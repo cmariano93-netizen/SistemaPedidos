@@ -1,6 +1,6 @@
 # Sistema de Pedidos - Kiosco "Sabor-Kiosco"
 
-## Portada
+## Carátula
 * **Materia:** Diseño Orientado a Objetos (DOO)
 * **Carrera:**  Tecnicatura en Programación de Sistemas
 * **Institución:** Universidad de Ciencias Empresariales y Sociales (UCES)
