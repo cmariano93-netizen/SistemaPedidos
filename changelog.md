@@ -1,8 +1,41 @@
-### 2. Control de Contingencias y Adaptación del Equipo
+# Changelog
 
-*   **Caso/Inconveniente presentado:** El estudiante **[Nombre y Apellido del integrante ausente]**, asignado originalmente al rol de **[Analista / Modelador / Diseñador]**, presentó **[detallar brevemente el motivo: ej. nula participación sin aviso / abandono de cursada / problemas de salud certificados]** durante el periodo de esta entrega [1, 2].
-*   **Resolución y reorganización de roles:** Ante esta situación y para garantizar la continuidad del proyecto, el equipo aplicó de manera crítica la política de adaptación de la cátedra [1, 2]. El integrante **[Nombre y Apellido de quien asumió la tarea]** asumió el rol de emergencia, cubriendo la totalidad de las actividades del rol afectado [2].
-*   **Detalle del doble rol asumido:**
-    *   **Rol Primario:** **[Tu rol original]** (documentado en el Issue [#Número](link) y PR [#Número](link)) [3].
-    *   **Rol Secundario (De Contingencia):** **[Rol del compañero ausente]** (documentado en el Issue [#Número](link) y PR [#Número](link)) [3].
-*   **Evidencia de Trazabilidad:** Las modificaciones técnicas correspondientes al rol secundario fueron desarrolladas de manera aislada en la rama `feature/` respectiva, verificadas mediante Code Review con IA, y finalmente integradas a la rama `develop` mediante Pull Request [3, 4].
+Este archivo se actualiza con cada Pull Request para registrar avances y correcciones.
+
+---
+
+## [Unreleased]
+
+### Added
+- [feature/estructura-base] Estructura inicial del proyecto.  
+  PR: [#1](link) - @usuario1 (Coordinador / DevOps)
+
+- [feature/ia-prompts] Documentación de 5 prompts de IA.  
+  PR: [#4](link) - @usuario4 (Especialista en IA)
+
+### Changed
+- [feature/readme-y-mockup] Actualización README.md con mockup.  
+  PR: [#3](link) - @usuario3 (Documentador / Diseñador UX)
+
+- [feature/index-html] Estructura HTML5 básica.  
+  PR: [#2](link) - @usuario2 (Desarrollador Frontend)
+
+### Fixed
+- [feature/fix-rutas] Corrección de rutas en README.md.  
+  PR: [#5](link) - @usuario3 (Documentador / Diseñador UX)
+
+---
+
+## [Release Actividad Obligatoria N°1] - 2025-08-10
+
+Aquí se listarán todas las Pull Requests que entraron en esta release.  
+Actualmente están en la sección [Unreleased] porque sólo están en la rama `develop`.
+
+---
+
+## Cómo usar este archivo
+
+- Para cada PR, simplemente agregar una línea breve en la sección correspondiente a su cambio (Added, Changed, Fixed).  
+- No es necesario escribir párrafos, sólo una frase corta + link a PR y responsable con rol.  
+- Al hacer la entrega final, copiar todo lo que está en **[Unreleased]** a una nueva sección con la fecha y nombre de la entrega (release).  
+- Mantener el orden y formato para facilitar el seguimiento.
