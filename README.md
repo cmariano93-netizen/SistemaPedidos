@@ -9,29 +9,29 @@
 | **Materia** | Diseño Orientado a Objetos |
 | **Institución** | Universidad de Ciencias Empresariales y Sociales (UCES) |
 | **Cuatrimestre** | 2° Cuatrimestre 2026 |
-| **Grupo** | **Grupo N° [Número de Grupo]** |
+| **Grupo** | **Grupo N° 1** |
 
 ### 👥 Integrantes del Equipo
 
-*   **[Nombre y Apellido]**  
+*   **Alexis Guardia**  
     *   **Matrícula:** [Número]  
-    *   **Carrera:** [Nombre de la Carrera]  
-    *   **Usuario GitHub:** @[Usuario]  
+    *   **Carrera:** Diseño Orientado a Objetos  
+    *   **Usuario GitHub:** @alexisguardia  
     *   **Rol en la AO1:** Analista de Requerimientos  
-*   **[Nombre y Apellido]**  
+*   **Lucas Mengarelli**  
     *   **Matrícula:** [Número]  
-    *   **Carrera:** [Nombre de la Carrera]  
-    *   **Usuario GitHub:** @[Usuario]  
+    *   **Carrera:** Diseño Orientado a Objetos  
+    *   **Usuario GitHub:** @LMengarelli93  
     *   **Rol en la AO1:** Modelador de Casos de Uso  
-*   **[Nombre y Apellido]**  
+*   **Isis Neith Escalada**  
     *   **Matrícula:** [Número]  
-    *   **Carrera:** [Nombre de la Carrera]  
-    *   **Usuario GitHub:** @[Usuario]  
+    *   **Carrera:** Diseño Orientado a Objetos  
+    *   **Usuario GitHub:** @neith18  
     *   **Rol en la AO1:** Diseñador de Clases Iniciales  
-*   **[Nombre y Apellido]**  
-    *   **Matrícula:** [Número]  
-    *   **Carrera:** [Nombre de la Carrera]  
-    *   **Usuario GitHub:** @[Usuario]  
+*   **Mariano Costamagna**  
+    *   **Matrícula:** 164693  
+    *   **Carrera:** Diseño Orientado a Objetos  
+    *   **Usuario GitHub:** @cmariano93-netizen  
     *   **Rol en la AO1:** Documentador y Coordinador de Repositorio  
 
 ---
@@ -44,7 +44,7 @@ Este sistema reemplaza los antiguos procesos informales y en papel por una arqui
 
 ---
 
-## 🎯 Objetivo del Entregable (Actividad Obligatoria N° 1)
+## 🎯 Objetivo de la Actividad Obligatoria N° 1
 
 El propósito fundamental de este primer hito es consolidar la **Ingeniería de Requerimientos** y la **Arquitectura Lógica Inicial** del software a partir de la interpretación de la documentación y audios dispersos del cliente. El equipo ha colaborado de manera distribuida bajo la metodología **GitFlow**, logrando:
 1.  La extracción sistemática de un mínimo de 5 Requisitos Funcionales y 5 No Funcionales.
