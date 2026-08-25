@@ -1,59 +1,37 @@
 # 🚀 Entrega Oficial - Actividad Obligatoria N° 1
 
-**GRUPO N° [Número]**
-<<<<<<< HEAD
+**GRUPO N° [Número de Grupo]**  
 **Materia:** Diseño Orientado a Objetos (UCES - 2° Cuatrimestre 2026)
 
 ---
 
-## 👥 Integrantes del Equipo
-*   [Nombre Integrante 1] - [Matrícula] - [Carrera]
-*   [Nombre Integrante 2] - [Matrícula] - [Carrera]
-*   [Nombre Integrante 3] - [Matrícula] - [Carrera]
-*   [Nombre Integrante 4] - [Matrícula] - [Carrera]
+## 👥 Carátula de Presentación de Integrantes
+
+| Nombre y Apellido | Número de Matrícula | Carrera | Rol Asumido en la AO1 |
+| :--- | :--- | :--- | :--- |
+| [Integrante 1] | [Matrícula] | [Carrera] | Analista de Requerimientos |
+| [Integrante 2] | [Matrícula] | [Carrera] | Modelador de Casos de Uso |
+| [Integrante 3] | [Matrícula] | [Carrera] | Diseñador de Clases Iniciales |
+| [Integrante 4] | [Matrícula] | [Carrera] | Documentador y Coordinador de Repositorio |
 
 ---
 
-## 📋 Resumen del Entregable Consolidado
-*Breve descripción de las metas cumplidas en la entrega y cómo se unificaron los aportes de Requisitos, Casos de Uso y Clases para el Consultorio Médico.*
-
----
-
-## 🔗 Enlaces Rápidos a la Documentación (Rutas Relativas)
-*   [Índice General de Anexos](./anexos/anexos.md)
-*   [Anexo I: Introducción Teórica, Requisitos y Casos de Uso](./anexos/introduccion.md)
-*   [Anexo II: Boceto Inicial del Diagrama de Clases (Imagen PNG)](./diagramas/01-diagrama-clases/01-boceto-inicial.png)
-*   [Registro de Cambios del Repositorio (Changelog)](./changelog.md)
-
----
-
-## 🛡️ Validación de Requisitos de la Entrega
-- [ ] La rama `develop` está completamente unificada en esta versión estable de `release`.
-- [ ] Se completaron de forma exitosa las 4 Code Reviews grupales asistidas por IA.
-- [ ] El archivo `changelog.md` posee todos los enlaces reales a Issues y PRs individuales.
-=======
-**Materia:** Diseño Orientado a Objetos (UCES - 2° Cuatrimestre 2026) [5]
-
----
-
-## 👥 Integrantes del Equipo y Roles Asumidos
-*   **[Nombre y Apellido]** - Matrícula: [XXXX] - Rol: *Analista de Requerimientos* [8]
-*   **[Nombre y Apellido]** - Matrícula: [XXXX] - Rol: *Modelador de Casos de Uso* [8]
-*   **[Nombre y Apellido]** - Matrícula: [XXXX] - Rol: *Diseñador de Clases Iniciales* [14]
-*   **[Nombre y Apellido]** - Matrícula: [XXXX] - Rol: *Documentador y Coordinador de Repositorio* [15]
-
----
-
-## 📊 Resumen del Entregable Consolidado
-*Breve introducción que explique cómo se integraron de forma cohesiva los requisitos del Consultorio Médico, los 5 casos de uso modelados y la arquitectura del diseño de clases en Excalidraw [5, 11, 21, 22].*
+## 📊 Resumen Consolidado del Entregable
+*Proporciona una breve síntesis de cómo el equipo unificó de forma lógica los requisitos de software del consultorio médico, los 5 casos de uso de la aplicación y la arquitectura inicial de clases modelada en Excalidraw.*
 
 ---
 
 ## 🔗 Enlaces Rápidos a la Documentación (Rutas Relativas Portables)
-*Utilizamos enlaces relativos para asegurar la correcta navegación del docente [23]:*
-*   [Índice de Anexos del Proyecto](./anexos/anexos.md) [6]
-*   [Anexo I: Introducción Teórica, Requisitos y Casos de Uso](./anexos/introduccion.md) [6]
-*   [Anexo II: Boceto Conceptual del Diagrama de Clases (Vista Previa PNG)](./diagramas/01-diagrama-clases/01-boceto-inicial.png) [6]
-*   [Registro de Cambios del Repositorio (Changelog)](./changelog.md) [6]
+*Utilizamos la sintaxis de rutas de enlaces relativos para garantizar la total portabilidad del repositorio al ser clonado por el docente:*
+*   [Índice General de Anexos](./anexos/anexos.md)
+*   [Anexo I: Introducción Teórica, Requisitos y Casos de Uso](./anexos/introduccion.md)
+*   [Anexo II: Boceto Inicial del Diagrama de Clases (Vista Previa PNG)](./diagramas/01-diagrama-clases/01-boceto-inicial.png)
+*   [Registro de Cambios del Repositorio (Changelog)](./changelog.md)
 
 ---
+
+## 🛡️ Auditoría de Calidad y Trazabilidad (Coordinador)
+- [ ] Todos los archivos del repositorio respetan estrictamente la jerarquía de carpetas y el formato Markdown.
+- [ ] Se ejecutaron de manera exitosa las **4 revisiones de código (Code Reviews) asistidas con IA** locales en cada una de las ramas feature individuales.
+- [ ] El archivo `changelog.md` se encuentra completamente consolidado y cuenta con los enlaces web reales de las Pull Requests e Issues individuales de cada miembro.
+- [ ] Comprendo que la rama `master` está protegida y no se realizará el merge definitivo hasta que el docente apruebe formalmente con el **LGTM / Approve**.
