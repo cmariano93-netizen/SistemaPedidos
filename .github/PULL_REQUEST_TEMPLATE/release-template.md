@@ -25,7 +25,7 @@
 *Utilizamos la sintaxis de rutas de enlaces relativos para garantizar la total portabilidad del repositorio al ser clonado por el docente:*
 *   [Índice General de Anexos](./anexos/anexos.md)
 *   [Anexo I: Introducción Teórica, Requisitos y Casos de Uso](./anexos/introduccion.md)
-*   [Anexo II: Boceto Inicial del Diagrama de Clases (Vista Previa PNG)](./diagramas/01-diagrama-clases/01-boceto-inicial.png)
+*   [Anexo II: Boceto Inicial del Diagrama de Clases (Vista Previa PNG)](./diagramas/01-diagrama-clases/01-boceto-inicial.png) ⚠️ *Verificar que la carpeta diagramas/ fue creada*
 *   [Registro de Cambios del Repositorio (Changelog)](./changelog.md)
 
 ---
