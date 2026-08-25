@@ -70,4 +70,8 @@ _(Opcional – Dejar aclaraciones, dificultades encontradas, o sugerencias)_
 ## ⚠ IMPORTANTE
 
 🚫 Sin esta Pull Request **no se justifica participación individual**.  
+<<<<<<< HEAD
 ✅ Recordá actualizar el archivo `changelog.md` con el resumen de esta PR una vez aprobada.
+=======
+✅ Recordá actualizar el archivo `changelog.md` con el resumen de esta PR una vez aprobada.
+>>>>>>> develop
