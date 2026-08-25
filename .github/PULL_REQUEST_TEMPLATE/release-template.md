@@ -17,7 +17,7 @@
 ---
 
 ## 📊 Resumen Consolidado del Entregable
-*Proporciona una breve síntesis de cómo el equipo unificó de forma lógica los requisitos de software del consultorio médico, los 5 casos de uso de la aplicación y la arquitectura inicial de clases modelada en Excalidraw.*
+*Proporciona una breve síntesis de cómo el equipo unificó de forma lógica los requisitos de software del Sistema de Pedidos para el Kiosco "Sabor", los 5 casos de uso de la aplicación y la arquitectura inicial de clases modelada en Excalidraw.*
 
 ---
 
