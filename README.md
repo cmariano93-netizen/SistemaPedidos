@@ -14,22 +14,22 @@
 ### 👥 Integrantes del Equipo
 
 *   **Alexis Guardia**  
-    *   **Matrícula:** [Número]  
+    *   **Matrícula:** 158767  
     *   **Carrera:** Diseño Orientado a Objetos  
     *   **Usuario GitHub:** @alexisguardia  
     *   **Rol en la AO1:** Analista de Requerimientos  
 *   **Lucas Mengarelli**  
-    *   **Matrícula:** [Número]  
+    *   **Matrícula:** 164298  
     *   **Carrera:** Diseño Orientado a Objetos  
     *   **Usuario GitHub:** @LMengarelli93  
     *   **Rol en la AO1:** Modelador de Casos de Uso  
 *   **Isis Neith Escalada**  
-    *   **Matrícula:** [Número]  
+    *   **Matrícula:** 155447  
     *   **Carrera:** Diseño Orientado a Objetos  
     *   **Usuario GitHub:** @neith18  
     *   **Rol en la AO1:** Diseñador de Clases Iniciales  
 *   **Mariano Costamagna**  
-    *   **Matrícula:** 164693  
+    *   **Matrícula:** 164690  
     *   **Carrera:** Diseño Orientado a Objetos  
     *   **Usuario GitHub:** @cmariano93-netizen  
     *   **Rol en la AO1:** Documentador y Coordinador de Repositorio  
