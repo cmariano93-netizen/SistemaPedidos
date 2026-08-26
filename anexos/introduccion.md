@@ -32,3 +32,91 @@ Para sentar las bases de la arquitectura lógica del **SistemaPedidos**, aplicam
 ### 🎭 D. Polimorfismo
 *   **Definición:** Es la capacidad de que objetos de distintas clases pertenecientes a una misma jerarquía respondan de maneras diferentes e individuales ante la recepción de un mismo mensaje o llamada a método.
 *   **Aplicación en el Kiosco:** Imaginemos una superclase abstracta de comportamiento llamada **`Pago`** con un método público `procesarCobro()`. De ella heredan las subclases concretas **`PagoEfectivo`** y **`PagoTransferencia`**. Cuando el sistema invoca de forma genérica el mensaje `procesarCobro()` sobre el pago de una orden, el objeto `PagoEfectivo` responderá registrando el ingreso en la caja física y abriendo el cajón, mientras que el objeto `PagoTransferencia` responderá disparando una llamada de validación electrónica hacia la API bancaria externa. Esto otorga una enorme flexibilidad y extensibilidad para añadir nuevos medios de pago en el futuro sin alterar la lógica de cobro general.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+### CASOS DE USO
+
+---
+- **Nombre del caso de uso**: Levantar pedido.
+    - Actor principal: Mozo / Cajero-Mostrador / Encargada de turno.
+    - Descripcion breve: El personal que atiende a los clientes debe registrar las comandas y entregarlas una vez listas o elaboradas.
+    - Flujo principal de eventos:  
+        - Actor: Ingresa al sistema y registra una mesas.
+        - Sistema: Ofrece el menu desplegable de opcines para completar comanda.
+        - Actor: Selecciona las comandas, accion de confirmar.
+        - Sistema: Al confirmar el menu, desplega la accion siguiente a cocina/mostrador donde corresponda y vuelve a mostrar el menu desplegable de toma de pedidos de la mesa.
+        - Actor: registra las entregas de la mesa en el sistema y confirma.
+        - Sistema: Actualiza los estados de entrega y vuelve a mostrar menu desplegable de toma de pedidos de la mesa.
+    - Precondiciones: El actor debe estar logeado con su usario y contraseña.
+    - Postcondiciones: Se genero solicitud de comandas con exito.
+- **Nombre del caso de uso**: Cobrar la cuenta.
+    - Actor principal: Mozo / Cajero-Mostrador / Encargada de turno.
+    - Descripcion breve: El cobrador debe ofrecer los medios de pago, imprimir ticket de cuenta, realizar el cobro.
+    - Flujo principal de eventos:  
+        - Actor: Pasar el estado de la mesa a cerrada.
+        - Sistema: Listar el ticket de detalles y procesar el total de la cuenta.
+        - Actor: Imprimir ticket.
+        - Sistema: Ofrecer menu de cobro recepcionado.
+        - Actor: Confirmar cobro.
+        - Sistema: Mostrar menu general de mesas.
+    - Precondiciones: El actor debe estar logeado con su usario y contraseña.
+    - Postcondiciones: Se confirmo y registro el pago.
+- **Nombre del caso de uso**: Cancelar pedido.
+    - Actor principal: Mozo / Cajero-Mostrador / Encargada de turno.
+    - Descripcion breve: El actor debe poder cancelar un pedido si el estado esta en la instancia de proceso.
+    - Flujo principal de eventos:
+        - Actor: Se desplega al menu de la mesa y observa el estado del pedido.
+        - Sistema: Informa el estado del pedido. Solicitado, En Proceso, listo. Si se encuentra en Solicitado o en proceso ofrece comando para cancelar pedido.
+        - Actor: Confirma la cancelacion.
+        - Sistema: Ejecuta la cancelacion del pedido. Borra del carrito el producto y vuelve a visualisar el menu desplegable de tomas de pedidos de la mesa.
+        - Actor: Actualiza el historial de la mesa para que desaparescan los cambios.
+    - precondiciones: El actor debe estar logeado con su usario y contraseña.
+    - Postcondiciones: Se genero registro de cancelacion de pedido.
+- **Nombre del caso de uso**: Elaboracion la comida.
+    - Actor principal: Cocinero.
+    - Descripcion breve: El area de cocina debe recibir la instruccion de los pedidos y los prepara.
+    - Flujo principal de eventos: 
+        - Actor: Recibe el llamado en el sistema, visualiza la mesa, evalua los pedidos y realiza confirmacion para que el estado corra de solicitado a en preparacion.
+        - Sistema: Muestra solo las opciones de las comandas correspondientes a cocina, colabora con la imagen de visualizacion de la lista como ayuda de memoria.
+        - Actor: Una vez terminados los platos se tilda la casilla de verificacion de listo para retirar.
+        - Sistema: Realiza la solicitud de plato listo para retirar en cocina.
+        - Actor: Realiza la confirmacion de plato entregado una vez que se lo llevan.
+    - Precondiciones: El actor debe estar logeado con su usario y contraseña.
+    - Postcondiciones: Se genero registro de entregas de cocina.
+- **Nombre del caso de uso**: Solicitud de pedido prioritario.
+    - Actor principal: Dueño / Encargada de turno.
+    - Descripcion breve: Las personas asignadas pueden indicar prioridad en la preparacion de pedidos para llevar.
+    - Flujo principal de eventos: 
+        - Actor: Entra el menu desplegable de pedidos para llevar.
+        - Sistema: Ofrece el menu desplegable de opcines para completar comanda.
+        - Actor:   Actor: Selecciona las comandas, accion de confirmar.
+        - Sistema: Al confirmar el menu, desplega la accion siguiente a cocina/mostrador donde corresponda y vuelve a mostrar el menu desplegable de toma de pedidos de las mesas.
+        - Actor: Si es necesario realiza la confirmacion de pedido listo para retirar cerrada.
+    - Precondiciones: El actor debe estar logeado con su usario y contraseña y cumplir con el nivel de acceso requerido.
+    - Postcondiciones: Se genero registro de entregas de cocina.
