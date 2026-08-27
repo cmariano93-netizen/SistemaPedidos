@@ -1,6 +1,14 @@
-| Integrante | Rol en la Entrega | Resumen del Aporte Técnico Realizado | Issue Asociado | Pull Request (PR) |
-| :--- | :--- | :--- | :--- | :--- |
-| **Mariano Costamagna** | **Documentador y Coordinador** | Creación de la estructura del repositorio (`README.md`, `anexos.md`, `introduccion.md`). Redacción de la carátula, el índice portable de anexos y la fundamentación teórica de POO con sus 4 pilares aplicados. Configuración de las plantillas automatizadas de PR. Gestión de las revisiones de código asistidas por IA para el equipo. | [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6) | [#0](https://github.com/cmariano93-netizen/SistemaPedidos/pull/14) |
-| **Mariano Costamagna** | **Documentador y Coordinador** | Creación de la estructura del repositorio (`README.md`, `anexos.md`, `introduccion.md`). Redacción de la carátula, el índice portable de anexos y la fundamentación teórica de POO con sus 4 pilares aplicados. Configuración de las plantillas automatizadas de PR. Gestión de las revisiones de código asistidas por IA para el equipo. | [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6) | [#0](https://github.com/cmariano93-netizen/SistemaPedidos/pull/14) |
-| **Mariano Costamagna** | **Documentador y Coordinador** | Creación de la estructura del repositorio (`README.md`, `anexos.md`, `introduccion.md`). Redacción de la carátula, el índice portable de anexos y la fundamentación teórica de POO con sus 4 pilares aplicados. Configuración de las plantillas automatizadas de PR. Gestión de las revisiones de código asistidas por IA para el equipo. | [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6) | [#0](https://github.com/cmariano93-netizen/SistemaPedidos/pull/14) |
-| **Mariano Costamagna** | **Documentador y Coordinador** | Creación de la estructura del repositorio (`README.md`, `anexos.md`, `introduccion.md`). Redacción de la carátula, el índice portable de anexos y la fundamentación teórica de POO con sus 4 pilares aplicados. Configuración de las plantillas automatizadas de PR. Gestión de las revisiones de código asistidas por IA para el equipo. | [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6) | [#0](https://github.com/cmariano93-netizen/SistemaPedidos/pull/14) |
+sólo a modo de ejemplo
+
+### Added
+
+- [feature/estructura-base] Estructura inicial del proyecto.
+  Issue(s): [#1](link-issue)
+  PR: [#2](link-pr) - @usuario (Coordinador / DevOps)
+Si una PR está asociada a más de una Issue, pueden indicarse todas las Issues correspondientes:
+
+### Changed
+
+- [feature/add-use-case-2] Actualización de las casos de uso.
+  Issue(s): [#3](link-issue), [#5](link-issue)
+  PR: [#6](link-pr) - @usuario (Modelador de Casos de Uso)
