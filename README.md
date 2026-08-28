@@ -1,6 +1,5 @@
 # 📦 SistemaPedidos - Kiosco "Sabor"
 
-## 👥 Portada
 *   **Universidad:** Universidad de Ciencias Empresariales y Sociales (UCES)
 *   **Materia:** Diseño Orientado a Objetos (DOO)
 *   **Carrera:** Tecnicatura Universitaria en Programación de Sistemas
