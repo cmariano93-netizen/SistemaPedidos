@@ -120,6 +120,14 @@ El sistema debe permitir agregar, quitar o modificar las personalizaciones de lo
 *RF13 - Registrar entrega del pedido*  
 El sistema debe permitir registrar que un pedido listo fue entregado al cliente.
 
+### Estados del pedido
+
+- recibido: permitir modificar, agregar/quitar productos, cancelar y priorizar.
+- en preparación: permitir priorizar y consultar; bloquear modificaciones.
+- listo: permitir registrar entrega; bloquear modificaciones.
+- entregado: solo consulta.
+- cancelado: solo consulta histórica y no aparece en la lista de pedidos activos.
+
 ### Requisitos no funcionales
 
 *RNF1 - Información actualizada*  
