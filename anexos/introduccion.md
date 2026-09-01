@@ -92,61 +92,62 @@ ACA AGREGAR LOS REQUISITOS FUNCIONALES Y NO FUNCIONALES
 
 
 ---
-# ***CASOS DE USO***
-- Nombre del caso de uso: Levantar pedido.
-    - Actor principal: Mozo / Cajero-Mostrador / Encargada de turno.
-    - Descripcion breve: El personal que atiende a los clientes debe registrar las comandas y entregarlas una vez listas o elaboradas.
+***CASOS DE USO***
+- Nombre del caso de uso: Registrar pedido.
+    - Actor principal: Personal de atención.
+    - Descripción breve: El personal que atiende a los clientes debe registrar las comandas y entregarlas una vez listas o elaboradas.
     - Flujo principal de eventos:  
-        - Actor: Ingresa al sistema y registra una mesas.
-        - Sistema: Ofrece el menu desplegable de opcines para completar comanda.
-        - Actor: Selecciona las comandas, accion de confirmar.
-        - Sistema: Al confirmar el menu, desplega la accion siguiente a cocina/mostrador donde corresponda y vuelve a mostrar el menu desplegable de toma de pedidos de la mesa.
-        - Actor: registra las entregas de la mesa en el sistema y confirma.
-        - Sistema: Actualiza los estados de entrega y vuelve a mostrar menu desplegable de toma de pedidos de la mesa.
-    - Precondiciones: El actor debe estar logeado con su usario y contraseña.
-    - Postcondiciones: Se genero solicitud de comandas con exito.
-- Nombre del caso de uso: Cobrar la cuenta.
-    - Actor principal: Mozo / Cajero-Mostrador / Encargada de turno.
-    - Descripcion breve: El cobrador debe ofrecer los medios de pago, imprimir ticket de cuenta, realizar el cobro.
+        - Actor: Ingresa al sistema y selecciona una mesa disponible.
+        - Sistema: Muestra listas de productos.
+        - Actor: Selecciona las comandas.
+        - Sistema:  Envía la lista de comandas a cocina/mostrador donde corresponda.
+        - Actor: Confirma el pedido en el sistema.
+        - Sistema: Genera registro de las comandas y calcula costos.
+    - Precondiciones: La mesa debe estar disponible y no debe tener consumos registrados previamente.
+    - Postcondiciones: Se instanció un nuevo objeto "Pedido" con estado de solicitado, asociado a una mesa seleccionada y el área de preparación fue notificado.
+- Nombre del caso de uso: Cobrar cuenta.
+    - Actor principal: Cobrador.
+    - Descripción breve: El cobrador debe ofrecer los medios de pago, imprimir ticket de cuenta, realizar el cobro.
     - Flujo principal de eventos:  
-        - Actor: Pasar el estado de la mesa a cerrada.
+        - Actor: Cierra la mesa.
         - Sistema: Listar el ticket de detalles y procesar el total de la cuenta.
-        - Actor: Imprimir ticket.
-        - Sistema: Ofrecer menu de cobro recepcionado.
-        - Actor: Confirmar cobro.
-        - Sistema: Mostrar menu general de mesas.
-    - Precondiciones: El actor debe estar logeado con su usario y contraseña.
-    - Postcondiciones: Se confirmo y registro el pago.
-- Nombre del caso de uso: Cancelar pedido.
-    - Actor principal: Mozo / Cajero-Mostrador / Encargada de turno.
-    - Descripcion breve: El actor debe poder cancelar un pedido si el estado esta en la instancia de proceso.
+        - Actor: Imprimir ticket y confirma el cobro.
+        - Sistema: Registra la venta.
+        - Actor: Actualiza el estado de la mesa y registra el cobro.
+    - Precondiciones: La mesa debe estar en estado de abierta/ocupada y tener consumos registrados.
+    - Postcondiciones: Se actualizó el estado de la mesa a cerrada o disponible y el pedido pasa a estado de cobrado.
+- Nombre del caso de uso: Cancelar comanda.
+    - Actor principal: Personal  de atención.
+    - Descripción breve: El actor debe poder cancelar una comanda si el estado esta en la instancia de proceso.
     - Flujo principal de eventos:
-        - Actor: Se desplega al menu de la mesa y observa el estado del pedido.
-        - Sistema: Informa el estado del pedido. Solicitado, En Proceso, listo. Si se encuentra en Solicitado o en proceso ofrece comando para cancelar pedido.
-        - Actor: Confirma la cancelacion.
-        - Sistema: Ejecuta la cancelacion del pedido. Borra del carrito el producto y vuelve a visualisar el menu desplegable de tomas de pedidos de la mesa.
-        - Actor: Actualiza el historial de la mesa para que desaparescan los cambios.
-    - precondiciones: El actor debe estar logeado con su usario y contraseña.
-    - Postcondiciones: Se genero registro de cancelacion de pedido.
-- Nombre del caso de uso: Elaboracion la comida.
+        - Actor: Observa el estado de la comanda.
+        - Sistema: En función del estado de preparación Solicitado, En Proceso, listo. Si se encuentra en solicitado o en proceso habilita cancelar comanda.
+        - Actor: Confirma la cancelación.
+        - Sistema: Borra del carrito la comanda.
+        - Actor: Actualiza los cambios.
+    - precondiciones: El estado de la comanda debe estar en solicitado o en proceso.
+    - Postcondiciones: El objeto "comanda" cambia su atributo a estado "cancelado", se eliminan los productos del carrito de la mesa y se recalculan los costos acumulados .
+- Nombre del caso de uso: Preparar pedido.
     - Actor principal: Cocinero.
-    - Descripcion breve: El area de cocina debe recibir la instruccion de los pedidos y los prepara.
+    - Descripción breve: El área de cocina debe recibir la instrucción de los pedidos y los prepara.
     - Flujo principal de eventos: 
-        - Actor: Recibe el llamado en el sistema, visualiza la mesa, evalua los pedidos y realiza confirmacion para que el estado corra de solicitado a en preparacion.
-        - Sistema: Muestra solo las opciones de las comandas correspondientes a cocina, colabora con la imagen de visualizacion de la lista como ayuda de memoria.
-        - Actor: Una vez terminados los platos se tilda la casilla de verificacion de listo para retirar.
-        - Sistema: Realiza la solicitud de plato listo para retirar en cocina.
-        - Actor: Realiza la confirmacion de plato entregado una vez que se lo llevan.
-    - Precondiciones: El actor debe estar logeado con su usario y contraseña.
-    - Postcondiciones: Se genero registro de entregas de cocina.
-- Nombre del caso de uso: Solicitud de pedido prioritario.
-    - Actor principal: Dueño / Encargada de turno.
-    - Descripcion breve: Las personas asignadas pueden indicar prioridad en la preparacion de pedidos para llevar.
+        - Actor: Recibe notificación de comanda, establece el cambio “solicitado" → 
+        "en proceso".
+        - Sistema: Sincroniza el estado de las comandas.
+        - Actor: Acciona la casilla de verificación de listo para retirar.
+        - Sistema: Notifica que las comandas están listas para retirar en cocina.
+        - Actor: Realiza la confirmación de comanda entregada.
+    - Precondiciones: El estado de la comanda debe estar en solicitado.
+    - Postcondiciones: El objeto "pedido" paso a estado "listo para retirar", y el sistema envia una notificación.
+- Nombre del caso de uso: Priorizar pedido.
+    - Actor principal: Supervisor.
+    - Descripción breve: Las personas asignadas pueden indicar prioridad en la preparación de pedidos.
     - Flujo principal de eventos: 
-        - Actor: Entra el menu desplegable de pedidos para llevar.
-        - Sistema: Ofrece el menu desplegable de opcines para completar comanda.
-        - Actor:   Actor: Selecciona las comandas, accion de confirmar.
-        - Sistema: Al confirmar el menu, desplega la accion siguiente a cocina/mostrador donde corresponda y vuelve a mostrar el menu desplegable de toma de pedidos de las mesas.
-        - Actor: Si es necesario realiza la confirmacion de pedido listo para retirar cerrada.
-    - Precondiciones: El actor debe estar logeado con su usario y contraseña y cumplir con el nivel de acceso requerido.
-    - Postcondiciones: Se genero registro de entregas de cocina.
+        - Actor: Selecciona un pedido activo en preparación desde el tablero de control.
+        - Sistema: Muestra las opciones de gestión del pedido.
+        - Actor: Selecciona "Fijar Prioridad Alta".
+        - Sistema: Modifica el atributo de prioridad y resalta el pedido en el tablero de cocina de manera visual.
+        - Actor: Confirma la operación.
+    - Precondiciones: El objeto "pedido" ya debe existir en el sistema en estado de solicitado.
+    - Postcondiciones: Se agregó prioridad al pedido y se notificó al área de preparación.
+
