@@ -52,3 +52,7 @@ El sistema debe ser sencillo de utilizar para el personal del kiosco, permitiend
 ### RNF4 - Integridad de los pedidos
 El sistema debe conservar la información de los pedidos, incluso cuando un pedido sea cancelado, sin eliminarlo del sistema.
 
+### RNF5 - Rendimiento y velocidad de sincronización
+
+El sistema debe actualizar los pedidos entre mostrador y cocina de forma casi instantánea.
+
