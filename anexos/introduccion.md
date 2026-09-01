@@ -102,8 +102,8 @@ El sistema debe permitir visualizar los pedidos activos y su estado actual.
 *RF7 - Cambiar estado del pedido*  
 El sistema debe permitir cambiar el estado de un pedido entre recibido, en preparación, listo y entregado.
 
-*RF8 - Cancelar pedido*  
-El sistema debe permitir cancelar un pedido completo cuando las reglas del estado del pedido lo permitan.
+*RF8 - Cancelar pedido*
+El sistema debe permitir cancelar un pedido solo en estados recibido o en preparación; al cancelarse, el pedido pasa a estado cancelado, queda registrado en el historial y no aparece en la lista de pedidos activos.
 
 *RF9 - Marcar pedido como prioritario*  
 El sistema debe permitir marcar manualmente un pedido como prioritario.
@@ -140,7 +140,7 @@ El sistema debe evitar que se pierda o se duplique la información de los pedido
 El sistema debe ser sencillo de utilizar para el personal del kiosco, permitiendo consultar y actualizar la información de los pedidos de forma clara.
 
 *RNF4 - Integridad de los pedidos*  
-El sistema debe conservar la información de los pedidos, incluso cuando un pedido sea cancelado, sin eliminarlo del sistema.
+El sistema debe conservar el historial completo de cada pedido cancelado para auditoría y no permitir su eliminación física del sistema.
 
 *RNF5 - Rendimiento y velocidad de sincronización*  
 El sistema debe actualizar el estado de un pedido entre mostrador y cocina en un máximo de 3 segundos, con una tasa de sincronización del 95% de los eventos dentro de ese umbral.
