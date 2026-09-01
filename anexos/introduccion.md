@@ -66,3 +66,135 @@ Un ejemplo en SistemaPedidos:
 Si queremos calcular el precio final de un productos envasado (gaseosa), ya lo tenemos configurado.
 
 Si queremos calcular el precio final de un producto elaborado (sándwich), se suman varios factores más, como el precio del ingrediente, precio del empaque, el precio del tiempo de preparación.
+
+
+### Requisitos iniciales del sistema
+
+Cuaderno grupal de NotebookLM: https://notebook.google.com/notebook/4dab293b-0441-4235-a64d-10e886ddbb70
+
+### Requisitos funcionales
+
+*RF1 - Registrar pedido*  
+El sistema debe permitir registrar un pedido con sus productos, cantidades y personalizaciones.
+
+*RF2 - Identificar pedido para retiro*  
+El sistema debe permitir identificar cada pedido mediante un número de pedido y un nombre o referencia de retiro.
+
+*RF3 - Calcular total del pedido*  
+El sistema debe calcular el total del pedido teniendo en cuenta los productos, cantidades y personalizaciones.
+
+*RF4 - Registrar pago*  
+El sistema debe permitir registrar el pago de un pedido y su forma de pago.
+
+*RF5 - Enviar pedido a cocina*  
+El sistema debe enviar automáticamente el pedido a cocina una vez registrado.
+
+*RF6 - Consultar pedidos activos*  
+El sistema debe permitir visualizar los pedidos activos y su estado actual.
+
+*RF7 - Cambiar estado del pedido*  
+El sistema debe permitir cambiar el estado de un pedido entre recibido, en preparación, listo y entregado.
+
+*RF8 - Cancelar pedido*
+El sistema debe permitir cancelar un pedido solo en estados recibido o en preparación; al cancelarse, el pedido pasa a estado cancelado, queda registrado en el historial y no aparece en la lista de pedidos activos.
+
+*RF9 - Marcar pedido como prioritario*  
+El sistema debe permitir marcar manualmente un pedido como prioritario.
+
+*RF10 - Modificar pedido*  
+El sistema debe permitir modificar un pedido mientras se encuentre en estado recibido.
+
+*RF11 - Agregar o quitar productos*  
+El sistema debe permitir agregar o quitar productos de un pedido mientras se encuentre en estado recibido.
+
+*RF12 - Modificar personalizaciones*  
+El sistema debe permitir agregar, quitar o modificar las personalizaciones de los productos de un pedido mientras se encuentre en estado recibido.
+
+*RF13 - Registrar entrega del pedido*  
+El sistema debe permitir registrar que un pedido listo fue entregado al cliente.
+
+### Estados del pedido
+
+- recibido: permitir modificar, agregar/quitar productos, cancelar y priorizar.
+- en preparación: permitir priorizar y consultar; bloquear modificaciones.
+- listo: permitir registrar entrega; bloquear modificaciones.
+- entregado: solo consulta.
+- cancelado: solo consulta histórica y no aparece en la lista de pedidos activos.
+
+### Requisitos no funcionales
+
+*RNF1 - Información actualizada*  
+El sistema debe mantener la información de los pedidos actualizada para que el personal pueda consultar el mismo estado y la misma información del pedido.
+
+*RNF2 - Consistencia de la información*  
+El sistema debe evitar que se pierda o se duplique la información de los pedidos.
+
+*RNF3 - Facilidad de uso*  
+El sistema debe ser sencillo de utilizar para el personal del kiosco, permitiendo consultar y actualizar la información de los pedidos de forma clara.
+
+*RNF4 - Integridad de los pedidos*  
+El sistema debe conservar el historial completo de cada pedido cancelado para auditoría y no permitir su eliminación física del sistema.
+
+*RNF5 - Rendimiento y velocidad de sincronización*  
+El sistema debe actualizar el estado de un pedido entre mostrador y cocina en un máximo de 3 segundos, con una tasa de sincronización del 95% de los eventos dentro de ese umbral.
+
+---
+***CASOS DE USO***
+- Nombre del caso de uso: Registrar pedido.
+    - Actor principal: Personal de atención.
+    - Descripción breve: El personal que atiende a los clientes debe registrar las comandas y entregarlas una vez listas o elaboradas.
+    - Flujo principal de eventos:  
+        - Actor: Ingresa al sistema y selecciona una mesa disponible.
+        - Sistema: Muestra listas de productos.
+        - Actor: Selecciona las comandas.
+        - Sistema:  Envía la lista de comandas a cocina/mostrador donde corresponda.
+        - Actor: Confirma el pedido en el sistema.
+        - Sistema: Genera registro de las comandas y calcula costos.
+    - Precondiciones: La mesa debe estar disponible y no debe tener consumos registrados previamente.
+    - Postcondiciones: Se instanció un nuevo objeto "Pedido" con estado de solicitado, asociado a una mesa seleccionada y el área de preparación fue notificado.
+- Nombre del caso de uso: Cobrar cuenta.
+    - Actor principal: Cobrador.
+    - Descripción breve: El cobrador debe ofrecer los medios de pago, imprimir ticket de cuenta, realizar el cobro.
+    - Flujo principal de eventos:  
+        - Actor: Cierra la mesa.
+        - Sistema: Listar el ticket de detalles y procesar el total de la cuenta.
+        - Actor: Imprimir ticket y confirma el cobro.
+        - Sistema: Registra la venta.
+        - Actor: Actualiza el estado de la mesa y registra el cobro.
+    - Precondiciones: La mesa debe estar en estado de abierta/ocupada y tener consumos registrados.
+    - Postcondiciones: Se actualizó el estado de la mesa a cerrada o disponible y el pedido pasa a estado de cobrado.
+- Nombre del caso de uso: Cancelar comanda.
+    - Actor principal: Personal  de atención.
+    - Descripción breve: El actor debe poder cancelar una comanda si el estado esta en la instancia de proceso.
+    - Flujo principal de eventos:
+        - Actor: Observa el estado de la comanda.
+        - Sistema: En función del estado de preparación Solicitado, En Proceso, listo. Si se encuentra en solicitado o en proceso habilita cancelar comanda.
+        - Actor: Confirma la cancelación.
+        - Sistema: Borra del carrito la comanda.
+        - Actor: Actualiza los cambios.
+    - precondiciones: El estado de la comanda debe estar en solicitado o en proceso.
+    - Postcondiciones: El objeto "comanda" cambia su atributo a estado "cancelado", se eliminan los productos del carrito de la mesa y se recalculan los costos acumulados .
+- Nombre del caso de uso: Preparar pedido.
+    - Actor principal: Cocinero.
+    - Descripción breve: El área de cocina debe recibir la instrucción de los pedidos y los prepara.
+    - Flujo principal de eventos: 
+        - Actor: Recibe notificación de comanda, establece el cambio “solicitado" → 
+        "en proceso".
+        - Sistema: Sincroniza el estado de las comandas.
+        - Actor: Acciona la casilla de verificación de listo para retirar.
+        - Sistema: Notifica que las comandas están listas para retirar en cocina.
+        - Actor: Realiza la confirmación de comanda entregada.
+    - Precondiciones: El estado de la comanda debe estar en solicitado.
+    - Postcondiciones: El objeto "pedido" paso a estado "listo para retirar", y el sistema envia una notificación.
+- Nombre del caso de uso: Priorizar pedido.
+    - Actor principal: Supervisor.
+    - Descripción breve: Las personas asignadas pueden indicar prioridad en la preparación de pedidos.
+    - Flujo principal de eventos: 
+        - Actor: Selecciona un pedido activo en preparación desde el tablero de control.
+        - Sistema: Muestra las opciones de gestión del pedido.
+        - Actor: Selecciona "Fijar Prioridad Alta".
+        - Sistema: Modifica el atributo de prioridad y resalta el pedido en el tablero de cocina de manera visual.
+        - Actor: Confirma la operación.
+    - Precondiciones: El objeto "pedido" ya debe existir en el sistema en estado de solicitado.
+    - Postcondiciones: Se agregó prioridad al pedido y se notificó al área de preparación.
+
