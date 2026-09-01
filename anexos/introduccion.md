@@ -7,8 +7,7 @@
 
 
 Las ventajas e importancia de este paradigma se basa en:
-1. 🛡️ *Robustez y Seguridad del Sistema*
-
+1. 🛡️ *Robustez y Seguridad del Sistema* 
     Se logra mediante encapsulación y ocultación de datos internos de los objetos.
     Para leer o modificar estos datos, se hace mediante una interfaz pública invocando métodos o funciones miembro, logrando que ninguna funcion ajena al sistema pueda modificar o alterar los datos.
 
@@ -67,87 +66,3 @@ Un ejemplo en SistemaPedidos:
 Si queremos calcular el precio final de un productos envasado (gaseosa), ya lo tenemos configurado.
 
 Si queremos calcular el precio final de un producto elaborado (sándwich), se suman varios factores más, como el precio del ingrediente, precio del empaque, el precio del tiempo de preparación.
-
-
-
-
-
-
-
-
-
-
-
-
-ACA AGREGAR LOS REQUISITOS FUNCIONALES Y NO FUNCIONALES
-
-
-
-
-
-
-
-
-
-
-
----
-***CASOS DE USO***
-- Nombre del caso de uso: Registrar pedido.
-    - Actor principal: Personal de atención.
-    - Descripción breve: El personal que atiende a los clientes debe registrar las comandas y entregarlas una vez listas o elaboradas.
-    - Flujo principal de eventos:  
-        - Actor: Ingresa al sistema y selecciona una mesa disponible.
-        - Sistema: Muestra listas de productos.
-        - Actor: Selecciona las comandas.
-        - Sistema:  Envía la lista de comandas a cocina/mostrador donde corresponda.
-        - Actor: Confirma el pedido en el sistema.
-        - Sistema: Genera registro de las comandas y calcula costos.
-    - Precondiciones: La mesa debe estar disponible y no debe tener consumos registrados previamente.
-    - Postcondiciones: Se instanció un nuevo objeto "Pedido" con estado de solicitado, asociado a una mesa seleccionada y el área de preparación fue notificado.
-- Nombre del caso de uso: Cobrar cuenta.
-    - Actor principal: Cobrador.
-    - Descripción breve: El cobrador debe ofrecer los medios de pago, imprimir ticket de cuenta, realizar el cobro.
-    - Flujo principal de eventos:  
-        - Actor: Cierra la mesa.
-        - Sistema: Listar el ticket de detalles y procesar el total de la cuenta.
-        - Actor: Imprimir ticket y confirma el cobro.
-        - Sistema: Registra la venta.
-        - Actor: Actualiza el estado de la mesa y registra el cobro.
-    - Precondiciones: La mesa debe estar en estado de abierta/ocupada y tener consumos registrados.
-    - Postcondiciones: Se actualizó el estado de la mesa a cerrada o disponible y el pedido pasa a estado de cobrado.
-- Nombre del caso de uso: Cancelar comanda.
-    - Actor principal: Personal  de atención.
-    - Descripción breve: El actor debe poder cancelar una comanda si el estado esta en la instancia de proceso.
-    - Flujo principal de eventos:
-        - Actor: Observa el estado de la comanda.
-        - Sistema: En función del estado de preparación Solicitado, En Proceso, listo. Si se encuentra en solicitado o en proceso habilita cancelar comanda.
-        - Actor: Confirma la cancelación.
-        - Sistema: Borra del carrito la comanda.
-        - Actor: Actualiza los cambios.
-    - precondiciones: El estado de la comanda debe estar en solicitado o en proceso.
-    - Postcondiciones: El objeto "comanda" cambia su atributo a estado "cancelado", se eliminan los productos del carrito de la mesa y se recalculan los costos acumulados .
-- Nombre del caso de uso: Preparar pedido.
-    - Actor principal: Cocinero.
-    - Descripción breve: El área de cocina debe recibir la instrucción de los pedidos y los prepara.
-    - Flujo principal de eventos: 
-        - Actor: Recibe notificación de comanda, establece el cambio “solicitado" → 
-        "en proceso".
-        - Sistema: Sincroniza el estado de las comandas.
-        - Actor: Acciona la casilla de verificación de listo para retirar.
-        - Sistema: Notifica que las comandas están listas para retirar en cocina.
-        - Actor: Realiza la confirmación de comanda entregada.
-    - Precondiciones: El estado de la comanda debe estar en solicitado.
-    - Postcondiciones: El objeto "pedido" paso a estado "listo para retirar", y el sistema envia una notificación.
-- Nombre del caso de uso: Priorizar pedido.
-    - Actor principal: Supervisor.
-    - Descripción breve: Las personas asignadas pueden indicar prioridad en la preparación de pedidos.
-    - Flujo principal de eventos: 
-        - Actor: Selecciona un pedido activo en preparación desde el tablero de control.
-        - Sistema: Muestra las opciones de gestión del pedido.
-        - Actor: Selecciona "Fijar Prioridad Alta".
-        - Sistema: Modifica el atributo de prioridad y resalta el pedido en el tablero de cocina de manera visual.
-        - Actor: Confirma la operación.
-    - Precondiciones: El objeto "pedido" ya debe existir en el sistema en estado de solicitado.
-    - Postcondiciones: Se agregó prioridad al pedido y se notificó al área de preparación.
-
