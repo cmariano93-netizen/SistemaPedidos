@@ -35,6 +35,12 @@ class Producto {
   + obtenerPrecio()
 }
 
+class Combo {
+  - nombre
+  - precioBase
+  + obtenerPrecio()
+}
+
 class Personalizacion {
   - tipo
   - descripcion
@@ -54,5 +60,7 @@ Pedido "1" -- "1..*" ItemPedido : contiene
 ItemPedido "*" -- "1" Producto : corresponde a
 ItemPedido "1" -- "0..*" Personalizacion : tiene
 Pedido "1" -- "0..1" Pago : tiene
+Combo --|> Producto
+Combo "1" -- "1..*" Producto : contiene
 
 @enduml
