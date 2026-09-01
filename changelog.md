@@ -42,3 +42,9 @@ Si una PR está asociada a más de una Issue, pueden indicarse todas las Issues 
   Issue(s): [#44](https://github.com/cmariano93-netizen/SistemaPedidos/issues/44)
 
   PR: [#43](https://github.com/cmariano93-netizen/SistemaPedidos/pull/43) - @neith18 (Diseñadora de Clases Iniciales)
+
+  [feature/analista-requerimentos-add-introduccion-md] Agrega el anexo de introducción al Diseño Orientado a Objetos con los requisitos funcionales y no funcionales del sistema.
+
+Issue(s): #48
+
+PR: #47 - @alexisguardia (Analista de Requerimientos)
