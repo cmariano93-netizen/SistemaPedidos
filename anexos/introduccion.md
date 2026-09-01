@@ -57,7 +57,12 @@ Si queremos calcular el precio final de un producto envasado (gaseosa) ya lo ten
 
 Si queremos calcular el precio final de un producto elaborado (sándwich), se suman varios factores más, como el precio del ingrediente, precio del empaque, el precio del tiempo de preparación.
 
+<<<<<<< HEAD
 ## Requisitos iniciales del sistema
+=======
+
+### Requisitos iniciales del sistema
+>>>>>>> 201208c8bda69773bea702c01f9caff86d246d38
 
 Cuaderno grupal de NotebookLM: https://notebook.google.com/notebook/4dab293b-0441-4235-a64d-10e886ddbb70
 
@@ -127,8 +132,13 @@ El sistema debe conservar el historial completo de cada pedido cancelado para au
 *RNF5 - Rendimiento y velocidad de sincronización*  
 El sistema debe actualizar el estado de un pedido entre mostrador y cocina en un máximo de 3 segundos, con una tasa de sincronización del 95% de los eventos dentro de ese umbral.
 
+<<<<<<< HEAD
 
 ## CASOS DE USO
+=======
+---
+***CASOS DE USO***
+>>>>>>> 201208c8bda69773bea702c01f9caff86d246d38
 - Nombre del caso de uso: Registrar pedido.
     - Actor principal: Personal de atención.
     - Descripción breve: El personal que atiende a los clientes debe registrar las comandas y entregarlas una vez listas o elaboradas.
