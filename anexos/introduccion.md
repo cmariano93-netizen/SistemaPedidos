@@ -79,6 +79,10 @@ Si queremos calcular el precio final de un producto elaborado (sándwich), se su
 
 
 
+### Requisitos iniciales del sistema
+
+Cuaderno grupal de NotebookLM: https://notebook.google.com/notebook/4dab293b-0441-4235-a64d-10e886ddbb70
+
 ### Requisitos funcionales
 
 *RF1 - Registrar pedido*  
