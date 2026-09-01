@@ -7,8 +7,7 @@
 
 
 Las ventajas e importancia de este paradigma se basa en:
-1. 🛡️ *Robustez y Seguridad del Sistema*
-
+1. 🛡️ *Robustez y Seguridad del Sistema* 
     Se logra mediante encapsulación y ocultación de datos internos de los objetos.
     Para leer o modificar estos datos, se hace mediante una interfaz pública invocando métodos o funciones miembro, logrando que ninguna funcion ajena al sistema pueda modificar o alterar los datos.
 
