@@ -54,3 +54,8 @@ Si una PR está asociada a más de una Issue, pueden indicarse todas las Issues 
 Issue(s): #48
 PR: #47 - @alexisguardia (Analista de Requerimientos)
 
+- [feature/diseniador-clases-update-anexo-diagrama] Actualiza la estructura del boceto inicial según la consigna, reubicando y renombrando los archivos Excalidraw e imagen en `diagramas/01-diagrama-clases/`. Incorpora además la imagen del boceto y su enlace de visualización en línea en `anexos/introduccion.md`.
+
+  Issue(s): [#44](https://github.com/cmariano93-netizen/SistemaPedidos/issues/44)
+
+  PR: [#49](https://github.com/cmariano93-netizen/SistemaPedidos/pull/49) - @neith18 (Diseñadora de Clases Iniciales)
