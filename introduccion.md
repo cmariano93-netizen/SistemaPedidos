@@ -56,3 +56,10 @@ El sistema debe conservar la información de los pedidos, incluso cuando un pedi
 
 El sistema debe actualizar los pedidos entre mostrador y cocina de forma casi instantánea.
 
+### Boceto inicial del diseño de clases
+
+El siguiente diagrama representa el boceto inicial de clases del sistema, incluyendo las clases principales identificadas, sus atributos, métodos y relaciones.
+
+![Boceto inicial del diseño de clases](../diagramas/01-diagrama-clases/01-boceto_inicial_clases.png)
+
+[Ver boceto inicial en línea](https://imgur.com/a/7fJjBOg)

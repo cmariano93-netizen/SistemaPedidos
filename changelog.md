@@ -46,3 +46,9 @@ Si una PR está asociada a más de una Issue, pueden indicarse todas las Issues 
  [feature/analista-requerimentos-add-introduccion-md] Agrega y ajusta el anexo de introducción al Diseño Orientado a Objetos con los requisitos funcionales y no funcionales del sistema, incluyendo estados del pedido y política de cancelación.
 Issue(s): #48
 PR: #47 - @alexisguardia (Analista de Requerimientos)
+
+- [feature/diseniador-clases-update-anexo-diagrama] Actualiza la estructura del boceto inicial según la consigna, reubicando y renombrando los archivos Excalidraw e imagen en `diagramas/01-diagrama-clases/`. Incorpora además la imagen del boceto y su enlace de visualización en línea en `anexos/introduccion.md`.
+
+  Issue(s): [#44](https://github.com/cmariano93-netizen/SistemaPedidos/issues/44)
+
+  PR: pendiente - @neith18 (Diseñadora de Clases Iniciales)
