@@ -3,7 +3,7 @@
 - [feature/estructura-base] Estructura inicial del proyecto.
   Issue(s): [#1](link-issue)
   PR: [#2](link-pr) - @usuario (Coordinador / DevOps)
-git 
+  
 - [feature/diseniador-clases-add-boceto-inicial] Agrega boceto inicial de clases en formatos PlantUML, Excalidraw e imagen.
 
   Issue(s): [#44](https://github.com/cmariano93-netizen/SistemaPedidos/issues/44)
