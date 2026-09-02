@@ -10,7 +10,7 @@ git
 
   PR: [#43](https://github.com/cmariano93-netizen/SistemaPedidos/pull/43) - @neith18 (Diseñadora de Clases Iniciales)
   
-  [feature/modelador-casos-uso-update-use-case-1] Agrego introduccion.md con los casos de uso actualizados.
+- [feature/modelador-casos-uso-update-use-case-1] Agrego introduccion.md con los casos de uso actualizados.
 
   Issue(s): [#41](https://github.com/cmariano93-netizen/SistemaPedidos/issues/41)
 
@@ -50,7 +50,7 @@ Si una PR está asociada a más de una Issue, pueden indicarse todas las Issues 
 
   PR: [#43](https://github.com/cmariano93-netizen/SistemaPedidos/pull/43) - @neith18 (Diseñadora de Clases Iniciales)
 
- [feature/analista-requerimentos-add-introduccion-md] Agrega y ajusta el anexo de introducción al Diseño Orientado a Objetos con los requisitos funcionales y no funcionales del sistema, incluyendo estados del pedido y política de cancelación.
+- [feature/analista-requerimentos-add-introduccion-md] Agrega y ajusta el anexo de introducción al Diseño Orientado a Objetos con los requisitos funcionales y no funcionales del sistema, incluyendo estados del pedido y política de cancelación.
 Issue(s): #48
 PR: #47 - @alexisguardia (Analista de Requerimientos)
 
