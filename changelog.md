@@ -51,4 +51,4 @@ PR: #47 - @alexisguardia (Analista de Requerimientos)
 
   Issue(s): [#44](https://github.com/cmariano93-netizen/SistemaPedidos/issues/44)
 
-  PR: pendiente - @neith18 (Diseñadora de Clases Iniciales)
+  PR: [#49](https://github.com/cmariano93-netizen/SistemaPedidos/pull/49) - @neith18 (Diseñadora de Clases Iniciales)
