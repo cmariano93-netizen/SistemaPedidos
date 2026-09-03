@@ -59,3 +59,9 @@ PR: #47 - @alexisguardia (Analista de Requerimientos)
   Issue(s): [#44](https://github.com/cmariano93-netizen/SistemaPedidos/issues/44)
 
   PR: [#49](https://github.com/cmariano93-netizen/SistemaPedidos/pull/49) - @neith18 (Diseñadora de Clases Iniciales)
+
+- [feature/diseniador-clases-fix-boceto-anexo] Incorpora el boceto inicial del diseño de clases como imagen incrustada en `anexos/introduccion.md`, conservando los aportes existentes en el archivo.
+
+  Issue(s): [#44](https://github.com/cmariano93-netizen/SistemaPedidos/issues/44)
+
+  PR: [#56](https://github.com/cmariano93-netizen/SistemaPedidos/pull/56) - @neith18 (Diseñadora de Clases Iniciales)

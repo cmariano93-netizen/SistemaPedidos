@@ -189,3 +189,10 @@ El sistema debe actualizar el estado de un pedido entre mostrador y cocina en un
     - Precondiciones: El objeto "pedido" ya debe existir en el sistema en estado de solicitado.
     - Postcondiciones: Se agregó prioridad al pedido y se notificó al área de preparación.
 
+### Boceto inicial del diseño de clases
+
+El siguiente diagrama representa el boceto inicial de clases del sistema, incluyendo las clases principales identificadas, sus atributos, métodos y relaciones.
+
+![Boceto inicial del diseño de clases](../diagramas/01-diagrama-clases/01-boceto_inicial_clases.png)
+
+[Ver boceto inicial en línea](https://imgur.com/a/7fJjBOg)
