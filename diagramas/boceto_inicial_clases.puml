@@ -1,0 +1,66 @@
+@startuml
+
+class Usuario {
+  - id
+  - nombre
+  + crearPedido()
+  + modificarPedido()
+}
+
+class Pedido {
+  - numero
+  - fechaHora
+  - nombreRetiro
+  - estado
+  - prioritario
+  - total
+  + agregarItem()
+  + quitarItem()
+  + modificarItem()
+  + calcularTotal()
+  + cambiarEstado()
+  + cancelar()
+}
+
+class ItemPedido {
+  - cantidad
+  - precioUnitario
+  - subtotal
+  + calcularSubtotal()
+}
+
+class Producto {
+  - nombre
+  - precioActual
+  + obtenerPrecio()
+}
+
+class Combo {
+  - nombre
+  - precioBase
+  + obtenerPrecio()
+}
+
+class Personalizacion {
+  - tipo
+  - descripcion
+  - precioAdicional
+  + calcularAdicional()
+}
+
+class Pago {
+  - monto
+  - fecha
+  - formaPago
+  + registrarPago()
+}
+
+Usuario "1" -- "0..*" Pedido : crea
+Pedido "1" -- "1..*" ItemPedido : contiene
+ItemPedido "*" -- "1" Producto : corresponde a
+ItemPedido "1" -- "0..*" Personalizacion : tiene
+Pedido "1" -- "0..1" Pago : tiene
+Combo --|> Producto
+Combo "1" -- "1..*" Producto : contiene
+
+@enduml
