@@ -44,4 +44,23 @@ Registro de cambios, participación de integrantes, roles asignados y enlaces a 
 - Habilitación de consignas: 10 de agosto 2026
 - Fecha límite: 3 de septiembre 2026
 
+### Correcciones Técnicas y Resolución de Hallazgos
+
+**Hallazgo RC5 - Atributo `total` sin tipo de dato (RESUELTO)**
+- **Severidad:** ALTA
+- **Identificado en:** Clase Pedido (diagramas/boceto_inicial_clases.puml)
+- **Problema:** El atributo `total` no tenía tipo de dato explícito
+- **Solución aplicada:** Se actualiza a `total: Decimal` con retorno `calcularTotal(): Decimal`
+- **Justificación:** Encapsulamiento fuerte y precisión en valores monetarios
+- **Commit:** beb1b5b - "fix: agregar tipos de dato explícitos al atributo total en clase Pedido"
+- **Estado:** ✅ RESUELTO
+- **Responsable:** @fernandodanielm (Coordinador - Coordinación de correcciones)
+
+**Revisiones de Código con IA - 12 PRs Completadas**
+- Se realizaron Code Reviews asistidas por IA en todas las PRs de la Actividad:
+  - PRs revisadas: #19, #20, #25, #28, #33, #34, #38, #40, #52, #55, #56, #57
+  - Cada revisión incluye: hallazgos específicos, líneas señaladas, decisiones explícitas
+  - Resultado: Identificación de patrones de mejora y validación de calidad técnica
+- **Responsable:** @fernandodanielm (Coordinador)
+
 
