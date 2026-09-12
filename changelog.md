@@ -1,60 +1,47 @@
-### Added
+# Changelog
 
-- [feature/diseniador-clases-add-boceto-inicial] Agrega boceto inicial de clases en formatos PlantUML, Excalidraw e imagen.
-Issue(s): [#44](https://github.com/cmariano93-netizen/SistemaPedidos/issues/44)
- PR: [#43](https://github.com/cmariano93-netizen/SistemaPedidos/pull/43) - @neith18 (Diseñadora de Clases Iniciales)
+Registro de cambios, participación de integrantes, roles asignados y enlaces a Pull Requests e Issues de cada entrega.
 
-  [feature/modelador-casos-uso-update-use-case-1] Agrego introduccion.md con los casos de uso actualizados.
+---
 
-  Issue(s): [#41](https://github.com/cmariano93-netizen/SistemaPedidos/issues/41)
+## Actividad Obligatoria N°1
 
-  PR: [#42](https://github.com/cmariano93-netizen/SistemaPedidos/pull/42) - @LMengarelli93git  (Modelador de casos de uso)
+### Participantes y Roles
 
-- [feature/doc-coord-repo-update-readme-md] Redacción y estructuración del archivo README.md
-Issue(s): [#39](https://github.com/cmariano93-netizen/SistemaPedidos/issues/39)
-PR: [#40](https://github.com/cmariano93-netizen/SistemaPedidos/pull/40) - @cmariano93-netizen (Coordinador)
+| Integrante | Matrícula | Rol | Issue | PR | Descripción |
+| :--- | :---: | :--- | :---: | :---: | :--- |
+| Mariano Costamagna | 164690 | Analista de Requerimientos | #48 | #47 | Análisis de requerimientos funcionales y no funcionales |
+| Lucas Mengarelli | 164298 | Modelador de Casos de Uso | #41 | #42 | Modelado de casos de uso del sistema |
+| Fernando Molina | 153090 | Diseñador de Clases Iniciales | #44 | #43 | Boceto inicial de clases con Excalidraw |
+| Alexis Guardia | 158767 | Documentador y Coordinador | #39, #45, #38 | #40, #46, #37 | Estructura repositorio y documentación |
 
-- [feature/doc-coord-repo-update-readme-md] Redacción de la introducción teórica al paradigma y los cuatro pilares de la POO en anexos/introduccion.md
- Issue(s): [#45](https://github.com/cmariano93-netizen/SistemaPedidos/issues/45)
-PR: [#46](https://github.com/cmariano93-netizen/SistemaPedidos/pull/46) - @cmariano93-netizen (Coordinador)
+### Resumen de aportes
 
-- [feature/doc-coord-repo-update-readme-md] Estructuración de carpetas
-Issue(s): [#38](https://github.com/cmariano93-netizen/SistemaPedidos/pull/38)
-PR: [#37](https://github.com/cmariano93-netizen/SistemaPedidos/issues/37) - @cmariano93-netizen (Coordinador)
+**Analista de Requerimientos - @alexisguardia (#48, #47)**
+- Extracción de requisitos funcionales y no funcionales
+- Creación de cuaderno en Notebook LM
+- Documentación en `anexos/introduccion.md` con requisitos del sistema
 
+**Modelador de Casos de Uso - @LMengarelli93 (#41, #42)**
+- Identificación de actores y casos de uso
+- Documentación de 5 casos de uso completos en `anexos/introduccion.md`
+- Integración con Notebook LM compartido
 
+**Diseñador de Clases Iniciales - @neith18 (#44, #43)**
+- Diseño de boceto inicial en Excalidraw
+- Generación de imagen PNG exportada
+- Almacenamiento en `diagramas/01-diagrama-clases/`
+- Actualización incluyendo `Combo` como especialización de `Producto`
 
-### Changed
+**Documentador y Coordinador - @cmariano93-netizen (#39, #45, #38, #40, #46, #37)**
+- Creación de estructura de carpetas y archivos
+- Redacción de `README.md`, `anexos.md` e `introduccion.md`
+- Introducción teórica a POO y cuatro pilares
+- Revisión de todas las PRs (mínimo 4 asistidas con IA)
+- Coordinación general del repositorio
 
-- [feature/diseniador-clases-add-boceto-inicial] Restaura `README.md` tomando como referencia la versión vigente de `develop`, corrigiendo una eliminación previa del archivo.
-
-  Issue(s): [#44](https://github.com/cmariano93-netizen/SistemaPedidos/issues/44)
-
-  PR: [#43](https://github.com/cmariano93-netizen/SistemaPedidos/pull/43) - @neith18 (Diseñadora de Clases Iniciales)
-
-- [feature/diseniador-clases-add-boceto-inicial] Incorpora y actualiza `changelog.md` con la trazabilidad correspondiente a la tarea, vinculando la Issue y la PR.
-
-  Issue(s): [#44](https://github.com/cmariano93-netizen/SistemaPedidos/issues/44)
-
-  PR: [#43](https://github.com/cmariano93-netizen/SistemaPedidos/pull/43) - @neith18 (Diseñadora de Clases Iniciales)
-
-- [feature/diseniador-clases-add-boceto-inicial] Resuelve el conflicto de integración de `changelog.md` con `develop`, conservando los cambios requeridos de ambas ramas.
-
-  Issue(s): [#44](https://github.com/cmariano93-netizen/SistemaPedidos/issues/44)
-
-  PR: [#43](https://github.com/cmariano93-netizen/SistemaPedidos/pull/43) - @neith18 (Diseñadora de Clases Iniciales)
-
-- [feature/diseniador-clases-add-boceto-inicial] Actualiza el boceto inicial de clases incorporando `Combo` como especialización de `Producto` y su composición por uno o más productos. Actualiza las representaciones PlantUML, Excalidraw e imagen.
-
-  Issue(s): [#44](https://github.com/cmariano93-netizen/SistemaPedidos/issues/44)
-
-  PR: [#43](https://github.com/cmariano93-netizen/SistemaPedidos/pull/43) - @neith18 (Diseñadora de Clases Iniciales)
-
-
-- [feature/analista-requerimentos-add-introduccion-md] Agrega y ajusta el anexo de introducción al Diseño Orientado a Objetos con los requisitos funcionales y no funcionales del sistema, incluyendo estados del pedido y política de cancelación.
-
-   Issue(s): [#48](https://github.com/cmariano93-netizen/SistemaPedidos/issues/48)
-
-  PR: [#47](https://github.com/cmariano93-netizen/SistemaPedidos/pull/47) - @alexisguardia (Analista de Requerimientos)
+### Fecha de entrega
+- Habilitación de consignas: 10 de agosto 2026
+- Fecha límite: 3 de septiembre 2026
 
 

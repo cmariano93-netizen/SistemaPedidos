@@ -12,7 +12,7 @@ Este proyecto tiene como objetivo el diseño orientado a objetos de una aplicaci
 | :--- | :---: | :---: |
 | Mariano Costamagna | 164690 | @cmariano93-netizen |
 | Lucas Mengarelli | 164298 | @LMengarelli93 |
-| Isis Neith Escalada | 155447 | @neith18 |
+| Fernando Molina | 153090 | @fernandodanielm |
 | Alexis Guardia | 158767 | @alexisguardia |
 
 

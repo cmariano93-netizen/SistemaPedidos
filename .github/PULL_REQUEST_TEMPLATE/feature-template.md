@@ -1,21 +1,30 @@
-## 🚀 Aporte Individual - Rama Feature
+## Descripción de la PR
+<!-- Describe brevemente qué cambios realiza esta PR -->
 
-### 👤 Información del Desarrollador
-*   **Nombre completo:**
-*   **Rol Asignado:** [Analista de Requerimientos / Modelador de Casos de Uso / Diseñador de Clases Iniciales / Documentador y Coordinador]
-*   **Rama de Origen:** `feature/`
+## Tipo de cambio
+- [ ] Análisis de requerimientos
+- [ ] Modelado de casos de uso
+- [ ] Diseño de clases
+- [ ] Documentación
+- [ ] Otro (especificar)
 
-### 📝 Descripción del Trabajo Realizado
-*Explica de manera resumida qué cambios, secciones o diagramas agregaste o modificaste en esta Pull Request.*
+## Relacionado con Issue
+Closes #<!-- Número del issue -->
 
----
+## Cambios realizados
+<!-- Enumera los cambios específicos -->
+- 
+- 
+- 
 
-### 🛡️ Checklist de Calidad Obligatorio (Marcar con una 'x')
+## Verificación
+- [ ] He actualizado el `changelog.md`
+- [ ] He documentado mi aporte en el registro de cambios
+- [ ] Los archivos están en las carpetas correspondientes
+- [ ] He revisado la ortografía y formato markdown
 
-- [ ] **Trazabilidad:** He creado mi Issue asociada al rol con el título correspondiente y la he vinculado en esta PR para su cierre automático (ej. *Closes #NúmeroIssue*).
-- [ ] **Changelog Actualizado:** He editado el archivo `changelog.md` agregando mi fila correspondiente con el resumen de mi aporte y los enlaces absolutos a mi Issue y a esta PR.
-- [ ] **Formato Markdown:** He verificado que toda la documentación escrita respete de forma estricta las reglas de visualización de Markdown.
-- [ ] **Code Review con IA (Mínimo 1 por PR):** He corrido la revisión técnica de código asistida por IA en VS Code, analizando sus advertencias y comentando en la línea correspondiente las decisiones tomadas.
+## Revisor asignado
+@documentador-coordinador
 
----
-*Cualquier fusión hacia la rama `develop` debe estar validada, comentada y aprobada de forma formal por el Documentador y Coordinador del repositorio.*
+## Notas adicionales
+<!-- Agrrega cualquier información relevante -->
