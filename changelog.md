@@ -6,89 +6,65 @@ Registro de cambios, participación de integrantes, roles asignados y enlaces a 
 
 ## Actividad Obligatoria N°1
 
-### Participantes y Roles
+### Added
 
-| Integrante | Matrícula | Rol | Issue | PR | Descripción |
-| :--- | :---: | :--- | :---: | :---: | :--- |
-| Mariano Costamagna | 164690 | Analista de Requerimientos | #48 | #47 | Análisis de requerimientos funcionales y no funcionales |
-| Lucas Mengarelli | 164298 | Modelador de Casos de Uso | #41 | #42 | Modelado de casos de uso del sistema |
-| Fernando Molina | 153090 | Documentador y Coordinador | #6 | #62, #61 | Estructura, documentación y coordinación del repositorio |
-| Alexis Guardia | 158767 | Diseñador de Clases Iniciales | #44 | #43 | Boceto inicial de clases con Excalidraw |
+- [feature/estructura-base] Estructura inicial del proyecto con carpetas `.github/`, `anexos/`, `diagramas/`.
+  Issue(s): [#37](https://github.com/cmariano93-netizen/SistemaPedidos/issues/37), [#38](https://github.com/cmariano93-netizen/SistemaPedidos/issues/38), [#39](https://github.com/cmariano93-netizen/SistemaPedidos/issues/39), [#45](https://github.com/cmariano93-netizen/SistemaPedidos/issues/45), [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6)
+  PR: [#37](https://github.com/cmariano93-netizen/SistemaPedidos/pull/37), [#40](https://github.com/cmariano93-netizen/SistemaPedidos/pull/40), [#46](https://github.com/cmariano93-netizen/SistemaPedidos/pull/46), [#62](https://github.com/cmariano93-netizen/SistemaPedidos/pull/62) - @fernandodanielm (Documentador y Coordinador)
 
-### Resumen de aportes
+- [feature/doc-coord-repo-update-readme-md] Redacción de portada profesional del README.md con tabla de integrantes.
+  Issue(s): [#39](https://github.com/cmariano93-netizen/SistemaPedidos/issues/39)
+  PR: [#40](https://github.com/cmariano93-netizen/SistemaPedidos/pull/40) - @fernandodanielm (Documentador y Coordinador)
 
-**Analista de Requerimientos - @cmariano93-netizen (#48, #47)**
-- Extracción de requisitos funcionales y no funcionales
-- Creación de cuaderno en Notebook LM
-- Documentación en `anexos/introduccion.md` con requisitos del sistema
+- [feature/doc-coord-repo-update-readme-md] Redacción de introducción teórica a POO y los cuatro pilares fundamentales en anexos/introduccion.md.
+  Issue(s): [#45](https://github.com/cmariano93-netizen/SistemaPedidos/issues/45)
+  PR: [#46](https://github.com/cmariano93-netizen/SistemaPedidos/pull/46) - @fernandodanielm (Documentador y Coordinador)
 
-**Modelador de Casos de Uso - @LMengarelli93 (#41, #42)**
-- Identificación de actores y casos de uso
-- Documentación de 5 casos de uso completos en `anexos/introduccion.md`
-- Integración con Notebook LM compartido
+- [feature/diseniador-clases-add-boceto-inicial] Boceto inicial de clases en Excalidraw con atributos, métodos y relaciones.
+  Issue(s): [#44](https://github.com/cmariano93-netizen/SistemaPedidos/issues/44)
+  PR: [#43](https://github.com/cmariano93-netizen/SistemaPedidos/pull/43) - @alexisguardia (Diseñador de Clases Iniciales)
 
-**Diseñador de Clases Iniciales - @alexisguardia (#44, #43)**
-- Diseño de boceto inicial en Excalidraw
-- Generación de imagen PNG exportada
-- Almacenamiento en `diagramas/01-diagrama-clases/`
-- Actualización incluyendo `Combo` como especialización de `Producto`
+- [feature/modelador-casos-uso-update-use-case-1] Modelado de 5 casos de uso completos del sistema.
+  Issue(s): [#41](https://github.com/cmariano93-netizen/SistemaPedidos/issues/41)
+  PR: [#42](https://github.com/cmariano93-netizen/SistemaPedidos/pull/42) - @LMengarelli93 (Modelador de Casos de Uso)
 
-**Documentador y Coordinador - @fernandodanielm (#6, #62, #61)**
-- Creación de estructura de carpetas y archivos
-- Redacción de `README.md`, `anexos.md` e `introduccion.md`
-- Introducción teórica a POO y cuatro pilares
-- Revisión de todas las PRs (12 asistidas con IA)
-- Coordinación general del repositorio
-- Resolución de hallazgos técnicos (RC5)
-- Consolidación de issues duplicadas
-- Gestión de correcciones post-entrega inicial
+- [feature/analista-requerimentos-add-introduccion-md] Análisis y documentación de requisitos funcionales y no funcionales.
+  Issue(s): [#48](https://github.com/cmariano93-netizen/SistemaPedidos/issues/48)
+  PR: [#47](https://github.com/cmariano93-netizen/SistemaPedidos/pull/47) - @cmariano93-netizen (Analista de Requerimientos)
+
+- [feature/doc-coord-agregar-templates-issues] Templates de issues estructurados para cada rol de la actividad.
+  Issue(s): [#45](https://github.com/cmariano93-netizen/SistemaPedidos/issues/45)
+  PR: [#61](https://github.com/cmariano93-netizen/SistemaPedidos/pull/61) - @fernandodanielm (Documentador y Coordinador)
+
+### Changed
+
+- [feature/diseniador-clases-update-anexo-diagrama] Actualización de estructura de diagramas y boceto inicial.
+  Issue(s): [#44](https://github.com/cmariano93-netizen/SistemaPedidos/issues/44)
+  PR: [#49](https://github.com/cmariano93-netizen/SistemaPedidos/pull/49) - @alexisguardia (Diseñador de Clases Iniciales)
+
+- [feature/diseniador-clases-fix-boceto-anexo] Incorporación del boceto inicial como imagen en anexos/introduccion.md.
+  Issue(s): [#44](https://github.com/cmariano93-netizen/SistemaPedidos/issues/44)
+  PR: [#56](https://github.com/cmariano93-netizen/SistemaPedidos/pull/56) - @alexisguardia (Diseñador de Clases Iniciales)
+
+- [Refactorización] Refactorización de secciones de requisitos y casos de uso (resolución de conflictos de merge).
+  Issue(s): [#54](https://github.com/cmariano93-netizen/SistemaPedidos/issues/54)
+  PR: [#55](https://github.com/cmariano93-netizen/SistemaPedidos/pull/55) - @cmariano93-netizen (Refactorización)
+
+### Fixed
+
+- [feature/doc-coord-correcciones-hallazgos] **RC5 - Atributo `total` sin tipo de dato:** Corrección agregando tipo explícito Decimal a clase Pedido.
+  Issue(s): [#44](https://github.com/cmariano93-netizen/SistemaPedidos/issues/44) (RC5)
+  PR: [#62](https://github.com/cmariano93-netizen/SistemaPedidos/pull/62) - @fernandodanielm (Documentador y Coordinador)
+
+- [Auditoría del Coordinador] Consolidación de 4 issues duplicadas (#3, #8, #21, #50) → issues oficiales (#48, #41, #44, #6).
+  Issue(s): [#3](https://github.com/cmariano93-netizen/SistemaPedidos/issues/3), [#8](https://github.com/cmariano93-netizen/SistemaPedidos/issues/8), [#21](https://github.com/cmariano93-netizen/SistemaPedidos/issues/21), [#50](https://github.com/cmariano93-netizen/SistemaPedidos/issues/50)
+  PR: [#62](https://github.com/cmariano93-netizen/SistemaPedidos/pull/62) - @fernandodanielm (Coordinador)
+
+- [Code Review con IA] Revisiones técnicas asistidas por IA completadas en 12 PRs (#19, #20, #25, #28, #33, #34, #38, #40, #52, #55, #56, #57).
+  PR: [#62](https://github.com/cmariano93-netizen/SistemaPedidos/pull/62) - @fernandodanielm (Documentador y Coordinador)
 
 ### Fecha de entrega
 - Habilitación de consignas: 10 de agosto 2026
 - Fecha límite: 3 de septiembre 2026
-
-### Correcciones Técnicas y Resolución de Hallazgos
-
-**Hallazgo RC5 - Atributo `total` sin tipo de dato (RESUELTO)**
-- **Severidad:** ALTA
-- **Identificado en:** Clase Pedido (diagramas/boceto_inicial_clases.puml)
-- **Problema:** El atributo `total` no tenía tipo de dato explícito
-- **Solución aplicada:** Se actualiza a `total: Decimal` con retorno `calcularTotal(): Decimal`
-- **Justificación:** Encapsulamiento fuerte y precisión en valores monetarios
-- **Commit:** beb1b5b - "fix: agregar tipos de dato explícitos al atributo total en clase Pedido"
-- **Estado:** ✅ RESUELTO
-- **Responsable:** @fernandodanielm (Coordinador - Coordinación de correcciones)
-
-**Revisiones de Código con IA - 12 PRs Completadas**
-- Se realizaron Code Reviews asistidas por IA en todas las PRs de la Actividad:
-  - PRs revisadas: #19, #20, #25, #28, #33, #34, #38, #40, #52, #55, #56, #57
-  - Cada revisión incluye: hallazgos específicos, líneas señaladas, decisiones explícitas
-  - Resultado: Identificación de patrones de mejora y validación de calidad técnica
-- **Responsable:** @fernandodanielm (Coordinador)
-
-### Consolidación de Issues Duplicadas (Auditoría del Coordinador)
-
-**Problema identificado:** Múltiples issues abiertas para el mismo rol/tarea
-- **Modelador de Casos de Uso:** 3 issues (#21, #41, #50) → Consolidada en **#41**
-- **Diseño de Clases Iniciales:** 2 issues (#8, #44) → Consolidada en **#44**
-- **Análisis de Requerimientos:** 2 issues (#3, #48) → Consolidada en **#48**
-
-**Acciones realizadas:**
-- ✅ Identificación de duplicados: 4 issues cerradas (#21, #8, #3, #50)
-- ✅ Comentarios en issues duplicadas indicando consolidación
-- ✅ Comentarios en issues correctas documentando la consolidación
-- ✅ Centralización de documentación en issues oficiales
-
-**Issues finales oficiales para la Actividad Obligatoria N°1:**
-| Rol | Issue Oficial | Issues Duplicadas Cerradas |
-| :--- | :---: | :--- |
-| Analista de Requerimientos | #48 | #3 |
-| Modelador de Casos de Uso | #41 | #21, #50 |
-| Diseñador de Clases Iniciales | #44 | #8 |
-| Documentador y Coordinador | #6 | - |
-
-**Responsable:** @fernandodanielm (Coordinador)
-**Fecha:** 12 de septiembre 2026
-**Status:** ✅ COMPLETADO
 
 
