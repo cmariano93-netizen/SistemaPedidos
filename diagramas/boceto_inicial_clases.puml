@@ -13,11 +13,11 @@ class Pedido {
   - nombreRetiro
   - estado
   - prioritario
-  - total
+  - total: Decimal
   + agregarItem()
   + quitarItem()
   + modificarItem()
-  + calcularTotal()
+  + calcularTotal(): Decimal
   + cambiarEstado()
   + cancelar()
 }
