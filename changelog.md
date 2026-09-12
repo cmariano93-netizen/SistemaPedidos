@@ -12,12 +12,12 @@ Registro de cambios, participación de integrantes, roles asignados y enlaces a 
 | :--- | :---: | :--- | :---: | :---: | :--- |
 | Mariano Costamagna | 164690 | Analista de Requerimientos | #48 | #47 | Análisis de requerimientos funcionales y no funcionales |
 | Lucas Mengarelli | 164298 | Modelador de Casos de Uso | #41 | #42 | Modelado de casos de uso del sistema |
-| Fernando Molina | 153090 | Diseñador de Clases Iniciales | #44 | #43 | Boceto inicial de clases con Excalidraw |
-| Alexis Guardia | 158767 | Documentador y Coordinador | #39, #45, #38 | #40, #46, #37 | Estructura repositorio y documentación |
+| Fernando Molina | 153090 | Documentador y Coordinador | #6 | #62, #61 | Estructura, documentación y coordinación del repositorio |
+| Alexis Guardia | 158767 | Diseñador de Clases Iniciales | #44 | #43 | Boceto inicial de clases con Excalidraw |
 
 ### Resumen de aportes
 
-**Analista de Requerimientos - @alexisguardia (#48, #47)**
+**Analista de Requerimientos - @cmariano93-netizen (#48, #47)**
 - Extracción de requisitos funcionales y no funcionales
 - Creación de cuaderno en Notebook LM
 - Documentación en `anexos/introduccion.md` con requisitos del sistema
@@ -27,18 +27,21 @@ Registro de cambios, participación de integrantes, roles asignados y enlaces a 
 - Documentación de 5 casos de uso completos en `anexos/introduccion.md`
 - Integración con Notebook LM compartido
 
-**Diseñador de Clases Iniciales - @neith18 (#44, #43)**
+**Diseñador de Clases Iniciales - @alexisguardia (#44, #43)**
 - Diseño de boceto inicial en Excalidraw
 - Generación de imagen PNG exportada
 - Almacenamiento en `diagramas/01-diagrama-clases/`
 - Actualización incluyendo `Combo` como especialización de `Producto`
 
-**Documentador y Coordinador - @cmariano93-netizen (#39, #45, #38, #40, #46, #37)**
+**Documentador y Coordinador - @fernandodanielm (#6, #62, #61)**
 - Creación de estructura de carpetas y archivos
 - Redacción de `README.md`, `anexos.md` e `introduccion.md`
 - Introducción teórica a POO y cuatro pilares
-- Revisión de todas las PRs (mínimo 4 asistidas con IA)
+- Revisión de todas las PRs (12 asistidas con IA)
 - Coordinación general del repositorio
+- Resolución de hallazgos técnicos (RC5)
+- Consolidación de issues duplicadas
+- Gestión de correcciones post-entrega inicial
 
 ### Fecha de entrega
 - Habilitación de consignas: 10 de agosto 2026
