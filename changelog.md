@@ -63,4 +63,29 @@ Registro de cambios, participación de integrantes, roles asignados y enlaces a 
   - Resultado: Identificación de patrones de mejora y validación de calidad técnica
 - **Responsable:** @fernandodanielm (Coordinador)
 
+### Consolidación de Issues Duplicadas (Auditoría del Coordinador)
+
+**Problema identificado:** Múltiples issues abiertas para el mismo rol/tarea
+- **Modelador de Casos de Uso:** 3 issues (#21, #41, #50) → Consolidada en **#41**
+- **Diseño de Clases Iniciales:** 2 issues (#8, #44) → Consolidada en **#44**
+- **Análisis de Requerimientos:** 2 issues (#3, #48) → Consolidada en **#48**
+
+**Acciones realizadas:**
+- ✅ Identificación de duplicados: 4 issues cerradas (#21, #8, #3, #50)
+- ✅ Comentarios en issues duplicadas indicando consolidación
+- ✅ Comentarios en issues correctas documentando la consolidación
+- ✅ Centralización de documentación en issues oficiales
+
+**Issues finales oficiales para la Actividad Obligatoria N°1:**
+| Rol | Issue Oficial | Issues Duplicadas Cerradas |
+| :--- | :---: | :--- |
+| Analista de Requerimientos | #48 | #3 |
+| Modelador de Casos de Uso | #41 | #21, #50 |
+| Diseñador de Clases Iniciales | #44 | #8 |
+| Documentador y Coordinador | #6 | - |
+
+**Responsable:** @fernandodanielm (Coordinador)
+**Fecha:** 12 de septiembre 2026
+**Status:** ✅ COMPLETADO
+
 
