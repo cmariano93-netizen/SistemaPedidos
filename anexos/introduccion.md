@@ -125,8 +125,8 @@ El sistema debe ser sencillo de utilizar para el personal del kiosco, permitiend
 *RNF4 - Integridad de los pedidos*  
 El sistema debe conservar el historial completo de cada pedido cancelado para auditoría y no permitir su eliminación física del sistema.
 
-*RNF5 - Rendimiento y velocidad de sincronización*  
-El sistema debe actualizar el estado de un pedido entre mostrador y cocina en un máximo de 3 segundos, con una tasa de sincronización del 95% de los eventos dentro de ese umbral.
+*RNF5 - Comunicación entre mostrador y cocina*
+El sistema debe comunicar oportunamente a cocina la toma y las actualizaciones de un pedido, evitando que el personal dependa de avisos verbales para enterarse de los cambios.
 
 
 # CASOS DE USO
