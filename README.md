@@ -17,4 +17,5 @@ Este proyecto tiene como objetivo el diseño orientado a objetos de una aplicaci
 
 
 ##  Diagramas y Diseños
-*   **[Anexo - Introduccion al Diseño Orientado a Objetos](./anexos/introduccion.md)**
+*   **[Anexos](./anexos/anexos.md)**
+*   **[Introducción al Diseño Orientado a Objetos](./anexos/introduccion.md)**
