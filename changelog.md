@@ -4,6 +4,11 @@ Registro de cambios, participación de integrantes, roles asignados y enlaces a 
 
 ---
 
+## Gestión de cambios - 14 de septiembre de 2026
+
+- Cierre de la PR #70, originada en `fix/diseniador-clases-actualizar-imagen-excalidraw`.
+- Reversión en `develop` de los cambios locales asociados a la actualización del changelog y del diagrama de clases.
+
 ## Actividad Obligatoria N°1
 
 ### Participantes y Roles
