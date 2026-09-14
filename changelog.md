@@ -40,6 +40,13 @@ Registro de cambios, participación de integrantes, roles asignados y enlaces a 
 - Revisión de todas las PRs (mínimo 4 asistidas con IA)
 - Coordinación general del repositorio
 
+### Correcciones posteriores - Lucas Mengarelli
+
+- PR [#73](https://github.com/cmariano93-netizen/SistemaPedidos/pull/73), creada desde `fix/analista-requerimientos-corregir-rnf` hacia `release/actividad-obligatoria-1`.
+- Corrección de RNF5 y agregado de cuatro requisitos no funcionales adicionales.
+- Ajuste de los casos de uso: referencias al número de pedido, nomenclatura uniforme, modelado de roles y flujos expresados únicamente mediante eventos del sistema.
+- Issue relacionada: [#72](https://github.com/cmariano93-netizen/SistemaPedidos/issues/72), cerrada tras la aprobación y merge de la PR.
+
 ### Fecha de entrega
 - Habilitación de consignas: 10 de agosto 2026
 - Fecha límite: 3 de septiembre 2026
