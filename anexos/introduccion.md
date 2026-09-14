@@ -125,69 +125,98 @@ El sistema debe ser sencillo de utilizar para el personal del kiosco, permitiend
 *RNF4 - Integridad de los pedidos*  
 El sistema debe conservar el historial completo de cada pedido cancelado para auditoría y no permitir su eliminación física del sistema.
 
-*RNF5 - Rendimiento y velocidad de sincronización*  
-El sistema debe actualizar el estado de un pedido entre mostrador y cocina en un máximo de 3 segundos, con una tasa de sincronización del 95% de los eventos dentro de ese umbral.
+*RNF5 - Comunicación entre mostrador y cocina*
+El sistema debe comunicar a cocina la toma y las actualizaciones de un pedido, evitando que el personal dependa de avisos verbales para enterarse de los cambios.
 
+*RNF6 - Inmutabilidad del precio histórico*
+El precio asignado a un ítem en un pedido debe congelarse en el momento de la venta, garantizando que futuros cambios en el catálogo de productos no modifiquen pedidos pasados. 
+ 
+*RNF7 - Encapsulamiento y protección de reglas del dominio*
+Definición: El sistema debe garantizar que las validaciones de negocio, restricciones de edición y transiciones de estado estén encapsuladas internamente en las entidades del dominio (como Pedido), impidiendo que capas externas o la interfaz alteren la información o el estado interno sin ejecutar los métodos válidos.
+
+*RNF8 - Extensibilidad y diseño modular*
+Definición: El diseño arquitectónico y de dominio debe ser modular y extensible, permitiendo incorporar futuras funcionalidades (como la apertura de un segundo local, cobro por QR, programa de puntos o integración con WhatsApp) sin requerir reestructurar ni romper las entidades base del MVP.
+
+*RNF9 - Confiabilidad y disponibilidad en horario operativo*
+Definición: El sistema debe mantenerse disponible y estable durante la totalidad de los turnos de atención del local (martes a domingos de 12:00 a 15:00 y de 20:00 a 00:00), garantizando que no se interrumpa el registro ni la consulta de comandas durante las horas pico de servicio.
+
+*RNF10 - Trazabilidad e identificación unívoca.*
+Definición: Cada pedido debe contar con un identificador único generado de forma automática e inalterable por el sistema y asociarse a una referencia de retiro, garantizando la trazabilidad completa del pedido a lo largo de todo su ciclo de vida entre mostrador y cocina.
 
 # CASOS DE USO
 
 - Nombre del caso de uso: Registrar pedido.
-    - Actor principal: Personal de atención.
-    - Descripción breve: El personal que atiende a los clientes debe registrar las comandas y entregarlas una vez listas o elaboradas.
-    - Flujo principal de eventos:  
-        - Actor: Ingresa al sistema y selecciona una mesa disponible.
-        - Sistema: Muestra listas de productos.
-        - Actor: Selecciona las comandas.
-        - Sistema:  Envía la lista de comandas a cocina/mostrador donde corresponda.
-        - Actor: Confirma el pedido en el sistema.
-        - Sistema: Genera registro de las comandas y calcula costos.
-    - Precondiciones: La mesa debe estar disponible y no debe tener consumos registrados previamente.
-    - Postcondiciones: Se instanció un nuevo objeto "Pedido" con estado de solicitado, asociado a una mesa seleccionada y el área de preparación fue notificado.
-- Nombre del caso de uso: Cobrar cuenta.
-    - Actor principal: Cobrador.
-    - Descripción breve: El cobrador debe ofrecer los medios de pago, imprimir ticket de cuenta, realizar el cobro.
-    - Flujo principal de eventos:  
-        - Actor: Cierra la mesa.
-        - Sistema: Listar el ticket de detalles y procesar el total de la cuenta.
-        - Actor: Imprimir ticket y confirma el cobro.
-        - Sistema: Registra la venta.
-        - Actor: Actualiza el estado de la mesa y registra el cobro.
-    - Precondiciones: La mesa debe estar en estado de abierta/ocupada y tener consumos registrados.
-    - Postcondiciones: Se actualizó el estado de la mesa a cerrada o disponible y el pedido pasa a estado de cobrado.
-- Nombre del caso de uso: Cancelar comanda.
-    - Actor principal: Personal  de atención.
-    - Descripción breve: El actor debe poder cancelar una comanda si el estado esta en la instancia de proceso.
+    - Actor principal: Usuario de mostrador.
+    - Descripción breve: Permite registrar un pedido con sus productos, cantidades, personalizaciones y una referencia de retiro para su preparación y entrega posterior.
     - Flujo principal de eventos:
-        - Actor: Observa el estado de la comanda.
-        - Sistema: En función del estado de preparación Solicitado, En Proceso, listo. Si se encuentra en solicitado o en proceso habilita cancelar comanda.
+        - Actor: Solicita registrar un nuevo pedido.
+        - Sistema: Valida la disponibilidad del catálogo y crea la instancia del pedido.
+        - Actor: Agrega productos, cantidades, personalizaciones y la referencia de retiro.
+        - Sistema: Calcula el total y asigna el identificador del pedido.
+        - Actor: Confirma el registro.
+        - Sistema: Guarda el pedido en estado recibido, conserva el historial y envía la orden a cocina.
+    - Precondiciones: Deben existir productos disponibles y el pedido no debe duplicar un identificador ya registrado.
+    - Postcondiciones: Queda creado un pedido en estado recibido, con total calculado y con la notificación enviada a cocina.
+
+- Nombre del caso de uso: Cobrar cuenta.
+    - Actor principal: Usuario de mostrador.
+    - Descripción breve: Permite registrar el pago de un pedido y emitir la comprobación correspondiente, manteniendo la trazabilidad del cobro.
+    - Flujo principal de eventos:
+        - Actor: Solicita cerrar la cuenta del pedido.
+        - Sistema: Recupera el detalle del pedido y calcula el total a cobrar.
+        - Actor: Confirma el medio de pago.
+        - Sistema: Registra el pago y actualiza el estado del pedido según la regla de negocio.
+        - Actor: Solicita la impresión del comprobante.
+        - Sistema: Emite el ticket de cobro.
+    - Precondiciones: El pedido debe existir y encontrarse en un estado habilitado para cobro.
+    - Postcondiciones: Se registra el pago y el pedido queda finalizado o en estado cobrado según la regla del negocio.
+
+- Nombre del caso de uso: Entregar pedido.
+    - Actor principal: Usuario de mostrador.
+    - Descripción breve: Permite localizar un pedido mediante su número de identificación y la referencia o nombre de retiro para atenderlo correctamente.
+    - Flujo principal de eventos:
+        - Actor: Informa el número del pedido y la referencia de retiro.
+        - Sistema: Busca el pedido asociado y verifica la coincidencia entre los datos ingresados y el registro del pedido.
+        - Actor: Solicita la consulta del pedido.
+        - Sistema: Recupera el estado, los productos y la información relevante del pedido.
+    - Precondiciones: El pedido debe estar registrado en el sistema.
+    - Postcondiciones: El pedido queda identificado para consulta, actualización o entrega según su estado actual.
+
+- Nombre del caso de uso: Cancelar pedido.
+    - Actor principal: Usuario de mostrador.
+    - Descripción breve: Permite cancelar un pedido solo si se encuentra en un estado habilitado, manteniendo su historial sin eliminarlo físicamente del sistema.
+    - Flujo principal de eventos:
+        - Actor: Consulta el pedido activo y verifica su estado.
+        - Sistema: Valida que el pedido cumple las condiciones de cancelación.
         - Actor: Confirma la cancelación.
-        - Sistema: Borra del carrito la comanda.
-        - Actor: Actualiza los cambios.
-    - precondiciones: El estado de la comanda debe estar en solicitado o en proceso.
-    - Postcondiciones: El objeto "comanda" cambia su atributo a estado "cancelado", se eliminan los productos del carrito de la mesa y se recalculan los costos acumulados .
+        - Sistema: Actualiza el estado a cancelado, lo excluye de los pedidos activos y conserva el registro histórico.
+    - Precondiciones: El pedido debe encontrarse en estado recibido o en preparación.
+    - Postcondiciones: El pedido queda en estado cancelado, no aparece en la vista de pedidos activos y permanece registrado para auditoría.
+
 - Nombre del caso de uso: Preparar pedido.
-    - Actor principal: Cocinero.
-    - Descripción breve: El área de cocina debe recibir la instrucción de los pedidos y los prepara.
-    - Flujo principal de eventos: 
-        - Actor: Recibe notificación de comanda, establece el cambio “solicitado" → 
-        "en proceso".
-        - Sistema: Sincroniza el estado de las comandas.
-        - Actor: Acciona la casilla de verificación de listo para retirar.
-        - Sistema: Notifica que las comandas están listas para retirar en cocina.
-        - Actor: Realiza la confirmación de comanda entregada.
-    - Precondiciones: El estado de la comanda debe estar en solicitado.
-    - Postcondiciones: El objeto "pedido" paso a estado "listo para retirar", y el sistema envia una notificación.
+    - Actor principal: Cocina.
+    - Descripción breve: Permite recibir un pedido y actualizar su estado hasta dejarlo listo para entrega.
+    - Flujo principal de eventos:
+        - Actor: Recibe la notificación del pedido nuevo.
+        - Sistema: Asigna el pedido a la cola de preparación.
+        - Actor: Actualiza el pedido al estado en preparación.
+        - Sistema: Registra el cambio de estado.
+        - Actor: Marca el pedido como listo para entrega.
+        - Sistema: Actualiza el estado a listo y notifica al mostrador.
+    - Precondiciones: El pedido debe existir y estar en estado recibido o en preparación.
+    - Postcondiciones: El pedido queda en estado listo y queda disponible para ser entregado o consultado por el personal.
+
 - Nombre del caso de uso: Priorizar pedido.
-    - Actor principal: Supervisor.
-    - Descripción breve: Las personas asignadas pueden indicar prioridad en la preparación de pedidos.
-    - Flujo principal de eventos: 
-        - Actor: Selecciona un pedido activo en preparación desde el tablero de control.
-        - Sistema: Muestra las opciones de gestión del pedido.
-        - Actor: Selecciona "Fijar Prioridad Alta".
-        - Sistema: Modifica el atributo de prioridad y resalta el pedido en el tablero de cocina de manera visual.
+    - Actor principal: Usuario de mostrador.
+    - Descripción breve: Permite marcar un pedido activo como prioritario para indicar su urgencia dentro de la preparación.
+    - Flujo principal de eventos:
+        - Actor: Consulta la lista de pedidos activos.
+        - Sistema: Verifica que el pedido se encuentre en un estado habilitado para prioridad.
+        - Actor: Solicita marcar el pedido como prioritario.
+        - Sistema: Actualiza el atributo de prioridad y reorganiza la atención del pedido.
         - Actor: Confirma la operación.
-    - Precondiciones: El objeto "pedido" ya debe existir en el sistema en estado de solicitado.
-    - Postcondiciones: Se agregó prioridad al pedido y se notificó al área de preparación.
+    - Precondiciones: El pedido debe existir y encontrarse en estado recibido o en preparación.
+    - Postcondiciones: El pedido queda marcado como prioritario y se atiende con mayor relevancia dentro de la gestión de pedidos.
 
 ### Boceto inicial del diseño de clases
 
