@@ -34,8 +34,8 @@ Registro de cambios, participación de integrantes, roles asignados y enlaces a 
 - [fix/analista-requerimientos-corregir-rnf] - Se corrigio rnf5 y se agrego 4 mas a pedido de Fernando. Se realizo ajustes en casos de uso, se quitaron gerarquias sin respaldo, se modelo en funsion de Nro-Retiro y se acomodo el flujo solo con eventos del sistema   Issue(s): #72 PR: #73 - @LMengarelli93 
 (Especialista en escenarios de casos de uso.)
 
-### Fecha de entrega
-[](https://github.com/cmariano93-netizen/SistemaPedidos/blob/develop/changelog.md#fecha-de-entrega)
 
-- Habilitación de consignas: 10 de agosto 2026
-- Fecha límite: 3 de septiembre 2026
+- [fix/diseniador/clases/corregir/boceto/excalidraw] - Se corrigio el boceto inicial del diseño de clases.
+
+    Issue: [#75](https://github.com/cmariano93-netizen/SistemaPedidos/issues/75) PR: [#76](https://github.com/cmariano93-netizen/SistemaPedidos/pull/76) - @cmariano93-netizen 
+(Diseñador de Tarjetas CRC.)
