@@ -34,16 +34,21 @@ Registro de cambios, participación de integrantes, roles asignados y enlaces a 
 - [fix/analista-requerimientos-corregir-rnf] - Se corrigio rnf5 y se agrego 4 mas a pedido de Fernando. Se realizo ajustes en casos de uso, se quitaron gerarquias sin respaldo, se modelo en funsion de Nro-Retiro y se acomodo el flujo solo con eventos del sistema   Issue(s): #72 PR: #73 - @LMengarelli93 
 (Especialista en escenarios de casos de uso.)
 
-<<<<<<<<< Temporary merge branch 1
-### Fecha de entrega
+
 [](https://github.com/cmariano93-netizen/SistemaPedidos/blob/develop/changelog.md#fecha-de-entrega)
 
-- Habilitación de consignas: 10 de agosto 2026
-- Fecha límite: 3 de septiembre 2026
-=========
 
 - [fix/diseniador/clases/corregir/boceto/excalidraw] - Se corrigio el boceto inicial del diseño de clases.
 
     Issue: [#75](https://github.com/cmariano93-netizen/SistemaPedidos/issues/75) PR: [#76](https://github.com/cmariano93-netizen/SistemaPedidos/pull/76) - @cmariano93-netizen 
 (Diseñador de Tarjetas CRC.)
->>>>>>>>> Temporary merge branch 2
+
+
+- [fix/diseniador/clases/corregir/boceto/excalidraw] - Agrego el boceto en introduccion.md
+
+    Agregué nuevo boceto en introduccion.md.
+
+    No pude abrir una PR debido a que subí los cambios con el comando git push origin fix/diseniador-clases-corregir-boceto-excalidraw:release/actividad-obligatoria-1.
+
+    Los dos puntos (:) en el comando hizo que los cambios impacten directamente dentro de la rama release/actividad-obligatoria-1.
+    No es la manera adecuada en este flujo de trabajo.
