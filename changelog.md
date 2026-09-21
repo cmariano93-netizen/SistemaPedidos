@@ -1,12 +1,9 @@
 # Changelog
 [](https://github.com/cmariano93-netizen/SistemaPedidos/blob/develop/changelog.md#changelog)
 Registro de cambios, participación de integrantes, roles asignados y enlaces a Pull Requests e Issues de cada entrega.
-
 ---
-
 ## Actividad Obligatoria N°1
 [](https://github.com/cmariano93-netizen/SistemaPedidos/blob/develop/changelog.md#actividad-obligatoria-n1)
-
 ### Added
 [](https://github.com/cmariano93-netizen/SistemaPedidos/blob/develop/changelog.md#added)
 
@@ -28,21 +25,13 @@ Registro de cambios, participación de integrantes, roles asignados y enlaces a 
 
 ### Fixed
 [](https://github.com/cmariano93-netizen/SistemaPedidos/blob/develop/changelog.md#fixed)
-
 - [feature/doc-coord-correcciones-hallazgos] **RC5 - Atributo `total` sin tipo de dato:** Corrección agregando tipo explícito Decimal a clase Pedido. Issue(s): [#44](https://github.com/cmariano93-netizen/SistemaPedidos/issues/44) (RC5) PR: [#62](https://github.com/cmariano93-netizen/SistemaPedidos/pull/62) - @fernandodanielm (Documentador y Coordinador)
 - [Auditoría del Coordinador] Consolidación de 4 issues duplicadas (#3, #8, #21, #50) → issues oficiales (#48, #41, #44, #6). Issue(s): [#3](https://github.com/cmariano93-netizen/SistemaPedidos/issues/3), [#8](https://github.com/cmariano93-netizen/SistemaPedidos/issues/8), [#21](https://github.com/cmariano93-netizen/SistemaPedidos/issues/21), [#50](https://github.com/cmariano93-netizen/SistemaPedidos/issues/50) PR: [#62](https://github.com/cmariano93-netizen/SistemaPedidos/pull/62) - @fernandodanielm (Coordinador)
 - [Code Review con IA] Revisiones técnicas asistidas por IA completadas en 12 PRs (#19, #20, #25, #28, #33, #34, #38, #40, #52, #55, #56, #57). PR: [#62](https://github.com/cmariano93-netizen/SistemaPedidos/pull/62) - @fernandodanielm (Documentador y Coordinador)
-- [fix/analista-requerimientos-corregir-rnf] - Corregir rnf y casos de uso en introduccion.md   Issue(s): [#72] https://github.com/cmariano93-netizen/SistemaPedidos/issues/72 PR: [#73] https://github.com/cmariano93-netizen/SistemaPedidos/pull/73  - @LMengarelli93 
-
-### Fecha de entrega
-[](https://github.com/cmariano93-netizen/SistemaPedidos/blob/develop/changelog.md#fecha-de-entrega)
-
- [fix/diseniador-clases-corregir-boceto-excalidraw] - Se corrigio el boceto inicial del diseño de clases.
-
+- [fix/analista-requerimientos-corregir-rnf] - Corregir rnf y casos de uso en introduccion.md   Issue(s): [#72] https://github.com/cmariano93-netizen/SistemaPedidos/issues/72 PR: [#73] https://github.com/cmariano93-netizen/SistemaPedidos/pull/73  - @LMengarelli93 -
+- [fix/diseniador-clases-corregir-boceto-excalidraw] - Se corrigio el boceto inicial del diseño de clasesGI
     Issue: [#75](https://github.com/cmariano93-netizen/SistemaPedidos/issues/75) PR: [#76](https://github.com/cmariano93-netizen/SistemaPedidos/pull/76) - @cmariano93-netizen 
- (Diseñador de Tarjetas CRC.)
-
+   (Diseñador de Tarjetas CRC.)
 - [fix/diseniador-clases-corregir-boceto-excalidraw] - Actualizado el boceto, corregido rutas de plantillas y eliminado los archivos obsoletos del repositorio.
-
-    Issue: [#79](https://github.com/cmariano93-netizen/SistemaPedidos/issues/79) PR: [#69](https://github.com/cmariano93-netizen/SistemaPedidos/pull/69) - @cmariano93-netizen 
- (Diseñador de Tarjetas CRC.)
+   ssue: [#79](https://github.com/cmariano93-netizen/SistemaPedidos/issues/79) PR: [#69](https://github.com/cmariano93-netizen/SistemaPedidos/pull/69) - @cmariano93-netizen (Diseñador de Tarjetas CRC.)
+-[fix/doc-coor-repo-update-changelog.md] - Se corrigio RC 16, 17, 18, 19, 20, 21, 22, 25, 29. Issue: [#83] https://github.com/cmariano93-netizen/SistemaPedidos/issues/83  PR [#82] https://github.com/cmariano93-netizen/SistemaPedidos/pull/82. @LMengarelli93 (DOCUMENTADOR Y COORDINADOR DEL REPOSITORIO) -
