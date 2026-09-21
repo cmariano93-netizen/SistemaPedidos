@@ -31,8 +31,7 @@ Registro de cambios, participación de integrantes, roles asignados y enlaces a 
 - [feature/doc-coord-correcciones-hallazgos] **RC5 - Atributo `total` sin tipo de dato:** Corrección agregando tipo explícito Decimal a clase Pedido. Issue(s): [#44](https://github.com/cmariano93-netizen/SistemaPedidos/issues/44) (RC5) PR: [#62](https://github.com/cmariano93-netizen/SistemaPedidos/pull/62) - @fernandodanielm (Documentador y Coordinador)
 - [Auditoría del Coordinador] Consolidación de 4 issues duplicadas (#3, #8, #21, #50) → issues oficiales (#48, #41, #44, #6). Issue(s): [#3](https://github.com/cmariano93-netizen/SistemaPedidos/issues/3), [#8](https://github.com/cmariano93-netizen/SistemaPedidos/issues/8), [#21](https://github.com/cmariano93-netizen/SistemaPedidos/issues/21), [#50](https://github.com/cmariano93-netizen/SistemaPedidos/issues/50) PR: [#62](https://github.com/cmariano93-netizen/SistemaPedidos/pull/62) - @fernandodanielm (Coordinador)
 - [Code Review con IA] Revisiones técnicas asistidas por IA completadas en 12 PRs (#19, #20, #25, #28, #33, #34, #38, #40, #52, #55, #56, #57). PR: [#62](https://github.com/cmariano93-netizen/SistemaPedidos/pull/62) - @fernandodanielm (Documentador y Coordinador)
-- [fix/analista-requerimientos-corregir-rnf] - Se corrigio rnf5 y se agrego 4 mas a pedido de Fernando. Se realizo ajustes en casos de uso, se quitaron gerarquias sin respaldo, se modelo en funsion de Nro-Retiro y se acomodo el flujo solo con eventos del sistema   Issue(s): #72 PR: #73 - @LMengarelli93 
-(Especialista en escenarios de casos de uso.)
+- [fix/analista-requerimientos-corregir-rnf] Corrección del RNF5 y actualización de requisitos y casos de uso para reflejar el flujo de retiro por mostrador. Issue(s): [#72](https://github.com/cmariano93-netizen/SistemaPedidos/issues/72) PR: [#73](https://github.com/cmariano93-netizen/SistemaPedidos/pull/73) - @LMengarelli93 (Modelador de Casos de Uso)
 
 
 [](https://github.com/cmariano93-netizen/SistemaPedidos/blob/develop/changelog.md#fecha-de-entrega)
@@ -41,14 +40,4 @@ Registro de cambios, participación de integrantes, roles asignados y enlaces a 
 - [fix/diseniador/clases/corregir/boceto/excalidraw] - Se corrigio el boceto inicial del diseño de clases.
 
     Issue: [#75](https://github.com/cmariano93-netizen/SistemaPedidos/issues/75) PR: [#76](https://github.com/cmariano93-netizen/SistemaPedidos/pull/76) - @cmariano93-netizen 
-(Diseñador de Tarjetas CRC.)
-
-
-- [fix/diseniador/clases/corregir/boceto/excalidraw] - Agrego el boceto en introduccion.md
-
-    Agregué nuevo boceto en introduccion.md.
-
-    No pude abrir una PR debido a que subí los cambios con el comando git push origin fix/diseniador-clases-corregir-boceto-excalidraw:release/actividad-obligatoria-1.
-
-    Los dos puntos (:) en el comando hizo que los cambios impacten directamente dentro de la rama release/actividad-obligatoria-1.
-    No es la manera adecuada en este flujo de trabajo.
+ (Diseñador de Tarjetas CRC.)
