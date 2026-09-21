@@ -14,7 +14,7 @@
     {"type":"line","id":"d_p1","x":70,"y":150,"width":180,"height":0,"points":[[0,0],[180,0]],"strokeWidth":1},
     {"type":"line","id":"d_p2","x":70,"y":216,"width":180,"height":0,"points":[[0,0],[180,0]],"strokeWidth":1},
     {"type":"text","id":"n_personal","x":103,"y":118,"width":110,"height":25,"text":"PersonalAtencion","fontSize":18},
-    {"type":"text","id":"at_personal","x":82,"y":160,"width":110,"height":60,"text":"- id\n- nombre\n- rol","fontSize":14},
+    {"type":"text","id":"at_personal","x":82,"y":160,"width":110,"height":60,"text":"- nombre\n- rol","fontSize":14},
     {"type":"text","id":"me_personal","x":82,"y":225,"width":140,"height":60,"text":"registrarPedido()\nmodificarPedido()\nenviarPedidoACocina()","fontSize":13},
 
     {"type":"rectangle","id":"r_cocina","x":70,"y":360,"width":180,"height":150,"backgroundColor":"#e9ecef","fillStyle":"solid"},
