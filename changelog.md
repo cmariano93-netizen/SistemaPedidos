@@ -37,7 +37,12 @@ Registro de cambios, participación de integrantes, roles asignados y enlaces a 
 [](https://github.com/cmariano93-netizen/SistemaPedidos/blob/develop/changelog.md#fecha-de-entrega)
 
 
-- [fix/diseniador/clases/corregir/boceto/excalidraw] - Se corrigio el boceto inicial del diseño de clases.
+- [fix/diseniador-clases-corregir-boceto-excalidraw] - Se corrigio el boceto inicial del diseño de clases.
 
     Issue: [#75](https://github.com/cmariano93-netizen/SistemaPedidos/issues/75) PR: [#76](https://github.com/cmariano93-netizen/SistemaPedidos/pull/76) - @cmariano93-netizen 
+ (Diseñador de Tarjetas CRC.)
+
+- [fix/diseniador-clases-corregir-boceto-excalidraw] - Actualizado el boceto, corregido rutas de plantillas y eliminado los archivos obsoletos del repositorio.
+
+    Issue: [#79](https://github.com/cmariano93-netizen/SistemaPedidos/issues/79) PR: [#69](https://github.com/cmariano93-netizen/SistemaPedidos/pull/69) - @cmariano93-netizen 
  (Diseñador de Tarjetas CRC.)
