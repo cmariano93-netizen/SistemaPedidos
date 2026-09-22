@@ -24,10 +24,35 @@ Registro de cambios, participación de integrantes, roles asignados y enlaces a 
 - [feature/diseniador-clases-update-anexo-diagrama] Actualización de estructura de diagramas y boceto inicial. Issue(s): [#44](https://github.com/cmariano93-netizen/SistemaPedidos/issues/44) PR: [#49](https://github.com/cmariano93-netizen/SistemaPedidos/pull/49) - @neith18 (Diseñador de Clases Iniciales)-
 - [feature/diseniador-clases-fix-boceto-anexo] Incorporación del boceto inicial como imagen en anexos/introduccion.md. Issue(s): [#44](https://github.com/cmariano93-netizen/SistemaPedidos/issues/44) PR: [#56](https://github.com/cmariano93-netizen/SistemaPedidos/pull/56) - @neith18 (Diseñador de Clases Iniciales)-
 - [Refactorización] Refactorización de secciones de requisitos y casos de uso (resolución de conflictos de merge). Issue(s): [#54](https://github.com/cmariano93-netizen/SistemaPedidos/issues/54) PR: [#55](https://github.com/cmariano93-netizen/SistemaPedidos/pull/55) - @cmariano93-netizen (Refactorización)-
+
+### R.C 24 
+
+- [feature/doc-coord-repo-update-readme-md] READMI, changelog, pull request. PR[#5](https://github.com/cmariano93-netizen/SistemaPedidos/pull/5/changes) - @cmariano93-netizen (Documentador y Coordinador)-
+- [Feature/doc-coord-repo-update-readme.md] eliminé archivos en mi feature de rol. PR[#9](https://github.com/cmariano93-netizen/SistemaPedidos/pull/9) - @cmariano93-netizen (Documentador y Coordinador)-
+- [cmariano93-netizen-patch-1] Nueva estructura. IMPORTANTE, PR[#10](https://github.com/cmariano93-netizen/SistemaPedidos/pull/10/changes) - @cmariano93-netizen (Documentador y Coordinador)-
+- [feature/doc-coord-repo-update-readme-md] READMI.MD, changelog.md PR[#14](https://github.com/cmariano93-netizen/SistemaPedidos/pull/14/changes) - @cmariano93-netizen (Documentador y Coordinador)-
+- [feature/doc-coord-repo-update-readme-md] Introduccion.md, changelog.md PR[#16](https://github.com/cmariano93-netizen/SistemaPedidos/pull/16/changes) - @cmariano93-netizen (Documentador y Coordinador)-
+- [cmariano93-netizen-patch-2] Changelog.md PR[#19](https://github.com/cmariano93-netizen/SistemaPedidos/pull/19/changes) - @cmariano93-netizen (Documentador y Coordinador)-
+- [cmariano93-netizen-patch-1] templease. IMPORTANTE, PR[#20](https://github.com/cmariano93-netizen/SistemaPedidos/pull/20/changes) - @cmariano93-netizen (Documentador y Coordinador)-
+- [cmariano93-netizen-patch-2] README.md PR[#25](https://github.com/cmariano93-netizen/SistemaPedidos/pull/25) - @cmariano93-netizen (Documentador y Coordinador)-
+- [feature/doc-coord-repo-update-readme-md] changelog.md PR[#28](https://github.com/cmariano93-netizen/SistemaPedidos/pull/28) - @cmariano93-netizen (Documentador y Coordinador)-
+- [cmariano93-netizen-patch-1] README, PR[#33](https://github.com/cmariano93-netizen/SistemaPedidos/pull/33) - @cmariano93-netizen (Documentador y Coordinador)-
+- [cmariano93-netizen-patch-2] changelog.md PR[#34](https://github.com/cmariano93-netizen/SistemaPedidos/pull/34) - @cmariano93-netizen (Documentador y Coordinador)-
+- [feature/doc-coord-repo-update-readme-md] Templase y changelog.md PR[#38](https://github.com/cmariano93-netizen/SistemaPedidos/pull/38) - @cmariano93-netizen (Documentador y Coordinador)-
+- [feature/modelador-casos-uso-update-use-case-1] changelog.md . Issue(s): [#50](https://github.com/cmariano93-netizen/SistemaPedidos/issues/50) PR: [#51](https://github.com/cmariano93-netizen/SistemaPedidos/pull/51) - @LMengarelli93 (Modelador de Casos de Uso)-
+- [cmariano93-netizen-patch-1] eliminio introduccion.md de rama develop.
+la ruta correcta es anexos/introduccion.md, Issue(s): [#53](https://github.com/cmariano93-netizen/SistemaPedidos/issues/53) PR[#52](https://github.com/cmariano93-netizen/SistemaPedidos/pull/52) - @cmariano93-netizen (Documentador y Coordinador)-
+- [feature/doc-coord-repo-update-readme-md] changelog.md PR[#57](https://github.com/cmariano93-netizen/SistemaPedidos/pull/57) - @cmariano93-netizen (Documentador y Coordinador)-
+- [chore/add-issue-template-to-master] ISSUE_TEMPLATE PR[#59](https://github.com/cmariano93-netizen/SistemaPedidos/pull/59) - @fernandodanielm (Documentador y Coordinador)-
+- [fix/analista-requerimientos-corregir-rnf] changelog.md . PR: [#74](https://github.com/cmariano93-netizen/SistemaPedidos/pull/74) - @LMengarelli93 (Especialista en escenarios casos de uso)-
+- [feature/doc-coord-repo-update-readme-md]  nuevo boceto en introduccion.md. y changelog.md, Issue(s): [#77](https://github.com/cmariano93-netizen/SistemaPedidos/issues/77) PR[#78](https://github.com/cmariano93-netizen/SistemaPedidos/pull/78) - @cmariano93-netizen (Diseñador de Tarjetas CRC.)
+
+- [fix/diseniador-clases-corregir-boceto-excalidraw] changelog.md[#81](https://github.com/cmariano93-netizen/SistemaPedidos/pull/81/changes) - @fernandodanielm (Diseñador de Tarjetas CRC.)-
+
 ### Fixed
 - [feature/doc-coord-correcciones-hallazgos] **RC5 - Atributo `total` sin tipo de dato:** Corrección agregando tipo explícito Decimal a clase Pedido. Issue(s): [#44](https://github.com/cmariano93-netizen/SistemaPedidos/issues/44) (RC5) PR: [#62](https://github.com/cmariano93-netizen/SistemaPedidos/pull/62) - @fernandodanielm (Documentador y Coordinador)-
 - [Auditoría del Coordinador] Consolidación de 4 issues duplicadas (#3, #8, #21, #50) → issues oficiales (#48, #41, #44, #6). Issue(s): [#3](https://github.com/cmariano93-netizen/SistemaPedidos/issues/3), [#8](https://github.com/cmariano93-netizen/SistemaPedidos/issues/8), [#21](https://github.com/cmariano93-netizen/SistemaPedidos/issues/21), [#50](https://github.com/cmariano93-netizen/SistemaPedidos/issues/50) PR: [#62](https://github.com/cmariano93-netizen/SistemaPedidos/pull/62) - @fernandodanielm (Coordinador)-
-- [fix/analista-requerimientos-corregir-rnf] - Corregir rnf y casos de uso en introduccion.md   Issue(s): [#72](https://github.com/cmariano93-netizen/SistemaPedidos/issues/72) PR: [#73](https://github.com/cmariano93-netizen/SistemaPedidos/pull/73)  - @LMengarelli93 -
+- [fix/analista-requerimientos-corregir-rnf] - Corregir rnf y casos de uso en introduccion.md   Issue(s): [#72](https://github.com/cmariano93-netizen/SistemaPedidos/issues/72) PR: [#73](https://github.com/cmariano93-netizen/SistemaPedidos/pull/73)  - @LMengarelli93 - (Especialista en escenarios de casos de uso)
 - [fix/diseniador-clases-corregir-boceto-excalidraw] - Se corrigio el boceto inicial del diseño de clases
     Issue: [#75](https://github.com/cmariano93-netizen/SistemaPedidos/issues/75) PR: [#76](https://github.com/cmariano93-netizen/SistemaPedidos/pull/76) - @cmariano93-netizen 
    (Diseñador de Tarjetas CRC.)-
