@@ -2,13 +2,15 @@
 
 ### Registro de cambios, participación de integrantes, roles asignados y enlaces a Pull Requests e Issues de cada entrega.
 ---
-## [Actividad Obligatoria N°1](https://github.com/cmariano93-netizen/SistemaPedidos/blob/develop/changelog.md#actividad-obligatoria-n1)
+## [Unreleased]
+
+## [Release Actividad Obligatoria N°1 - 2026-09-23](https://github.com/cmariano93-netizen/SistemaPedidos/blob/develop/changelog.md#actividad-obligatoria-n1)
 
 ### [Added](https://github.com/cmariano93-netizen/SistemaPedidos/blob/develop/changelog.md#added)
 
 - [feature/doc-coord-repo-update-readme-md] Estructura inicial del proyecto con las carpetas .github/, anexos/ y diagramas. Issue(s): [#38](https://github.com/cmariano93-netizen/SistemaPedidos/issues/38), PR: [#40](https://github.com/cmariano93-netizen/SistemaPedidos/pull/40), @cmariano93-netizen. (Documentador y coordinador.)
 
-- [feature/doc-coord-correcciones-hallazgos] chore: Correcciones técnicas y resolución de hallazgos de revisión (RC5). Issue(s): [#43](https://github.com/cmariano93-netizen/SistemaPedidos/pull/43) PR: [#62](https://github.com/cmariano93-netizen/SistemaPedidos/pull/62) - @fernandodanielm (Documentador y Coordinador)
+- [feature/doc-coord-correcciones-hallazgos] chore: Correcciones técnicas y resolución de hallazgos de revisión (RC5). Issue(s): [#44](https://github.com/cmariano93-netizen/SistemaPedidos/issues/44) PR: [#62](https://github.com/cmariano93-netizen/SistemaPedidos/pull/62) - @fernandodanielm (Documentador y Coordinador)
 
 - [feature/doc-coord-repo-update-readme-md] Redacción de introducción teórica a POO y los cuatro pilares fundamentales en anexos/introduccion.md. Issue(s): [#45](https://github.com/cmariano93-netizen/SistemaPedidos/issues/45) PR: [#46](https://github.com/cmariano93-netizen/SistemaPedidos/pull/46) - @cmariano93-netizen (Documentador y Coordinador)
 
@@ -107,7 +109,7 @@ PR[#59](https://github.com/cmariano93-netizen/SistemaPedidos/pull/59) - @fernand
 
 - [release/actividad-obligatoria-1] Agregar boceto en introduccion.md y enlace para visualizarlo en línea (desvío de GitFlow; sin PR). Commit: [1c865de](https://github.com/cmariano93-netizen/SistemaPedidos/commit/1c865de7b9566a0c09e75577138ad8115c4020a4) - @cmariano93-netizen (Diseñador de tarjetas CRC).
 
-- [feature/doc-coord-correcciones-hallazgos] *RC5 - Atributo total sin tipo de dato:* Corrección que agrega el tipo de dato explícito Decimal a la clase Pedido. Issue(s): [#44](https://github.com/cmariano93-netizen/SistemaPedidos/issues/44) (RC5) PR: [#62](https://github.com/cmariano93-netizen/SistemaPedidos/pull/62) - @fernandodanielm (Documentador y Coordinador)
+- [feature/doc-coord-correcciones-hallazgos] RC5 - Atributo total sin tipo de dato: Corrección que agrega el tipo de dato explícito Decimal a la clase Pedido. Issue(s): [#44](https://github.com/cmariano93-netizen/SistemaPedidos/issues/44) (RC5) PR: [#62](https://github.com/cmariano93-netizen/SistemaPedidos/pull/62) - @fernandodanielm (Documentador y Coordinador)
 
 - [Auditoría del Coordinador] Consolidación de cuatro issues duplicados (#3, #8, #21 y #50) en las issues oficiales (#48, #41, #44 y #6). Issue(s): [#3](https://github.com/cmariano93-netizen/SistemaPedidos/issues/3), [#8](https://github.com/cmariano93-netizen/SistemaPedidos/issues/8), [#21](https://github.com/cmariano93-netizen/SistemaPedidos/issues/21), [#50](https://github.com/cmariano93-netizen/SistemaPedidos/issues/50) PR: [#62](https://github.com/cmariano93-netizen/SistemaPedidos/pull/62) - @fernandodanielm (Coordinador)
 
@@ -140,4 +142,4 @@ Issue: [#79](https://github.com/cmariano93-netizen/SistemaPedidos/issues/79) y [
 
 - [fix/doc-coor-repo-update-changelog.md] Se corrigió la RC33 y el enlace pendiente de la RC37. Issue: [#88](https://github.com/cmariano93-netizen/SistemaPedidos/issues/88) PR: [#89](https://github.com/cmariano93-netizen/SistemaPedidos/pull/89). @LMengarelli93 (Documentador y coordinador).
 
-- [fix/doc-coor-repo-update-changelog.md] Changelog.md restructurado completo. Issue: [#92](https://github.com/cmariano93-netizen/SistemaPedidos/pull/92) PR: [#91](https://github.com/cmariano93-netizen/SistemaPedidos/issues/91). @LMengarelli93 (Documentador y coordinador).
+- [fix/doc-coor-repo-update-changelog.md] Changelog.md restructurado completo. Issue: [#91](https://github.com/cmariano93-netizen/SistemaPedidos/issues/91) PR: [#92](https://github.com/cmariano93-netizen/SistemaPedidos/pull/92). @LMengarelli93 (Documentador y coordinador).
