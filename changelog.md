@@ -139,3 +139,5 @@ Issue: [#79](https://github.com/cmariano93-netizen/SistemaPedidos/issues/79) y [
 - [fix/doc-coor-repo-update-changelog.md] - Se corrigieron las RC 33, 35, 36 y 37. Se incorporó a @cmariano93-netizen en la PR 46. Issue: [#86](https://github.com/cmariano93-netizen/SistemaPedidos/issues/86) PR: [#87](https://github.com/cmariano93-netizen/SistemaPedidos/pull/87/commits). @LMengarelli93 (Documentador y coordinador)
 
 - [fix/doc-coor-repo-update-changelog.md] Se corrigió la RC33 y el enlace pendiente de la RC37. Issue: [#88](https://github.com/cmariano93-netizen/SistemaPedidos/issues/88) PR: [#89](https://github.com/cmariano93-netizen/SistemaPedidos/pull/89). @LMengarelli93 (Documentador y coordinador).
+
+- [fix/doc-coor-repo-update-changelog.md] Changelog.md restructurado completo. Issue: [#92](https://github.com/cmariano93-netizen/SistemaPedidos/pull/92) PR: [#91](https://github.com/cmariano93-netizen/SistemaPedidos/issues/91). @LMengarelli93 (Documentador y coordinador).
