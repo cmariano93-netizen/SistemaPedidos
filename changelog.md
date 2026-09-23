@@ -4,9 +4,9 @@
 ---
 ## [Unreleased]
 
-## [Release Actividad Obligatoria N°1 - 2026-09-23](https://github.com/cmariano93-netizen/SistemaPedidos/blob/develop/changelog.md#actividad-obligatoria-n1)
+## Release Actividad Obligatoria N°1 - 2026-09-23
 
-### [Added](https://github.com/cmariano93-netizen/SistemaPedidos/blob/develop/changelog.md#added)
+### Added
 
 - [feature/doc-coord-repo-update-readme-md] Estructura inicial del proyecto con las carpetas .github/, anexos/ y diagramas. Issue(s): [#38](https://github.com/cmariano93-netizen/SistemaPedidos/issues/38), PR: [#40](https://github.com/cmariano93-netizen/SistemaPedidos/pull/40), @cmariano93-netizen. (Documentador y coordinador.)
 
@@ -22,7 +22,7 @@
 
 - [feature/doc-coord-agregar-templates-issues] Plantillas de issues estructuradas para cada rol de la actividad. Issue(s): [#45](https://github.com/cmariano93-netizen/SistemaPedidos/issues/45) PR: [#61](https://github.com/cmariano93-netizen/SistemaPedidos/pull/61) - @fernandodanielm (Documentador y coordinador)
 
-### [Changed](https://github.com/cmariano93-netizen/SistemaPedidos/blob/develop/changelog.md#changed)
+### Changed
 
 - [feature/diseniador-clases-update-anexo-diagrama] Actualización de estructura de diagramas y boceto inicial. Issue(s): [#44](https://github.com/cmariano93-netizen/SistemaPedidos/issues/44) PR: [#49](https://github.com/cmariano93-netizen/SistemaPedidos/pull/49) - @neith18 (Diseñador de Clases Iniciales)
 
@@ -93,8 +93,7 @@ PR: [#57](https://github.com/cmariano93-netizen/SistemaPedidos/pull/57) - @cmari
 Issue(s): N/A
 PR[#59](https://github.com/cmariano93-netizen/SistemaPedidos/pull/59) - @fernandodanielm (Documentador y Coordinador)
 
-### [Fixed](https://github.com/cmariano93-netizen/SistemaPedidos/blob/develop/changelog.md#fixed)
-
+### Fixed
 - [release/actividad-obligatoria-1] Reemplazo de colaboradores en README.md (desvío de GitFlow; sin PR). Commit: [9ece5ec](https://github.com/cmariano93-netizen/SistemaPedidos/commit/9ece5ecfcc514884b6d5788f0010693594bf6823) - @fernandodanielm (Documentador y coordinador).
 
 - [release/actividad-obligatoria-1] Agregar plantillas de pull request y actualizar changelog, anexos e introduccion (desvío de GitFlow; sin PR). Commit: [a3851d5](https://github.com/cmariano93-netizen/SistemaPedidos/commit/a3851d5dfcf9949db700569c5d4029befed88fd2) - @fernandodanielm (Documentador y coordinador).
