@@ -22,8 +22,8 @@
 - [ ] `changelog.md` - Registro de cambios y participación
 - [ ] `anexos/introduccion.md` - Introducción a POO y requisitos
 - [ ] `anexos/anexos.md` - Índice de anexos
-- [ ] `diagramas/01-diagrama-clases/01-boceto-inicial.excalidraw` - Diagrama
-- [ ] `diagramas/01-diagrama-clases/01-boceto-inicial.png` - Imagen exportada
+- [ ] `diagramas/01-diagrama-clases/01-boceto-inicial-corregido.excalidraw` - Diagrama
+- [ ] `diagramas/01-diagrama-clases/01-boceto-inicial-corregido-final.png` - Imagen exportada
 
 ### Criterios de aceptación
 - [ ] Estructura de carpetas correcta
