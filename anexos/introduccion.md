@@ -20,7 +20,7 @@ Los requisitos de un negocio son dinámicos y cambian de forma inevitable. La PO
 ## Los Cuatro Fundamentos de POO
 *Explicar detalladamente el significado técnico de cada pilar e ilustrarlo de forma pragmática con analogías lógicas del negocio del Kiosco "Sabor" (sin necesidad de codificar en esta etapa):*
 
-1. **Abstracción:** 
+1. **Abstracción:**
 Proceso para reducir la complejidad del mundo real, enfocándose sólo en puntos relevantes y significativos para el sistema.
 
 En SistemaPedidos, un ejemplo puede ser un alfajor, que tiene diferentes propiedades (peso, tamaño, color, gusto, etc.). Para el sistema, lo importante es la venta y facturación del mismo.
@@ -29,18 +29,18 @@ Atributos esenciales: `codigo`, `descripcion`, `precioBase`.
 
 Métodos esenciales: `obtenerPrecio()`
 
-2. **Encapsulamiento:** 
+2. **Encapsulamiento:**
 Consiste en agrupar los atributos de los datos con las funciones o métodos que actúan sobre los mismos.
 
 En SistemaPedidos un ejemplo es el valor total de un pedido(montoTotal). Este valor numérico no debe ser manipulado.
-Solo puede modificarse en caso de agregar o quitar productos dentro del mismo pedido. 
+Solo puede modificarse en caso de agregar o quitar productos dentro del mismo pedido.
 
-3. **Herencia:** 
+3. **Herencia:**
 Es el mecanismo estructural que permite organizar las clases en jerarquías.
- 
+
 Una clase derivada (hija) hereda y adquiere de forma automática todos los atributos y comportamientos (métodos) de una clase base (madre o superclase), posibilitando la reutilización del diseño y la extensión de comportamientos especializados sin necesidad de duplicar código.
 
-Aplicación práctica en el Kiosco "Sabor": 
+Aplicación práctica en el Kiosco "Sabor":
 En el kiosco existen productos que requieren manipulación (productos elaborados como un sándwich) y productos comerciales directos (envasados como una gaseosa).
 En lugar de diseñar dos clases independientes duplicando campos, creamos la superclase genérica Producto y hacemos que dos subclases específicas hereden de ella :
 
@@ -48,7 +48,7 @@ ProductoEnvasado hereda `codigo` y `descripcion`, y añade su propio atributo es
 
 ProductoElaborado hereda `codigo` y `descripcion`, y añade `tiempoPreparacion`.
 
-4. **Polimorfismo:** 
+4. **Polimorfismo:**
 Es la capacidad que poseen diferentes objetos pertenecientes a una misma jerarquía de clases para responder de manera distinta y personalizada a un mismo mensaje o llamada de método común.
 
 Un ejemplo en SistemaPedidos:
@@ -64,43 +64,43 @@ Cuaderno grupal de NotebookLM: https://notebook.google.com/notebook/4dab293b-044
 
 ### Requisitos funcionales
 
-*RF1 - Registrar pedido*  
+*RF1 - Registrar pedido*
 El sistema debe permitir registrar un pedido con sus productos, cantidades y personalizaciones.
 
-*RF2 - Identificar pedido para retiro*  
+*RF2 - Identificar pedido para retiro*
 El sistema debe permitir identificar cada pedido mediante un número de pedido y un nombre o referencia de retiro.
 
-*RF3 - Calcular total del pedido*  
+*RF3 - Calcular total del pedido*
 El sistema debe calcular el total del pedido teniendo en cuenta los productos, cantidades y personalizaciones.
 
-*RF4 - Registrar pago*  
+*RF4 - Registrar pago*
 El sistema debe permitir registrar el pago de un pedido y su forma de pago.
 
-*RF5 - Enviar pedido a cocina*  
+*RF5 - Enviar pedido a cocina*
 El sistema debe enviar automáticamente el pedido a cocina una vez registrado.
 
-*RF6 - Consultar pedidos activos*  
+*RF6 - Consultar pedidos activos*
 El sistema debe permitir visualizar los pedidos activos y su estado actual.
 
-*RF7 - Cambiar estado del pedido*  
+*RF7 - Cambiar estado del pedido*
 El sistema debe permitir cambiar el estado de un pedido entre recibido, en preparación, listo y entregado.
 
 *RF8 - Cancelar pedido*
 El sistema debe permitir cancelar un pedido solo en estados recibido o en preparación; al cancelarse, el pedido pasa a estado cancelado, queda registrado en el historial y no aparece en la lista de pedidos activos.
 
-*RF9 - Marcar pedido como prioritario*  
+*RF9 - Marcar pedido como prioritario*
 El sistema debe permitir marcar manualmente un pedido como prioritario.
 
-*RF10 - Modificar pedido*  
+*RF10 - Modificar pedido*
 El sistema debe permitir modificar un pedido mientras se encuentre en estado recibido.
 
-*RF11 - Agregar o quitar productos*  
+*RF11 - Agregar o quitar productos*
 El sistema debe permitir agregar o quitar productos de un pedido mientras se encuentre en estado recibido.
 
-*RF12 - Modificar personalizaciones*  
+*RF12 - Modificar personalizaciones*
 El sistema debe permitir agregar, quitar o modificar las personalizaciones de los productos de un pedido mientras se encuentre en estado recibido.
 
-*RF13 - Registrar entrega del pedido*  
+*RF13 - Registrar entrega del pedido*
 El sistema debe permitir registrar que un pedido listo fue entregado al cliente.
 
 ### Estados del pedido
@@ -113,24 +113,24 @@ El sistema debe permitir registrar que un pedido listo fue entregado al cliente.
 
 ### Requisitos no funcionales
 
-*RNF1 - Información actualizada*  
+*RNF1 - Información actualizada*
 El sistema debe mantener la información de los pedidos actualizada para que el personal pueda consultar el mismo estado y la misma información del pedido.
 
-*RNF2 - Consistencia de la información*  
+*RNF2 - Consistencia de la información*
 El sistema debe evitar que se pierda o se duplique la información de los pedidos.
 
-*RNF3 - Facilidad de uso*  
+*RNF3 - Facilidad de uso*
 El sistema debe ser sencillo de utilizar para el personal del kiosco, permitiendo consultar y actualizar la información de los pedidos de forma clara.
 
-*RNF4 - Integridad de los pedidos*  
+*RNF4 - Integridad de los pedidos*
 El sistema debe conservar el historial completo de cada pedido cancelado para auditoría y no permitir su eliminación física del sistema.
 
 *RNF5 - Comunicación entre mostrador y cocina*
 El sistema debe comunicar a cocina la toma y las actualizaciones de un pedido, evitando que el personal dependa de avisos verbales para enterarse de los cambios.
 
 *RNF6 - Inmutabilidad del precio histórico*
-El precio asignado a un ítem en un pedido debe congelarse en el momento de la venta, garantizando que futuros cambios en el catálogo de productos no modifiquen pedidos pasados. 
- 
+El precio asignado a un ítem en un pedido debe congelarse en el momento de la venta, garantizando que futuros cambios en el catálogo de productos no modifiquen pedidos pasados.
+
 *RNF7 - Encapsulamiento y protección de reglas del dominio*
 Definición: El sistema debe garantizar que las validaciones de negocio, restricciones de edición y transiciones de estado estén encapsuladas internamente en las entidades del dominio (como Pedido), impidiendo que capas externas o la interfaz alteren la información o el estado interno sin ejecutar los métodos válidos.
 
@@ -165,11 +165,11 @@ Definición: Cada pedido debe contar con un identificador único generado de for
         - Actor: Solicita cerrar la cuenta del pedido.
         - Sistema: Recupera el detalle del pedido y calcula el total a cobrar.
         - Actor: Confirma el medio de pago.
-        - Sistema: Registra el pago y actualiza el estado del pedido según la regla de negocio.
+        - Sistema: Registra el pago asociado al pedido sin incorporar un estado adicional al ciclo de vida.
         - Actor: Solicita la impresión del comprobante.
         - Sistema: Emite el ticket de cobro.
     - Precondiciones: El pedido debe existir y encontrarse en un estado habilitado para cobro.
-    - Postcondiciones: Se registra el pago y el pedido queda finalizado o en estado cobrado según la regla del negocio.
+    - Postcondiciones: Se registra el pago y el pedido conserva uno de los estados definidos: recibido, en preparación, listo, entregado o cancelado.
 
 - Nombre del caso de uso: Entregar pedido.
     - Actor principal: Usuario de mostrador.
