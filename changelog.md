@@ -3,6 +3,7 @@
 ### Registro de cambios, participación de integrantes, roles asignados y enlaces a Pull Requests e Issues de cada entrega.
 ---
 ## [Unreleased]
+- [Backport/release-actividad-obligatoria-1] Establecer la base en Develop Issue: [#97](https://github.com/cmariano93-netizen/SistemaPedidos/issues/97) PR: [#98](https://github.com/cmariano93-netizen/SistemaPedidos/pull/98). @LMengarelli93 (Documentador y coordinador).
 
 ## Release Actividad Obligatoria N°1 - 2026-09-23
 
@@ -146,3 +147,4 @@ Issue: [#79](https://github.com/cmariano93-netizen/SistemaPedidos/issues/79) y [
 - [fix/doc-coor-repo-update-changelog.md] Changelog.md restructurado completo. Issue: [#93](https://github.com/cmariano93-netizen/SistemaPedidos/issues/93) PR: [#94](https://github.com/cmariano93-netizen/SistemaPedidos/pull/94). @LMengarelli93 (Documentador y coordinador).
 
 - [fix/doc-coor-repo-update-changelog.md] Changelog.md restructurado completo. Issue: [#95](https://github.com/cmariano93-netizen/SistemaPedidos/issues/95) PR: [#96](https://github.com/cmariano93-netizen/SistemaPedidos/pull/96). @LMengarelli93 (Documentador y coordinador).
+
