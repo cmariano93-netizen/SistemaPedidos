@@ -22,9 +22,9 @@
 | **Condiciones, suposiciones y preguntas** | |
 |---|---|
 | **Precondiciones:** | El usuario está autenticado; el pedido existe; el total está calculado; el medio de pago está habilitado; no hay un pago aprobado previo para el mismo pedido. |
-| **Poscondiciones:** | Existe un pago aprobado asociado al pedido, con comprobante y trazabilidad; el pedido queda en el estado de cobro definido por el negocio sin alterar su detalle. |
-| **Suposiciones:** | La regla final sobre si cobrar ocurre antes o después de entregar debe ser confirmada por el negocio. |
+| **Poscondiciones:** | Existe un pago aprobado asociado al pedido, con comprobante y trazabilidad; el pedido conserva uno de los estados definidos (`recibido`, `en preparación`, `listo`, `entregado` o `cancelado`) sin alterar su detalle. |
+| **Suposiciones:** | El pago se registra como información asociada al pedido y no agrega un estado nuevo al ciclo de vida. La política sobre el momento del cobro se mantiene independiente de la transición de estados. |
 | **Reunir requerimientos:** | RF4, RF3, RNF2, RNF6, RNF10. |
-| **Aspectos sobresalientes:** | ¿El pedido debe quedar `cobrado` como estado adicional? ¿Se permiten pagos parciales o anulaciones? ¿Cómo se reimprime el comprobante? |
+| **Aspectos sobresalientes:** | ¿Se permiten pagos parciales o anulaciones? ¿Cómo se reimprime el comprobante? |
 | **Prioridad:** | Alta: sin cobro no se completa la operación comercial del pedido. |
 | **Riesgo:** | Alto: involucra dinero, duplicidad de cobros y necesidad de conciliación con el comprobante. |

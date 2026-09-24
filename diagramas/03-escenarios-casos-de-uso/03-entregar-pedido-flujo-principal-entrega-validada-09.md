@@ -21,10 +21,10 @@
 
 | **Condiciones, suposiciones y preguntas** | |
 |---|---|
-| **Precondiciones:** | El usuario está autenticado; el pedido existe, está activo y en estado `listo`; número y referencia están registrados; se cumple la política de cobro definida. |
+| **Precondiciones:** | El usuario está autenticado; el pedido existe, está activo y en estado `listo`; número y referencia están registrados y coinciden con el pedido. |
 | **Poscondiciones:** | El pedido queda en estado `entregado`, deja de estar disponible como pendiente y conserva el historial de su ciclo. |
 | **Suposiciones:** | La referencia de retiro es suficiente junto con el número; el pedido se entrega una sola vez. |
 | **Reunir requerimientos:** | RF2, RF6, RF7, RF13, RNF1, RNF4, RNF10. |
-| **Aspectos sobresalientes:** | ¿Se exige comprobante de pago? ¿Qué evidencia de entrega se conserva? ¿Puede entregar un tercero autorizado? |
+| **Aspectos sobresalientes:** | ¿Qué evidencia de entrega se conserva? ¿Puede entregar un tercero autorizado? |
 | **Prioridad:** | Alta: completa el servicio al cliente y libera el pedido del circuito activo. |
 | **Riesgo:** | Alto: entregar a la persona equivocada afecta al cliente y rompe la trazabilidad del pedido. |
