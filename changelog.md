@@ -5,6 +5,15 @@
 ## [Unreleased]
 - [Backport/release-actividad-obligatoria-1] Establecer la base en Develop Issue: [#97](https://github.com/cmariano93-netizen/SistemaPedidos/issues/97) PR: [#99](https://github.com/cmariano93-netizen/SistemaPedidos/pull/99). @LMengarelli93 (Documentador y coordinador).
 
+- [feature/diseniador-tarjetas-crc-add-tarjeta-clase-1] A2 - Diseñar Tarjetas CRC: Creación estructura de carpetas.
+Issue: [#68](https://github.com/cmariano93-netizen/SistemaPedidos/issues/68)
+PR: [#69](https://github.com/cmariano93-netizen/SistemaPedidos/pull/69). @cmariano93-netizen (Diseñador de Tarjetas CRC).
+
+- [feature/modelador-diag-casos-uso-update-use-case-1] A2 - Modelar diagramas de casos de uso - Incorporación de diagramas de Casos de Uso e índices.
+Issue: [#101](https://github.com/cmariano93-netizen/SistemaPedidos/issues/101)
+PR: [#102](https://github.com/cmariano93-netizen/SistemaPedidos/pull/102). @cmariano93-netizen (Modelador de Diagramas de Casos de Uso).
+
+
 ## Release Actividad Obligatoria N°1 - 2026-09-23
 
 ### Added
