@@ -1,31 +1,58 @@
-* **Prompt Utilizado:** > "Actuá como un Ingeniero de Software Experto y especialista en Diseño Orientado a Objetos (OO). 
-Tu tarea es analizar el contexto del sistema (basándote en los archivos 'anexos/introduccion.md' y 'diagramas/01-diagrama-clases/01-boceto-inicial.excalidraw') para identificar las clases principales y diseñar sus correspondientes Tarjetas CRC (Class-Responsibility-Collaborator).
+# Directivas de Diseño: Análisis y Generación de Tarjetas CRC
 
-### Requisitos Estrictos:
-1. **Cantidad:** Debes generar tarjetas CRC para todas las clases clave utilizadas en el boceto inicial. En total, el diseño final NO debe tener menos de CINCO (5) clases clave.
-2. **Revisión Crítica:** Realiza un diseño sólido y profesional. Corrige errores comunes de diseño (como bajo acoplamiento y alta cohesión), ajusta las responsabilidades adecuadamente y descarta cualquier elemento que no corresponda al dominio del sistema.
-3. **Contenido de cada Tarjeta:** Cada una debe incluir obligatoriamente: Nombre de la clase, Superclase/Subclase (si aplica herencia), Pensamiento del objeto, Responsabilidades principales, Colaboraciones con otras clases y Propiedad clave.
+Actuá como un experto en diseño orientado a objetos y metodologías ágiles, especializado en la técnica de **Tarjetas CRC (Clase-Responsabilidad-Colaborador)**.
 
-### Estructura y Plantilla:
-Debes usar estrictamente la siguiente plantilla en formato Markdown para cada una de las clases que identifiques. Sigue al pie de la letra esta estructura:
+## Contexto
+Leé los siguientes archivos como base para tu análisis:
+* `anexos/introduccion.md` (contexto funcional del sistema)
+* `diagramas/01-diagrama-clases/01-boceto-inicial-corregido.excalidraw` (boceto de clases de la Actividad Obligatoria N°1)
 
-# 🎴 Tarjeta CRC: [NombreClase]
+---
+
+## Tarea
+
+1. **Identificación de Clases:** Identificá todas las clases principales presentes en el boceto de clases, incluyendo relaciones de herencia (superclase/subclase) si las hubiera.
+2. **Generación de Tarjetas:** Para cada clase, generá una tarjeta CRC completa siguiendo exactamente la plantilla especificada abajo.
+3. **Requisitos Mínimos por Tarjeta:**
+   * Nombre de la clase.
+   * Superclase y/o subclase, si corresponde (herencia).
+   * Responsabilidades principales (qué debe saber o hacer la clase).
+   * Colaboradores (otras clases con las que interactúa para cumplir cada responsabilidad).
+   * Pensamiento del objeto (redactado en primera persona, ej: *"Conozco mi DNI para registrarme"*).
+   * Propiedad/atributo asociado a cada responsabilidad.
+4. **Estructura de Archivos:** Creá la estructura de carpetas `herramientas-agile/tarjetas-crc/` y organizá cada tarjeta en un archivo `.md` individual (uno por clase), con nombre de archivo tipo `tarjeta-crc-nombreclase.md`. Incluí además un archivo `README.md` o índice que liste todas las tarjetas generadas.
+5. **Revisión Crítica:** Al finalizar, hacé una revisión crítica del resultado:
+   * Verificá que cada responsabilidad tenga sentido y esté correctamente asignada a esa clase (evitando responsabilidades que en realidad pertenecen a otra clase).
+   * Corregí relaciones de herencia mal planteadas o inexistentes en el boceto.
+   * Ajustá colaboradores que no coincidan con las relaciones reales del diagrama de clases.
+   * Descartá clases, atributos o responsabilidades que no correspondan al alcance del sistema descrito en `anexos/introduccion.md`.
+   * Señalá clases que puedan estar duplicadas, mal nombradas o con responsabilidades solapadas.
+
+---
+
+## Plantilla de Tarjeta CRC
+
+Cada archivo de clase debe utilizar estrictamente el siguiente formato de tabla de Markdown:
 
 | | | | |
 |---|---|---|---|
-| **Nombre de la Clase:** | `[NombreClase]` | | |
-| **Superclase:** | `[Ninguna / NombreSuperclase]` | | |
-| **Subclase:** | `[Ninguna / NombreSubclase]` | | |
+| **Nombre de la Clase:** | NombreClase | | |
+| **Superclase:** | (si aplica) | | |
+| **Subclase:** | (si aplica) | | |
 | **Responsabilidades** | **Colaboradores** | **Pensamiento del objeto** | **Propiedad** |
-| [Acción o comportamiento que realiza] | `[ClaseColaboradora]` | "Conozco mi [identificador o dato]" | `[nombreAtributo]` |
-| [Cálculo o procesamiento que ejecuta] | `[ClaseColaboradora]` | "Conozco mi [estado, fecha o valor]" | `[nombreAtributo]` |
-| [Gestión de estado interno de la entidad] | Ninguno | "Sé [calcular / actualizar comportamiento]" | `[nombreAtributo]` |
+| Responsabilidad 1 | ClaseColaboradora | Frase en primera persona que refleje qué necesita saber/hacer | atributoRelacionado |
+| Responsabilidad 2 | ClaseColaboradora | ... | atributoRelacionado |
 
-*(Asegúrate de adaptar las filas de la tabla según las responsabilidades reales de cada objeto, respetando el formato de los ejemplos).*
-Por favor, lee los archivos de contexto mencionados y genera la propuesta completa de tarjetas CRC respetando esta estructura."
+---
 
+## Formato de Salida Esperado
+
+* Estructura de carpetas creada con un archivo `.md` por clase.
+* Cada archivo con la tarjeta CRC completa en formato tabla markdown.
+* Un índice general en `herramientas-agile/tarjetas-crc/README.md`.
+* Apartado final de **"Revisión crítica"** explicando ajustes, correcciones y descartes realizados.
 
 * **Archivos de Contexto Proporcionados a la IA:**
- - `anexos/introduccion.md` (Secciones: Requisitos Funcionales RF1-RF5 y Casos de Uso CU1-CU5) 
-- `diagramas/01-diagrama-clases/01-boceto-inicial.png` 
+ - `anexos/introduccion.md` (Secciones: Requisitos Funcionales RF1-RF5 y Casos de Uso CU1-CU5)
+- `diagramas/01-diagrama-clases/01-boceto-inicial.png`
 - `plantilla_crc.md` (como guía de formato Markdown)

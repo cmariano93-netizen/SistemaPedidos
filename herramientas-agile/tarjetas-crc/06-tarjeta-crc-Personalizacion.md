@@ -1,4 +1,4 @@
- 🎴 Tarjeta CRC: Personalizacion
+# 🎴 Tarjeta CRC: Personalizacion
 
 | | | | |
 |---|---|---|---|
@@ -6,6 +6,6 @@
 | **Superclase:** | `Ninguna` | | |
 | **Subclase:** | `Ninguna` | | |
 | **Responsabilidades** | **Colaboradores** | **Pensamiento del objeto** | **Propiedad** |
-| Describir una modificación solicitada para el producto | `ItemPedido` | "Conozco el tipo de personalización" | `tipo` |
+| Describir una modificación solicitada para el producto | `ItemPedido`, `PersonalAtencion` | "Conozco el tipo de personalización" | `tipo` |
 | Calcular el importe adicional que agrega al ítem | `ItemPedido` | "Conozco mi descripción y costo adicional" | `precioAdicional` |
-| Mantener encapsulados los datos de la personalización para que el ítem los agregue a su subtotal | `ItemPedido` | "Sé calcular mi adicional" | `descripcion` |
+| Informar sus datos para que el ítem recalcule el subtotal | `ItemPedido` | "Sé informar mi adicional" | `descripcion` |
