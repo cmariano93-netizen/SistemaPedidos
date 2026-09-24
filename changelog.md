@@ -13,6 +13,10 @@ PR: [#69](https://github.com/cmariano93-netizen/SistemaPedidos/pull/69). @cmaria
 Issue: [#101](https://github.com/cmariano93-netizen/SistemaPedidos/issues/101)
 PR: [#102](https://github.com/cmariano93-netizen/SistemaPedidos/pull/102). @cmariano93-netizen (Modelador de Diagramas de Casos de Uso).
 
+- [feature/espec-escenarios-casos-uso-add-escenario-1] A2 - Especialista en escenarios : agregar escenaios individuales de CU, índice y auditoría de IA.
+Issue: [#104](https://github.com/cmariano93-netizen/SistemaPedidos/issues/104)
+PR: [#105](https://github.com/cmariano93-netizen/SistemaPedidos/pull/105). @cmariano93-netizen (Especialista en Escenarios de Casos de Uso).
+
 
 ## Release Actividad Obligatoria N°1 - 2026-09-23
 
