@@ -54,6 +54,25 @@ UC_Entrega .> UC_Estado : <<include>>
 UC_Cancelar .> UC_Estado : <<include>>
 UC_Priorizar .> UC_Consultar : <<include>>
 
+note right of UC_Modificar
+  Solo permitido mientras el pedido
+  se encuentre en estado recibido.
+  En preparación, listo, entregado
+  y cancelado queda bloqueado.
+end note
+
+note right of UC_Productos
+  La adición o eliminación de
+  productos solo es válida
+  en estado recibido.
+end note
+
+note right of UC_Personalizaciones
+  La modificación de
+  personalizaciones solo es válida
+  en estado recibido.
+end note
+
 note right of UC_Cancelar
   Solo permitido en estado
   recibido o en preparación.
@@ -62,6 +81,13 @@ end note
 note right of UC_Entrega
   El pedido debe estar
   listo para entregar.
+end note
+
+note right of UC_Cobrar
+  Se registra el pago y el pedido
+  conserva su estado actual
+  (recibido, en preparación, listo,
+  entregado o cancelado).
 end note
 
 @enduml
