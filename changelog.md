@@ -2,7 +2,9 @@
 
 ### Registro de cambios, participación de integrantes, roles asignados y enlaces a Pull Requests e Issues de cada entrega.
 ---
-## [Unreleased]
+##  Release Actividad Obligatoria N°1 - 2026-09-23
+
+### Added
 - [Backport/release-actividad-obligatoria-1] Establecer la base en Develop Issue: [#97](https://github.com/cmariano93-netizen/SistemaPedidos/issues/97) PR: [#99](https://github.com/cmariano93-netizen/SistemaPedidos/pull/99). @LMengarelli93 (Documentador y coordinador).
 
 - [feature/diseniador-tarjetas-crc-add-tarjeta-clase-1] A2 - Diseñar Tarjetas CRC: Creación estructura de carpetas.
