@@ -1,0 +1,45 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam actorStyle awesome
+
+actor "Usuario de mostrador" as Mostrador
+actor "Cliente" as Cliente
+actor "Cocina" as Cocina
+
+rectangle "Cancelación de Pedidos" {
+  usecase "Cancelar pedido" as UC_Cancelar
+  usecase "Consultar pedido activo" as UC_Consultar
+  usecase "Verificar estado cancelable\n(recibido o en preparación)" as UC_VerificarEstado
+  usecase "Registrar motivo\nde cancelación" as UC_Motivo
+  usecase "Actualizar estado\na cancelado" as UC_EstadoCancelado
+  usecase "Notificar detención\na cocina" as UC_NotificarCocina
+  usecase "Rechazar cancelación" as UC_Rechazar
+}
+
+Cliente --> UC_Cancelar : solicita anulación
+Mostrador --> UC_Cancelar : ejecuta cancelación
+Cocina <-- UC_NotificarCocina : recibe aviso
+
+UC_Cancelar .> UC_Consultar : <<include>>
+UC_Cancelar .> UC_VerificarEstado : <<include>>
+UC_Cancelar .> UC_Motivo : <<include>>
+UC_Cancelar .> UC_EstadoCancelado : <<include>>
+
+UC_NotificarCocina .> UC_Cancelar : <<extend>>
+UC_Rechazar .> UC_Cancelar : <<extend>>
+
+note right of UC_Cancelar
+  Regla de negocio:
+  Solo cancelable si está 'recibido'
+  o 'en preparación'. Se mantiene
+  el registro para auditoría histórica.
+end note
+
+note bottom of UC_NotificarCocina
+  Punto de extensión: Se activa
+  si el pedido ya se encontraba
+  en preparación al ser cancelado.
+end note
+@enduml

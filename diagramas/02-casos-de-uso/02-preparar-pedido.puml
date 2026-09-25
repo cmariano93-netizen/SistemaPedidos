@@ -1,0 +1,38 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam actorStyle awesome
+
+actor "Cocina" as Cocina
+actor "Usuario de mostrador" as Mostrador
+
+rectangle "Preparación de Pedidos en Cocina" {
+  usecase "Preparar pedido" as UC_Preparar
+  usecase "Consultar cola\nde pedidos recibidos" as UC_Cola
+  usecase "Visualizar detalle\ny personalizaciones" as UC_Detalle
+  usecase "Actualizar estado\na en preparación" as UC_EnPrep
+  usecase "Actualizar estado\na listo" as UC_Listo
+  usecase "Notificar a mostrador" as UC_NotificarMostrador
+  usecase "Marcar pedido\ncomo prioritario" as UC_Priorizar
+  usecase "Reportar falta\nde insumos" as UC_FaltaInsumos
+}
+
+Cocina --> UC_Preparar
+Mostrador --> UC_Priorizar
+
+UC_Preparar .> UC_Cola : <<include>>
+UC_Preparar .> UC_Detalle : <<include>>
+UC_Preparar .> UC_EnPrep : <<include>>
+UC_Preparar .> UC_Listo : <<include>>
+UC_Preparar .> UC_NotificarMostrador : <<include>>
+
+UC_Priorizar .> UC_Cola : <<include>>
+UC_FaltaInsumos .> UC_Preparar : <<extend>>
+
+note right of UC_Preparar
+  Transiciones del ciclo de vida:
+  recibido -> en preparación -> listo.
+  Al marcar como 'listo', se notifica a mostrador.
+end note
+@enduml
