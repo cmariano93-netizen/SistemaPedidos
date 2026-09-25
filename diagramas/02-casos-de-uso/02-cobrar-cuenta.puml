@@ -1,0 +1,41 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam actorStyle awesome
+
+actor "Usuario de mostrador" as Mostrador
+actor "Cliente" as Cliente
+actor "Entidad Financiera /\nTerminal de Pago" as Pasarela
+
+rectangle "Cobro de Cuenta" {
+  usecase "Cobrar cuenta" as UC_Cobrar
+  usecase "Identificar pedido\npor ID / referencia" as UC_Identificar
+  usecase "Obtener total vigente" as UC_Total
+  usecase "Registrar pago" as UC_Pago
+  usecase "Cobrar en efectivo" as UC_Efectivo
+  usecase "Cobrar con medios\nelectrónicos" as UC_Electronico
+  usecase "Emitir comprobante" as UC_Ticket
+  usecase "Registrar rechazo\nde pago" as UC_Rechazo
+}
+
+Cliente --> UC_Cobrar : efectúa abono
+Mostrador --> UC_Cobrar : procesa cobro
+Pasarela -- UC_Electronico
+
+UC_Cobrar .> UC_Identificar : <<include>>
+UC_Cobrar .> UC_Total : <<include>>
+UC_Cobrar .> UC_Pago : <<include>>
+UC_Cobrar .> UC_Ticket : <<include>>
+
+UC_Efectivo --|> UC_Pago
+UC_Electronico --|> UC_Pago
+
+UC_Rechazo .> UC_Cobrar : <<extend>>
+
+note right of UC_Cobrar
+  El cobro no altera el estado de
+  elaboración del pedido (recibido,
+  en preparación, listo, etc.).
+end note
+@enduml

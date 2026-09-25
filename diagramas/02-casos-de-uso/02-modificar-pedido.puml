@@ -1,0 +1,42 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam actorStyle awesome
+
+actor "Usuario de mostrador" as Mostrador
+actor "Cliente" as Cliente
+
+rectangle "Modificación de Pedidos" {
+  usecase "Modificar pedido" as UC_Modificar
+  usecase "Buscar pedido activo" as UC_Buscar
+  usecase "Agregar o quitar\nproductos" as UC_Productos
+  usecase "Modificar\npersonalizaciones" as UC_Personalizaciones
+  usecase "Recalcular total\ndel pedido" as UC_Recalcular
+  usecase "Notificar cambios\na cocina" as UC_NotificarCocina
+  usecase "Rechazar modificación" as UC_RechazarMod
+}
+
+Cliente --> UC_Modificar : solicita cambios
+Mostrador --> UC_Modificar : opera en sistema
+
+UC_Modificar .> UC_Buscar : <<include>>
+UC_Modificar .> UC_Recalcular : <<include>>
+UC_Modificar .> UC_NotificarCocina : <<include>>
+
+UC_Productos .> UC_Modificar : <<extend>>
+UC_Personalizaciones .> UC_Modificar : <<extend>>
+UC_RechazarMod .> UC_Modificar : <<extend>>
+
+note right of UC_Modificar
+  Precondición: Solo permitido si el
+  pedido está en estado 'recibido'.
+  Si ya pasó a preparación, queda bloqueado.
+end note
+
+note bottom of UC_RechazarMod
+  Punto de extensión: Se activa si el pedido
+  cambió de estado durante la edición o ya
+  está en preparación/listo.
+end note
+@enduml
