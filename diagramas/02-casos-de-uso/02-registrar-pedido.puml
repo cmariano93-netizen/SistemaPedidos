@@ -1,0 +1,38 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam actorStyle awesome
+
+actor "Usuario de mostrador" as Mostrador
+actor "Cliente" as Cliente
+
+rectangle "Alta de Pedidos" {
+  usecase "Registrar pedido" as UC_Registrar
+  usecase "Consultar catálogo\nde productos" as UC_Catalogo
+  usecase "Calcular total\ndel pedido" as UC_Total
+  usecase "Ingresar referencia\nde retiro" as UC_Referencia
+  usecase "Enviar pedido\na cocina" as UC_EnviarCocina
+  usecase "Aplicar descuento\no beneficio" as UC_Descuento
+}
+
+Cliente --> UC_Registrar : solicita
+Mostrador --> UC_Registrar : registra en sistema
+
+UC_Registrar .> UC_Catalogo : <<include>>
+UC_Registrar .> UC_Total : <<include>>
+UC_Registrar .> UC_Referencia : <<include>>
+UC_Registrar .> UC_EnviarCocina : <<include>>
+UC_Descuento .> UC_Registrar : <<extend>>
+
+note right of UC_Registrar
+  El pedido se genera con un identificador
+  único en estado 'recibido' y congela los
+  precios históricos de los ítems.
+end note
+
+note bottom of UC_Descuento
+  Extensión opcional si el cliente
+  presenta beneficio o promoción.
+end note
+@enduml
