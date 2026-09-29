@@ -173,3 +173,5 @@
 - [fix/doc-coor-repo-update-changelog.md] Changelog.md restructurado completo. Issue: [#93](https://github.com/cmariano93-netizen/SistemaPedidos/issues/93) PR: [#94](https://github.com/cmariano93-netizen/SistemaPedidos/pull/94). @LMengarelli93 (Documentador y coordinador).
 
 - [fix/doc-coor-repo-update-changelog.md] Changelog.md restructurado completo. Issue: [#95](https://github.com/cmariano93-netizen/SistemaPedidos/issues/95) PR: [#96](https://github.com/cmariano93-netizen/SistemaPedidos/pull/96). @LMengarelli93 (Documentador y coordinador).
+
+- [fix/correcciones-tarjetas-crc-a2] A2 - Corregir hallazgos RC1, RC2 y RC3 de Tarjetas CRC. Issue: [#112](https://github.com/cmariano93-netizen/SistemaPedidos/issues/112) PR: [#113](https://github.com/cmariano93-netizen/SistemaPedidos/pull/113). @neith18 (Diseñadora de Tarjetas CRC).

@@ -41,21 +41,19 @@ Es el mecanismo estructural que permite organizar las clases en jerarquías.
 Una clase derivada (hija) hereda y adquiere de forma automática todos los atributos y comportamientos (métodos) de una clase base (madre o superclase), posibilitando la reutilización del diseño y la extensión de comportamientos especializados sin necesidad de duplicar código.
 
 Aplicación práctica en el Kiosco "Sabor":
-En el kiosco existen productos que requieren manipulación (productos elaborados como un sándwich) y productos comerciales directos (envasados como una gaseosa).
-En lugar de diseñar dos clases independientes duplicando campos, creamos la superclase genérica Producto y hacemos que dos subclases específicas hereden de ella :
 
-ProductoEnvasado hereda `codigo` y `descripcion`, y añade su propio atributo específico: `fechaVencimiento`.
+La herencia permite modelar especializaciones cuando distintas clases comparten características y comportamientos comunes.
 
-ProductoElaborado hereda `codigo` y `descripcion`, y añade `tiempoPreparacion`.
+Por ejemplo, podría evaluarse una jerarquía en la que distintos tipos de productos especialicen a `Producto`. Sin embargo, para el alcance actual del sistema se decidió mantener una única clase `Producto`, ya que el boceto de clases vigente no requiere especializaciones.
+
+Por este motivo, el modelo actual no presenta relaciones de herencia.
 
 4. **Polimorfismo:**
 Es la capacidad que poseen diferentes objetos pertenecientes a una misma jerarquía de clases para responder de manera distinta y personalizada a un mismo mensaje o llamada de método común.
 
-Un ejemplo en SistemaPedidos:
+Un ejemplo de polimorfismo podría darse si el sistema incorporara en el futuro distintos tipos de productos que respondieran de manera diferente a una misma operación.
 
-Si queremos calcular el precio final de un producto envasado (gaseosa) ya lo tenemos configurado.
-
-Si queremos calcular el precio final de un producto elaborado (sándwich), se suman varios factores más, como el precio del ingrediente, precio del empaque, el precio del tiempo de preparación.
+Sin embargo, en el alcance actual de SistemaPedidos se utiliza una única clase `Producto`, por lo que el modelo vigente no presenta una jerarquía de clases sobre la cual aplicar polimorfismo.
 
 
 # Requisitos iniciales del sistema
