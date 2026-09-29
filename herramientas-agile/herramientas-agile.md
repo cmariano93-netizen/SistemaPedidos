@@ -1,2 +1,4 @@
 ##  Herramienta Agile
-*   **[Tarjetas CRC](./herramientas-agile/tarjetas-crc)**
+**[Tarjetas CRC](./tarjetas-crc/README.md)**
+
+
