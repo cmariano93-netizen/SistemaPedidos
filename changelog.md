@@ -174,7 +174,9 @@
 
 - [fix/doc-coor-repo-update-changelog.md] Changelog.md restructurado completo. Issue: [#95](https://github.com/cmariano93-netizen/SistemaPedidos/issues/95) PR: [#96](https://github.com/cmariano93-netizen/SistemaPedidos/pull/96). @LMengarelli93 (Documentador y coordinador).
 
-
 - [fix/correcciones-tarjetas-crc-a2] A2 - Corregir hallazgos RC1, RC2 y RC3 de Tarjetas CRC. Issue: [#112](https://github.com/cmariano93-netizen/SistemaPedidos/issues/112) PR: [#113](https://github.com/cmariano93-netizen/SistemaPedidos/pull/113). @neith18 (Diseñadora de Tarjetas CRC).
 
 - [fix/correcciones-escenarios-casos-uso-A2] A2 - Corregi hallazgo RC8 de Escenarios de casos de uso. Issue: [#114](https://github.com/lucasmengarelli3/SistemaPedidos/issues/114) PR: [#115](https://github.com/lucasmengarelli3/SistemaPedidos/pull/115). @LMengarelli93 (Especialista en escenarios de casos de uso).
+
+- [fix/correcciones-escenarios-casos-uso-A2] A2 - Problemas de fusion de cambios en changelog.md: [#118](https://github.com/lucasmengarelli3/SistemaPedidos/issues/118) PR: [#119](https://github.com/lucasmengarelli3/SistemaPedidos/pull/119). @LMengarelli93 (Especialista en escenarios de casos de uso).
+
