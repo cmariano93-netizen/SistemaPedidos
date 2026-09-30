@@ -180,5 +180,5 @@
 
 - [fix/doc-coord-corregir-enlaces-rotos] A2 - Corregir enlaces rotos (README e índice de diagramas), documentación de IA del Modelador (RC6), encabezado de release (RC15) y entrada del backport (RC16). Issue: [#116](https://github.com/lucasmengarelli3/SistemaPedidos/issues/116) PR: [#120](https://github.com/lucasmengarelli3/SistemaPedidos/pull/120). @santimarM (Documentador y coordinador).
 
-- [fix/doc-coord-rc9-rc11] A2 - Adaptar plantillas de issues y PR a la Actividad Obligatoria N°2 (RC9) y documentar el prompt y las revisiones asistidas por IA en ia/a2/documentador-coordinador.md (RC11). Issue: [#121](https://github.com/lucasmengarelli3/SistemaPedidos/issues/121) PR: [#NNN](https://github.com/lucasmengarelli3/SistemaPedidos/pull/NNN). @santimarM (Documentador y coordinador).
+- [fix/doc-coord-rc9-rc11] A2 - Adaptar plantillas de issues y PR a la Actividad Obligatoria N°2 (RC9) y documentar el prompt y las revisiones asistidas por IA en ia/a2/documentador-coordinador.md (RC11). Issue: [#121](https://github.com/lucasmengarelli3/SistemaPedidos/issues/121) PR: [#122](https://github.com/lucasmengarelli3/SistemaPedidos/pull/122). @santimarM (Documentador y coordinador).
 
