@@ -4,11 +4,9 @@
 
 ---
 
-## Release Actividad Obligatoria N°1 - 2026-09-23
+## Release Actividad Obligatoria N°2 - 2026-09-30
 
 ### Added
-
-- [Backport/release-actividad-obligatoria-1] Establecer la base en Develop Issue: [#97](https://github.com/cmariano93-netizen/SistemaPedidos/issues/97) PR: [#99](https://github.com/cmariano93-netizen/SistemaPedidos/pull/99). @LMengarelli93 (Documentador y coordinador).
 
 - [feature/diseniador-tarjetas-crc-add-tarjeta-clase-1] A2 - Diseñar Tarjetas CRC: Creación estructura de carpetas.
   Issue: [#68](https://github.com/cmariano93-netizen/SistemaPedidos/issues/68)
@@ -179,4 +177,8 @@
 - [fix/correcciones-escenarios-casos-uso-A2] A2 - Corregi hallazgo RC8 de Escenarios de casos de uso. Issue: [#114](https://github.com/lucasmengarelli3/SistemaPedidos/issues/114) PR: [#115](https://github.com/lucasmengarelli3/SistemaPedidos/pull/115). @LMengarelli93 (Especialista en escenarios de casos de uso).
 
 - [fix/correcciones-escenarios-casos-uso-A2] A2 - Problemas de fusion de cambios en changelog.md: [#118](https://github.com/lucasmengarelli3/SistemaPedidos/issues/118) PR: [#119](https://github.com/lucasmengarelli3/SistemaPedidos/pull/119). @LMengarelli93 (Especialista en escenarios de casos de uso).
+
+- [fix/doc-coord-corregir-enlaces-rotos] A2 - Corregir enlaces rotos (README e índice de diagramas), documentación de IA del Modelador (RC6), encabezado de release (RC15) y entrada del backport (RC16). Issue: [#116](https://github.com/lucasmengarelli3/SistemaPedidos/issues/116) PR: [#120](https://github.com/lucasmengarelli3/SistemaPedidos/pull/120). @santimarM (Documentador y coordinador).
+
+- [fix/doc-coord-rc9-rc11] A2 - Adaptar plantillas de issues y PR a la Actividad Obligatoria N°2 (RC9) y documentar el prompt y las revisiones asistidas por IA en ia/a2/documentador-coordinador.md (RC11). Issue: [#121](https://github.com/lucasmengarelli3/SistemaPedidos/issues/121) PR: [#NNN](https://github.com/lucasmengarelli3/SistemaPedidos/pull/NNN). @santimarM (Documentador y coordinador).
 
