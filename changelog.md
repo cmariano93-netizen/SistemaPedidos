@@ -184,3 +184,5 @@
 
 - [fix/doc-coord-rc10] A2 - Documentar en ia/a2/documentador-coordinador.md las cuatro revisiones asistidas por IA publicadas por el Documentador y Coordinador en las PRs #69, #102, #105 y #113 (RC10, RC4). Issue: [#124](https://github.com/lucasmengarelli3/SistemaPedidos/issues/124) PR: [#125](https://github.com/lucasmengarelli3/SistemaPedidos/pull/125). @santimarM (Documentador y coordinador).
 
+- [fix/doc-coord-rc12] A2 - Reconciliar los roles declarados con los aportes reales de la AO2 (RC12): se agregaron integrantes a README.md y se documentó la participación de cada uno. Issue: [#126](https://github.com/lucasmengarelli3/SistemaPedidos/issues/126) PR: [#127](https://github.com/lucasmengarelli3/SistemaPedidos/pull/127). @santimarM (Documentador y coordinador).
+
