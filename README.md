@@ -19,4 +19,4 @@ Este proyecto tiene como objetivo el diseño orientado a objetos de una aplicaci
 
 - [Anexo](./anexos/introduccion.md)
 - [Diagramas UML](./diagramas/diagramasUML.md)
-- [Herramientas Agile](./herramientas-agile/herramientas-agile.md)
+- [Herramientas Agile](./herramientas-agile/herramientas_agile.md)
