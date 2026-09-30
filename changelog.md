@@ -178,5 +178,5 @@
 
 - [fix/correcciones-escenarios-casos-uso-A2] A2 - Problemas de fusion de cambios en changelog.md: [#118](https://github.com/lucasmengarelli3/SistemaPedidos/issues/118) PR: [#119](https://github.com/lucasmengarelli3/SistemaPedidos/pull/119). @LMengarelli93 (Especialista en escenarios de casos de uso).
 
-- [fix/doc-coord-corregir-enlaces-rotos] A2 - Corregir enlaces rotos (README e índice de diagramas), documentación de IA del Modelador (RC6), encabezado de release (RC15) y entrada del backport (RC16). Issue: [#116](https://github.com/lucasmengarelli3/SistemaPedidos/issues/116). @santimarM (Documentador y coordinador).
+- [fix/doc-coord-corregir-enlaces-rotos] A2 - Corregir enlaces rotos (README e índice de diagramas), documentación de IA del Modelador (RC6), encabezado de release (RC15) y entrada del backport (RC16). Issue: [#116](https://github.com/lucasmengarelli3/SistemaPedidos/issues/116) PR: [#120](https://github.com/lucasmengarelli3/SistemaPedidos/pull/120). @santimarM (Documentador y coordinador).
 
