@@ -7,7 +7,7 @@ Actuar como analista de requerimientos experto en modelado de casos de uso y eli
 ## Archivos referenciados
 
 - [Introducción, requisitos y casos de uso](../../anexos/introduccion.md)
-- [Tarjetas CRC](../../herramientas-agile/tarjetas-crc/README.md)
+- [Tarjetas CRC](../../herramientas-agile/tarjetas-crc/tarjetas-crc.md)
 - [Boceto inicial de clases](../../diagramas/01-diagrama-clases/01-boceto-inicial-corregido.excalidraw)
 - [Índice de escenarios](../../diagramas/03-escenarios-casos-de-uso/escenarios_de_casos_de_uso.md)
 

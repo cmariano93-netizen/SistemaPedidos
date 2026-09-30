@@ -84,7 +84,20 @@ No respondas en el chat salvo para el resumen final.
 - [Contexto funcional, requisitos y casos de uso](../../anexos/introduccion.md): criterio de referencia para evaluar la coherencia de cada entregable.
 - Los archivos modificados en cada PR revisada (ver tabla siguiente).
 
-## Revisiones realizadas
+## Revisiones realizadas por el Documentador y Coordinador
+
+Revisiones publicadas por @santimarM (Documentador y Coordinador) con el prompt anterior. Cada hallazgo se publicó como comentario en la línea correspondiente de la PR, con la decisión del revisor humano completada. Como las PRs ya estaban mergeadas, GitHub solo permitió publicar las revisiones como *Comment*; la decisión sugerida por la IA figura en el resumen de cada revisión.
+
+| PR | Rol revisado | Archivos revisados | Hallazgos (severidad) | Decisión sugerida por IA | Decisión del revisor humano | Revisión |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| [#69](https://github.com/lucasmengarelli3/SistemaPedidos/pull/69) | Diseñador de Tarjetas CRC | Tarjetas CRC, índices y `ia/a2/diseñador-tarjetas-crc.md` | 8 (2 alta, 4 media, 2 baja) | REQUEST CHANGES | 8 aceptados: 3 corregidos en PR #113 y 5 pendientes | [Ver revisión](https://github.com/lucasmengarelli3/SistemaPedidos/pull/69#pullrequestreview-5372196167) |
+| [#102](https://github.com/lucasmengarelli3/SistemaPedidos/pull/102) | Modelador de Diagramas de Casos de Uso | `02-diagrama-casos-uso.puml`, índices y `ia/a2/modelador-diagramas-casos-uso.md` | 6 (5 media, 1 baja) | REQUEST CHANGES | 6 aceptados: 1 corregido en PR #120, 2 corregidos parcialmente en PR #109 y 3 pendientes | [Ver revisión](https://github.com/lucasmengarelli3/SistemaPedidos/pull/102#pullrequestreview-5372369414) |
+| [#105](https://github.com/lucasmengarelli3/SistemaPedidos/pull/105) | Especialista en Escenarios de Casos de Uso | 12 escenarios, `anexos/introduccion.md` y `ia/a2/especialista-escenarios.md` | 8 (1 alta, 4 media, 3 baja) | REQUEST CHANGES | 8 aceptados y pendientes | [Ver revisión](https://github.com/lucasmengarelli3/SistemaPedidos/pull/105#pullrequestreview-5372422681) |
+| [#113](https://github.com/lucasmengarelli3/SistemaPedidos/pull/113) | Diseñador de Tarjetas CRC (corrección de RC1, RC2 y RC3) | Tarjeta `Pedido`, índices de herramientas ágiles y `anexos/introduccion.md` | 5 (3 media, 2 baja) | REQUEST CHANGES | 5 aceptados: 1 corregido en PR #123 y 4 pendientes | [Ver revisión](https://github.com/lucasmengarelli3/SistemaPedidos/pull/113#pullrequestreview-5372492421) |
+
+## Revisiones previas publicadas por el autor de las PRs
+
+Antes de las revisiones anteriores, el mismo prompt se utilizó en revisiones publicadas desde la cuenta de @cmariano93-netizen, que también es autor de las PRs revisadas. Se conservan como antecedente.
 
 | PR | Rol revisado | Archivos revisados | Hallazgos (severidad) | Decisión sugerida por IA | Revisión |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -93,11 +106,12 @@ No respondas en el chat salvo para el resumen final.
 | [#102](https://github.com/lucasmengarelli3/SistemaPedidos/pull/102) | Modelador de Diagramas de Casos de Uso (segunda revisión) | `02-diagrama-casos-uso.puml`, `diagramas_de_casos_de_uso.md` | 3 (2 alta, 1 media) | REQUEST CHANGES | [Ver revisión](https://github.com/lucasmengarelli3/SistemaPedidos/pull/102#pullrequestreview-5308291151) |
 | [#105](https://github.com/lucasmengarelli3/SistemaPedidos/pull/105) | Especialista en Escenarios de Casos de Uso | Escenarios de cobrar cuenta y entregar pedido | 2 (1 alta, 1 media) | REQUEST CHANGES | [Ver revisión](https://github.com/lucasmengarelli3/SistemaPedidos/pull/105#pullrequestreview-5308456264) |
 
-En las PRs #102 y #105, el Coordinador solicitó cambios en base a los hallazgos y aprobó la PR una vez aplicadas las correcciones.
+En las PRs #102 y #105, el Coordinador solicitó cambios en base a esos hallazgos y aprobó la PR una vez aplicadas las correcciones.
 
 ## Revisión crítica
 
-- El prompt obliga a usar `anexos/introduccion.md` como criterio de coherencia. Esto permitió detectar inconsistencias entre los entregables y los requisitos, que fueron el tipo de hallazgo predominante.
-- La sección "Decisión del revisor humano" quedó sin completar en las revisiones publicadas. Debe completarse para dejar registrada la aceptación o el rechazo de cada hallazgo.
-- Las revisiones fueron publicadas desde la cuenta de @cmariano93-netizen, que también es autor de las PRs revisadas. Quedan pendientes revisiones publicadas por el Documentador y Coordinador para completar las cuatro revisiones requeridas (RC4 y RC10 de la revisión de la PR #111).
-- Los hallazgos de la PR #102 referencian `02-diagrama-casos-uso.puml`, que luego se reemplazó por un diagrama por caso de uso.
+- El prompt obliga a usar `anexos/introduccion.md` como criterio de coherencia. Esto permitió detectar inconsistencias entre los entregables y los requisitos, que fueron el tipo de hallazgo predominante en las cuatro revisiones.
+- Cada hallazgo generado por la IA se verificó contra los archivos de la PR y el estado actual del repositorio antes de publicarlo. En la decisión del revisor humano se indicó si el hallazgo ya estaba corregido (y en qué PR) o si quedaba pendiente.
+- La revisión de la PR #69 cubre también la revisión del Coordinador que faltaba sobre esa PR (RC4).
+- Las revisiones se realizaron después del merge de las PRs, por lo que los hallazgos pendientes deben resolverse en ramas `fix/` de cada rol.
+- Las revisiones previas referencian `02-diagrama-casos-uso.puml`, que luego se reemplazó por un diagrama por caso de uso.
