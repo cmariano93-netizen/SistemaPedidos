@@ -2,10 +2,11 @@
 <!-- Describe brevemente qué cambios realiza esta PR -->
 
 ## Tipo de cambio
-- [ ] Análisis de requerimientos
-- [ ] Modelado de casos de uso
-- [ ] Diseño de clases
-- [ ] Documentación
+- [ ] Tarjetas CRC
+- [ ] Diagramas de casos de uso
+- [ ] Escenarios de casos de uso
+- [ ] Documentación y coordinación
+- [ ] Corrección de hallazgos (`fix/`)
 - [ ] Otro (especificar)
 
 ## Relacionado con Issue
