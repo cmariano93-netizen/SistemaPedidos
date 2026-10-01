@@ -1,8 +1,66 @@
 # [Changelog](https://github.com/cmariano93-netizen/SistemaPedidos/blob/1bb3bb905fc41704a8568babb292bb2c5f136932/changelog.md#changelog)
 
 ### Registro de cambios, participación de integrantes, roles asignados y enlaces a Pull Requests e Issues de cada entrega.
+
 ---
-## [Unreleased]
+
+## Release Actividad Obligatoria N°2 - 2026-09-30
+
+### Added
+
+- [feature/diseniador-tarjetas-crc-add-tarjeta-clase-1] A2 - Diseñar Tarjetas CRC: Creación estructura de carpetas.
+  Issue: [#68](https://github.com/cmariano93-netizen/SistemaPedidos/issues/68)
+  PR: [#69](https://github.com/cmariano93-netizen/SistemaPedidos/pull/69). @cmariano93-netizen (Diseñador de Tarjetas CRC).
+
+- [feature/modelador-diag-casos-uso-update-use-case-1] A2 - Modelar diagramas de casos de uso - Incorporación de diagramas de Casos de Uso e índices.
+  Issue: [#101](https://github.com/cmariano93-netizen/SistemaPedidos/issues/101)
+  PR: [#102](https://github.com/cmariano93-netizen/SistemaPedidos/pull/102). @cmariano93-netizen (Modelador de Diagramas de Casos de Uso).
+
+  - [feature/modelador-diag-casos-uso-update-use-case-1] actualizados archivos .puml y .png en carpeta diagramas/02-casos-de-uso/.
+  Issue: [#102](https://github.com/cmariano93-netizen/SistemaPedidos/pull/102)
+  PR: [#109](https://github.com/cmariano93-netizen/SistemaPedidos/pull/109). @cmariano93-netizen (Modelador de Diagramas de Casos de Uso).
+
+- [feature/espec-escenarios-casos-uso-add-escenario-1] A2 - Especialista en escenarios : agregar escenaios individuales de CU, índice y auditoría de IA.
+  Issue: [#104](https://github.com/cmariano93-netizen/SistemaPedidos/issues/104)
+  PR: [#105](https://github.com/cmariano93-netizen/SistemaPedidos/pull/105). @cmariano93-netizen (Especialista en Escenarios de Casos de Uso).
+
+- [feature/doc-coord-repo-update-readme-md] Modifico estructura de carpetas y archivos del proyecto.-
+  Issue: [#108](https://github.com/cmariano93-netizen/SistemaPedidos/issues/108)
+  PR: [#107](https://github.com/cmariano93-netizen/SistemaPedidos/pull/107). @cmariano93-netizen (Documentador y Coordinador de Repositorio).
+
+### Fixed
+
+- [fix/correcciones-tarjetas-crc-a2] A2 - Diseñar Tarjetas CRC: Corregir hallazgos RC1, RC2 y RC3. Issue: [#112](https://github.com/lucasmengarelli3/SistemaPedidos/issues/112) PR: [#113](https://github.com/lucasmengarelli3/SistemaPedidos/pull/113). @neith18 (Diseñadora de Tarjetas CRC).
+
+- [fix/correcciones-escenarios-casos-uso-A2] A2 - Especialista en escenarios casos de uso: Corregir hallazgos RC8. Issue: [#114](https://github.com/lucasmengarelli3/SistemaPedidos/issues/114) PR: [#115](https://github.com/lucasmengarelli3/SistemaPedidos/pull/115). @lucasmengarelli3 (Especialista en escenarios de casos de uso).
+
+- [fix/correcciones-escenarios-casos-uso-A2] solucionar problema de HEAD. Issue: [#118](https://github.com/lucasmengarelli3/SistemaPedidos/issues/118) PR: [#119](https://github.com/lucasmengarelli3/SistemaPedidos/pull/119). @lucasmengarelli3 (Especialista en escenarios de casos de uso).
+
+- [fix/doc-coord-corregir-enlaces-rotos] A2 - Documentador: corregir enlaces rotos y hallazgos RC6, RC15 y RC16. Issue: [#116](https://github.com/lucasmengarelli3/SistemaPedidos/issues/116) PR: [#120](https://github.com/lucasmengarelli3/SistemaPedidos/pull/120) (cerrada sin merge por apuntar a develop; sus commits se integraron a la release mediante la PR [#122](https://github.com/lucasmengarelli3/SistemaPedidos/pull/122)). @santimarM (Documentador y coordinador).
+
+- [fix/doc-coord-rc9-rc11] A2 - Documentador: corregir hallazgos RC9 y RC11. Issue: [#121](https://github.com/lucasmengarelli3/SistemaPedidos/issues/121) PR: [#122](https://github.com/lucasmengarelli3/SistemaPedidos/pull/122). @santimarM (Documentador y coordinador).
+
+- [fix/doc-coord-rc9-rc11] A2 - Documentador: corregir enlace a tarjetas CRC y completar changelog. Issue: [#121](https://github.com/lucasmengarelli3/SistemaPedidos/issues/121) PR: [#123](https://github.com/lucasmengarelli3/SistemaPedidos/pull/123). @santimarM (Documentador y coordinador).
+
+- [fix/doc-coord-rc10] A2 - Documentador: documentar revisiones asistidas por IA (RC10 y RC4). Issue: [#124](https://github.com/lucasmengarelli3/SistemaPedidos/issues/124) PR: [#125](https://github.com/lucasmengarelli3/SistemaPedidos/pull/125). @santimarM (Documentador y coordinador).
+
+- [fix/doc-coord-rc12] A2 - Documentador: reconciliar roles declarados con los aportes reales (RC12). Issue: [#126](https://github.com/lucasmengarelli3/SistemaPedidos/issues/126) PR: [#127](https://github.com/lucasmengarelli3/SistemaPedidos/pull/127). @santimarM (Documentador y coordinador).
+
+- [release/actividad-obligatoria-2] Update README.md (desvío de GitFlow; sin PR). Commit: [b40b6b1](https://github.com/lucasmengarelli3/SistemaPedidos/commit/b40b6b19537ed259697690eb7939454b31bef999) - @santimarM (Documentador y coordinador).
+
+- [release/actividad-obligatoria-2] Update GitHub username for Agustin Feijo (desvío de GitFlow; sin PR). Commit: [2f7f29b](https://github.com/lucasmengarelli3/SistemaPedidos/commit/2f7f29b5071a301c55afee3f21fc3318d0f1fd56) - @santimarM (Documentador y coordinador).
+
+- [release/actividad-obligatoria-2] Update GitHub username for Agustin Feijo (desvío de GitFlow; sin PR). Commit: [e71e711](https://github.com/lucasmengarelli3/SistemaPedidos/commit/e71e71185b250d338ef4106813970796145a7c14) - @santimarM (Documentador y coordinador).
+
+- [fix/doc-coord-changelog-ao2] A2 - Documentador: actualizar integrantes en README.md y reubicar correcciones de la AO2 en changelog.md. Issue: [#128](https://github.com/lucasmengarelli3/SistemaPedidos/issues/128) PR: [#129](https://github.com/lucasmengarelli3/SistemaPedidos/pull/129). @santimarM (Documentador y coordinador).
+
+- [fix-correcciones-diagramas-casos-uso-A2] A2 - Modelador de diagramas de Casos de Uso: Corregir RC5, RC6, RC13, RC14. Issue: [#130](https://github.com/lucasmengarelli3/SistemaPedidos/issues/130) PR: [#131](https://github.com/lucasmengarelli3/SistemaPedidos/pull/131). @lucasmengarelli3 (Modelador de diagramas de casos de uso).
+
+- [fix/doc-coord-rc17-rc18] A2 - Documentador: corregir hallazgos RC17 y RC18 de changelog.md. Issue: [#132](https://github.com/lucasmengarelli3/SistemaPedidos/issues/132) PR: [#133](https://github.com/lucasmengarelli3/SistemaPedidos/pull/133). @santimarM (Documentador y coordinador).
+
+- [fix/modelador-diag-casos-uso-rc5-rc13-rc14] A2 - Modelador: alinear reglas de estado en diagramas de casos de uso (RC5). Issue: [#134](https://github.com/lucasmengarelli3/SistemaPedidos/issues/134) PR: [#135](https://github.com/lucasmengarelli3/SistemaPedidos/pull/135). @santimarM (Documentador y coordinador; asume por contingencia la corrección del Modelador de diagramas de casos de uso).
+
+- [fix/doc-coord-rc20-rc26] A2 - Documentador: corregir hallazgos RC20 a RC26 de índices y README.md. Issue: [#136](https://github.com/lucasmengarelli3/SistemaPedidos/issues/136) PR: [#137](https://github.com/lucasmengarelli3/SistemaPedidos/pull/137). @santimarM (Documentador y coordinador).
 
 ## Release Actividad Obligatoria N°1 - 2026-09-23
 
@@ -31,69 +89,70 @@
 - [cmariano93-netizen-patch-1] Refactorizar la sección de requisitos iniciales y casos de uso. Issue(s): [#54](https://github.com/cmariano93-netizen/SistemaPedidos/issues/54) PR: [#55](https://github.com/cmariano93-netizen/SistemaPedidos/pull/55) - @cmariano93-netizen (Documentador y Coordinador)
 
 - [feature/doc-coord-repo-update-readme-md] Feature/doc coord repo update readme md.
-Issue(s): [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6)
-PR[#5](https://github.com/cmariano93-netizen/SistemaPedidos/pull/5) - @cmariano93-netizen (Documentador y Coordinador)
+  Issue(s): [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6)
+  PR[#5](https://github.com/cmariano93-netizen/SistemaPedidos/pull/5) - @cmariano93-netizen (Documentador y Coordinador)
 
 - [feature/doc-coord-repo-update-readme-md] Feature/doc coord repo update readme md.
-Issue(s): [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6)
-PR:[#9](https://github.com/cmariano93-netizen/SistemaPedidos/pull/9) - @cmariano93-netizen (Documentador y Coordinador)
+  Issue(s): [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6)
+  PR:[#9](https://github.com/cmariano93-netizen/SistemaPedidos/pull/9) - @cmariano93-netizen (Documentador y Coordinador)
 
 - [cmariano93-netizen-patch-1] Revise changelog format and add version 1.0.0 details
-Issue(s): [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6)
-PR[#10](https://github.com/cmariano93-netizen/SistemaPedidos/pull/10) - @cmariano93-netizen (Documentador y Coordinador)
+  Issue(s): [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6)
+  PR[#10](https://github.com/cmariano93-netizen/SistemaPedidos/pull/10) - @cmariano93-netizen (Documentador y Coordinador)
 
 - [feature/doc-coord-repo-update-readme-md] Feature/doc coord repo update readme md
-Issue(s): [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6)
-PR[#14](https://github.com/cmariano93-netizen/SistemaPedidos/pull/14) - @cmariano93-netizen (Documentador y Coordinador)
+  Issue(s): [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6)
+  PR[#14](https://github.com/cmariano93-netizen/SistemaPedidos/pull/14) - @cmariano93-netizen (Documentador y Coordinador)
 
 - [feature/doc-coord-repo-update-readme-md] Feature/doc coord repo update readme md.
-Issue(s): [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6)
-PR: [#16](https://github.com/cmariano93-netizen/SistemaPedidos/pull/16/changes) - @cmariano93-netizen (Documentador y Coordinador)
+  Issue(s): [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6)
+  PR: [#16](https://github.com/cmariano93-netizen/SistemaPedidos/pull/16/changes) - @cmariano93-netizen (Documentador y Coordinador)
 
 - [cmariano93-netizen-patch-2] Update changelog with additional contributions.
-Issue(s): [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6)
-[#19](https://github.com/cmariano93-netizen/SistemaPedidos/pull/19/changes) - @cmariano93-netizen (Documentador y Coordinador)
+  Issue(s): [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6)
+  [#19](https://github.com/cmariano93-netizen/SistemaPedidos/pull/19/changes) - @cmariano93-netizen (Documentador y Coordinador)
 
 - [cmariano93-netizen-patch-1] Add pull request template for student activities.
-Issue(s): [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6)
-PR[#20](https://github.com/cmariano93-netizen/SistemaPedidos/pull/20) - @cmariano93-netizen (Documentador y Coordinador)
+  Issue(s): [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6)
+  PR[#20](https://github.com/cmariano93-netizen/SistemaPedidos/pull/20) - @cmariano93-netizen (Documentador y Coordinador)
 
 - [cmariano93-netizen-patch-2] Update team member enrollment numbers in README.
-Issue(s): [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6)
-PR[#25](https://github.com/cmariano93-netizen/SistemaPedidos/pull/25) - @cmariano93-netizen (Documentador y Coordinador)
+  Issue(s): [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6)
+  PR[#25](https://github.com/cmariano93-netizen/SistemaPedidos/pull/25) - @cmariano93-netizen (Documentador y Coordinador)
 
 - [feature/doc-coord-repo-update-readme-md] Feature/doc coord repo update readme md.
-Issue(s): [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6)
-PR: [#28](https://github.com/cmariano93-netizen/SistemaPedidos/pull/28) - @cmariano93-netizen (Documentador y Coordinador)
+  Issue(s): [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6)
+  PR: [#28](https://github.com/cmariano93-netizen/SistemaPedidos/pull/28) - @cmariano93-netizen (Documentador y Coordinador)
 
 - [cmariano93-netizen-patch-1] Inicializo README.
-Issue(s): [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6)
-PR[#33](https://github.com/cmariano93-netizen/SistemaPedidos/pull/33) - @cmariano93-netizen (Documentador y Coordinador)
+  Issue(s): [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6)
+  PR[#33](https://github.com/cmariano93-netizen/SistemaPedidos/pull/33) - @cmariano93-netizen (Documentador y Coordinador)
 
 - [cmariano93-netizen-patch-2] Update changelog with new sections and examples.
-Issue(s): [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6)
-PR[#34](https://github.com/cmariano93-netizen/SistemaPedidos/pull/34) - @cmariano93-netizen (Documentador y Coordinador)
+  Issue(s): [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6)
+  PR[#34](https://github.com/cmariano93-netizen/SistemaPedidos/pull/34) - @cmariano93-netizen (Documentador y Coordinador)
 
 - [feature/doc-coord-repo-update-readme-md] Feature/doc coord repo update readme md.
-Issue(s): [#37](https://github.com/cmariano93-netizen/SistemaPedidos/issues/37)
-PR: [#38](https://github.com/cmariano93-netizen/SistemaPedidos/pull/38) - @cmariano93-netizen (Documentador y Coordinador)
+  Issue(s): [#37](https://github.com/cmariano93-netizen/SistemaPedidos/issues/37)
+  PR: [#38](https://github.com/cmariano93-netizen/SistemaPedidos/pull/38) - @cmariano93-netizen (Documentador y Coordinador)
 
 - [feature/modelador-casos-uso-update-use-case-1] Changelog.md modificado.
-Issue(s): [#50](https://github.com/cmariano93-netizen/SistemaPedidos/issues/50) PR: [#51](https://github.com/cmariano93-netizen/SistemaPedidos/pull/51) - @LMengarelli93 (Modelador de Casos de Uso)
+  Issue(s): [#50](https://github.com/cmariano93-netizen/SistemaPedidos/issues/50) PR: [#51](https://github.com/cmariano93-netizen/SistemaPedidos/pull/51) - @LMengarelli93 (Modelador de Casos de Uso)
 
 - [cmariano93-netizen-patch-1] Delete introduccion.md.
-Issue(s): [#53](https://github.com/cmariano93-netizen/SistemaPedidos/issues/53)
-PR[#52](https://github.com/cmariano93-netizen/SistemaPedidos/pull/52) - @cmariano93-netizen (Documentador y Coordinador)
+  Issue(s): [#53](https://github.com/cmariano93-netizen/SistemaPedidos/issues/53)
+  PR[#52](https://github.com/cmariano93-netizen/SistemaPedidos/pull/52) - @cmariano93-netizen (Documentador y Coordinador)
 
 - [feature/doc-coord-repo-update-readme-md] A1 - Registrar participación del Coordinador en changelog.md.
-Issue(s): [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6)
-PR: [#57](https://github.com/cmariano93-netizen/SistemaPedidos/pull/57) - @cmariano93-netizen (Documentador y Coordinador)
+  Issue(s): [#6](https://github.com/cmariano93-netizen/SistemaPedidos/issues/6)
+  PR: [#57](https://github.com/cmariano93-netizen/SistemaPedidos/pull/57) - @cmariano93-netizen (Documentador y Coordinador)
 
 - [chore/add-issue-template-to-master] Habilitar plantilla de issues en master.
-Issue(s): N/A
-PR[#59](https://github.com/cmariano93-netizen/SistemaPedidos/pull/59) - @fernandodanielm (Documentador y Coordinador)
+  Issue(s): N/A
+  PR[#59](https://github.com/cmariano93-netizen/SistemaPedidos/pull/59) - @fernandodanielm (Documentador y Coordinador)
 
 ### Fixed
+
 - [release/actividad-obligatoria-1] Reemplazo de colaboradores en README.md (desvío de GitFlow; sin PR). Commit: [9ece5ec](https://github.com/cmariano93-netizen/SistemaPedidos/commit/9ece5ecfcc514884b6d5788f0010693594bf6823) - @fernandodanielm (Documentador y coordinador).
 
 - [release/actividad-obligatoria-1] Agregar plantillas de pull request y actualizar changelog, anexos e introduccion (desvío de GitFlow; sin PR). Commit: [a3851d5](https://github.com/cmariano93-netizen/SistemaPedidos/commit/a3851d5dfcf9949db700569c5d4029befed88fd2) - @fernandodanielm (Documentador y coordinador).
@@ -113,25 +172,25 @@ PR[#59](https://github.com/cmariano93-netizen/SistemaPedidos/pull/59) - @fernand
 - [Auditoría del Coordinador] Consolidación de cuatro issues duplicados (#3, #8, #21 y #50) en las issues oficiales (#48, #41, #44 y #6). Issue(s): [#3](https://github.com/cmariano93-netizen/SistemaPedidos/issues/3), [#8](https://github.com/cmariano93-netizen/SistemaPedidos/issues/8), [#21](https://github.com/cmariano93-netizen/SistemaPedidos/issues/21), [#50](https://github.com/cmariano93-netizen/SistemaPedidos/issues/50) PR: [#62](https://github.com/cmariano93-netizen/SistemaPedidos/pull/62) - @fernandodanielm (Coordinador)
 
 - [fix/analista-requerimientos-corregir-rnf] Agrego fixes al changelog.md
-Issue(s): [#72](https://github.com/cmariano93-netizen/SistemaPedidos/issues/72)
-PR: [#74](https://github.com/cmariano93-netizen/SistemaPedidos/pull/74) - @LMengarelli93 (Especialista en escenarios casos de uso)
+  Issue(s): [#72](https://github.com/cmariano93-netizen/SistemaPedidos/issues/72)
+  PR: [#74](https://github.com/cmariano93-netizen/SistemaPedidos/pull/74) - @LMengarelli93 (Especialista en escenarios casos de uso)
 
 - [fix/diseniador-clases-corregir-boceto-excalidraw] Actualizo changelog.
-Issue(s): [#90](https://github.com/cmariano93-netizen/SistemaPedidos/issues/90)
-PR: [#78](https://github.com/cmariano93-netizen/SistemaPedidos/pull/78) - @cmariano93-netizen (Diseñador de Tarjetas CRC)
+  Issue(s): [#90](https://github.com/cmariano93-netizen/SistemaPedidos/issues/90)
+  PR: [#78](https://github.com/cmariano93-netizen/SistemaPedidos/pull/78) - @cmariano93-netizen (Diseñador de Tarjetas CRC)
 
 - [fix/diseniador-clases-corregir-boceto-excalidraw] Actualizo changelog.md
-Issue(s): [#90](https://github.com/cmariano93-netizen/SistemaPedidos/issues/90)
-PR: [#81](https://github.com/cmariano93-netizen/SistemaPedidos/pull/81) - @cmariano93-netizen  (Diseñador de Tarjetas CRC.)
+  Issue(s): [#90](https://github.com/cmariano93-netizen/SistemaPedidos/issues/90)
+  PR: [#81](https://github.com/cmariano93-netizen/SistemaPedidos/pull/81) - @cmariano93-netizen (Diseñador de Tarjetas CRC.)
 
 - [fix/analista-requerimientos-corregir-rnf] - Corregir RNF y casos de uso en introduccion.md. Issue(s): [#72](https://github.com/cmariano93-netizen/SistemaPedidos/issues/72) PR: [#73](https://github.com/cmariano93-netizen/SistemaPedidos/pull/73) - @LMengarelli93 (Especialista en escenarios de casos de uso)
 
 - [fix/diseniador-clases-corregir-boceto-excalidraw] - Corrección Boceto inicial de clases.
-Issue: [#75](https://github.com/cmariano93-netizen/SistemaPedidos/issues/75) y [#90](https://github.com/cmariano93-netizen/SistemaPedidos/issues/90)
- PR: [#76](https://github.com/cmariano93-netizen/SistemaPedidos/pull/76) - @cmariano93-netizen (Diseñador de tarjetas CRC.)
+  Issue: [#75](https://github.com/cmariano93-netizen/SistemaPedidos/issues/75) y [#90](https://github.com/cmariano93-netizen/SistemaPedidos/issues/90)
+  PR: [#76](https://github.com/cmariano93-netizen/SistemaPedidos/pull/76) - @cmariano93-netizen (Diseñador de tarjetas CRC.)
 
 - [fix/diseniador-clases-corregir-boceto-excalidraw] - Actualizo diagramas de clases y elimino bocetos obsoletos.
-Issue: [#79](https://github.com/cmariano93-netizen/SistemaPedidos/issues/79) y [#90](https://github.com/cmariano93-netizen/SistemaPedidos/issues/90) PR: [#80](https://github.com/cmariano93-netizen/SistemaPedidos/pull/80) - @cmariano93-netizen (Diseñador de tarjetas CRC.)
+  Issue: [#79](https://github.com/cmariano93-netizen/SistemaPedidos/issues/79) y [#90](https://github.com/cmariano93-netizen/SistemaPedidos/issues/90) PR: [#80](https://github.com/cmariano93-netizen/SistemaPedidos/pull/80) - @cmariano93-netizen (Diseñador de tarjetas CRC.)
 
 - [fix/doc-coor-repo-update-changelog.md] - Fixed changelog.md. Issue: [#83](https://github.com/cmariano93-netizen/SistemaPedidos/issues/83) PR: [#82](https://github.com/cmariano93-netizen/SistemaPedidos/pull/82). @LMengarelli93 (Documentador y coordinador)
 
