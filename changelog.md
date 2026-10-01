@@ -44,7 +44,7 @@
 
 - [fix/doc-coord-rc12] A2 - Reconciliar los roles declarados con los aportes reales de la AO2 (RC12): se agregaron integrantes a README.md y se documentó la participación de cada uno. Issue: [#126](https://github.com/lucasmengarelli3/SistemaPedidos/issues/126) PR: [#127](https://github.com/lucasmengarelli3/SistemaPedidos/pull/127). @santimarM (Documentador y coordinador).
 
-- [fix/doc-coord-changelog-ao2] A2 - Actualizar la tabla de integrantes de README.md (matrícula de Isis Neith Escalada e incorporación de Agustin Ariel Feijo; cambios subidos directamente a release/actividad-obligatoria-2 en los commits b40b6b1, 2f7f29b y e71e711, desvío de GitFlow) y reubicar las correcciones de la AO2 (PRs #113 a #127) en el bloque de la release AO2 de changelog.md. Issue: [#128](https://github.com/lucasmengarelli3/SistemaPedidos/issues/128) PR: [#NNN](https://github.com/lucasmengarelli3/SistemaPedidos/pull/NNN). @santimarM (Documentador y coordinador).
+- [fix/doc-coord-changelog-ao2] A2 - Actualizar la tabla de integrantes de README.md (matrícula de Isis Neith Escalada e incorporación de Agustin Ariel Feijo; cambios subidos directamente a release/actividad-obligatoria-2 en los commits b40b6b1, 2f7f29b y e71e711, desvío de GitFlow) y reubicar las correcciones de la AO2 (PRs #113 a #127) en el bloque de la release AO2 de changelog.md. Issue: [#128](https://github.com/lucasmengarelli3/SistemaPedidos/issues/128) PR: [#129](https://github.com/lucasmengarelli3/SistemaPedidos/pull/129). @santimarM (Documentador y coordinador).
 
 ## Release Actividad Obligatoria N°1 - 2026-09-23
 
