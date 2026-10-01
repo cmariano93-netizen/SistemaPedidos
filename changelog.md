@@ -56,7 +56,7 @@
 
 - [fix-correcciones-diagramas-casos-uso-A2] A2 - Modelador de diagramas de Casos de Uso: Corregir RC5, RC6, RC13, RC14. Issue: [#130](https://github.com/lucasmengarelli3/SistemaPedidos/issues/130) PR: [#131](https://github.com/lucasmengarelli3/SistemaPedidos/pull/131). @lucasmengarelli3 (Modelador de diagramas de casos de uso).
 
-- [fix/doc-coord-rc17-rc18] A2 - Documentador: corregir hallazgos RC17 y RC18 de changelog.md. Issue: [#NNN](https://github.com/lucasmengarelli3/SistemaPedidos/issues/NNN) PR: [#NNN](https://github.com/lucasmengarelli3/SistemaPedidos/pull/NNN). @santimarM (Documentador y coordinador).
+- [fix/doc-coord-rc17-rc18] A2 - Documentador: corregir hallazgos RC17 y RC18 de changelog.md. Issue: [#132](https://github.com/lucasmengarelli3/SistemaPedidos/issues/132) PR: [#133](https://github.com/lucasmengarelli3/SistemaPedidos/pull/133). @santimarM (Documentador y coordinador).
 
 ## Release Actividad Obligatoria N°1 - 2026-09-23
 
