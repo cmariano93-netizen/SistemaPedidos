@@ -34,7 +34,7 @@
 
 - [fix/correcciones-escenarios-casos-uso-A2] A2 - Corregi hallazgo RC8 de Escenarios de casos de uso. Issue: [#114](https://github.com/lucasmengarelli3/SistemaPedidos/issues/114) PR: [#115](https://github.com/lucasmengarelli3/SistemaPedidos/pull/115). @LMengarelli93 (Especialista en escenarios de casos de uso).
 
-- [fix/correcciones-escenarios-casos-uso-A2] A2 - Problemas de fusion de cambios en changelog.md: [#118](https://github.com/lucasmengarelli3/SistemaPedidos/issues/118) PR: [#119](https://github.com/lucasmengarelli3/SistemaPedidos/pull/119). @LMengarelli93 (Especialista en escenarios de casos de uso).
+- [fix/correcciones-escenarios-casos-uso-A2] A2 - Problemas de fusion de cambios en changelog.md: Issue: [#118](https://github.com/lucasmengarelli3/SistemaPedidos/issues/118) PR: [#119](https://github.com/lucasmengarelli3/SistemaPedidos/pull/119). @LMengarelli93 (Especialista en escenarios de casos de uso).
 
 - [fix/doc-coord-corregir-enlaces-rotos] A2 - Corregir enlaces rotos (README e índice de diagramas), documentación de IA del Modelador (RC6), encabezado de release (RC15) y entrada del backport (RC16). Issue: [#116](https://github.com/lucasmengarelli3/SistemaPedidos/issues/116) PR: [#120](https://github.com/lucasmengarelli3/SistemaPedidos/pull/120). @santimarM (Documentador y coordinador).
 
@@ -45,6 +45,8 @@
 - [fix/doc-coord-rc12] A2 - Reconciliar los roles declarados con los aportes reales de la AO2 (RC12): se agregaron integrantes a README.md y se documentó la participación de cada uno. Issue: [#126](https://github.com/lucasmengarelli3/SistemaPedidos/issues/126) PR: [#127](https://github.com/lucasmengarelli3/SistemaPedidos/pull/127). @santimarM (Documentador y coordinador).
 
 - [fix/doc-coord-changelog-ao2] A2 - Actualizar la tabla de integrantes de README.md (matrícula de Isis Neith Escalada e incorporación de Agustin Ariel Feijo; cambios subidos directamente a release/actividad-obligatoria-2 en los commits b40b6b1, 2f7f29b y e71e711, desvío de GitFlow) y reubicar las correcciones de la AO2 (PRs #113 a #127) en el bloque de la release AO2 de changelog.md. Issue: [#128](https://github.com/lucasmengarelli3/SistemaPedidos/issues/128) PR: [#129](https://github.com/lucasmengarelli3/SistemaPedidos/pull/129). @santimarM (Documentador y coordinador).
+
+- [fix-correcciones-diagramas-casos-uso-A2] A2 -Corregir hallazgos RC5, RC6, RC13, RC14 de Modelador diagramas de Casos de uso. Issue: [#130](https://github.com/lucasmengarelli3/SistemaPedidos/issues/130) PR: [#131](https://github.com/lucasmengarelli3/SistemaPedidos/pull/131). @LMengarelli93.
 
 ## Release Actividad Obligatoria N°1 - 2026-09-23
 

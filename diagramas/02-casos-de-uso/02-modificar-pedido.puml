@@ -1,8 +1,5 @@
 @startuml
 left to right direction
-skinparam packageStyle rectangle
-skinparam shadowing false
-skinparam actorStyle awesome
 
 actor "Usuario de mostrador" as Mostrador
 actor "Cliente" as Cliente
@@ -20,21 +17,21 @@ rectangle "Modificación de Pedidos" {
 Cliente --> UC_Modificar : solicita cambios
 Mostrador --> UC_Modificar : opera en sistema
 
-UC_Modificar .> UC_Buscar : <<include>>
-UC_Modificar .> UC_Recalcular : <<include>>
-UC_Modificar .> UC_NotificarCocina : <<include>>
+UC_Modificar -d.> UC_Buscar : <<include>>
+UC_Modificar -d.> UC_Recalcular : <<include>>
+UC_Modificar -d.> UC_NotificarCocina : <<include>>
 
 UC_Productos .> UC_Modificar : <<extend>>
 UC_Personalizaciones .> UC_Modificar : <<extend>>
 UC_RechazarMod .> UC_Modificar : <<extend>>
 
-note right of UC_Modificar
+note left of UC_Modificar
   Precondición: Solo permitido si el
   pedido está en estado 'recibido'.
   Si ya pasó a preparación, queda bloqueado.
 end note
 
-note bottom of UC_RechazarMod
+note left of UC_RechazarMod
   Punto de extensión: Se activa si el pedido
   cambió de estado durante la edición o ya
   está en preparación/listo.

@@ -13,6 +13,12 @@
 ## Archivos de contexto consultados
 
 - [Contexto funcional, requisitos y casos de uso](../../anexos/introduccion.md)
+- [Código PlantUML generado](../../diagramas/02-casos-de-uso/02-cancelar-pedido.puml)
+- [Código PlantUML generado](../../diagramas/02-casos-de-uso/02-cobrar-cuenta.puml)
+- [Código PlantUML generado](../../diagramas/02-casos-de-uso/02-entregar-pedido.puml)
+- [Código PlantUML generado](../../diagramas/02-casos-de-uso/02-modificar-pedido.puml)
+- [Código PlantUML generado](../../diagramas/02-casos-de-uso/02-preparar-pedido.puml)
+- [Código PlantUML generado](../../diagramas/02-casos-de-uso/02-registrar-pedido.puml)
 - [Índice específico de casos de uso](../../diagramas/02-casos-de-uso/diagramas_de_casos_de_uso.md)
 
 El contexto funcional aportó los requisitos RF1 a RF13, los estados del pedido, los actores principales y los casos de uso narrados: registrar pedido, cobrar cuenta, entregar pedido, cancelar pedido, preparar pedido y priorizar pedido.
