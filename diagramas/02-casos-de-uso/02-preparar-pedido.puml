@@ -1,8 +1,5 @@
 @startuml
 left to right direction
-skinparam packageStyle rectangle
-skinparam shadowing false
-skinparam actorStyle awesome
 
 actor "Cocina" as Cocina
 actor "Usuario de mostrador" as Mostrador
@@ -21,18 +18,24 @@ rectangle "Preparación de Pedidos en Cocina" {
 Cocina --> UC_Preparar
 Mostrador --> UC_Priorizar
 
-UC_Preparar .> UC_Cola : <<include>>
-UC_Preparar .> UC_Detalle : <<include>>
-UC_Preparar .> UC_EnPrep : <<include>>
-UC_Preparar .> UC_Listo : <<include>>
-UC_Preparar .> UC_NotificarMostrador : <<include>>
+UC_Preparar -d.> UC_Cola : <<include>>
+UC_Preparar -d.> UC_Detalle : <<include>>
+UC_Preparar -d.> UC_EnPrep : <<include>>
+UC_Preparar -d.> UC_Listo : <<include>>
+UC_Preparar -d.> UC_NotificarMostrador : <<include>>
 
 UC_Priorizar .> UC_Cola : <<include>>
 UC_FaltaInsumos .> UC_Preparar : <<extend>>
 
-note right of UC_Preparar
+note left of UC_Preparar
   Transiciones del ciclo de vida:
   recibido -> en preparación -> listo.
   Al marcar como 'listo', se notifica a mostrador.
+end note
+
+note top of UC_Preparar
+Precondición: Solo permite modificar el pedido si 
+ está en estado 'recibido'.
+Si ya pasó a preparación, queda bloqueado.
 end note
 @enduml

@@ -5,3 +5,4 @@
 - [Caso de Uso 3 - Preparar pedido](./02-preparar-pedido.puml)
 - [Caso de Uso 4 - Cobrar cuenta](./02-cobrar-cuenta.puml)
 - [Caso de Uso 5 - Entregar pedido](./02-entregar-pedido.puml)
+- [Caso de Uso 6 - Entregar pedido](./02-cancelar-pedido.puml)
