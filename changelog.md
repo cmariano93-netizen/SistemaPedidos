@@ -28,6 +28,24 @@
   Issue: [#108](https://github.com/cmariano93-netizen/SistemaPedidos/issues/108)
   PR: [#107](https://github.com/cmariano93-netizen/SistemaPedidos/pull/107). @cmariano93-netizen (Documentador y Coordinador de Repositorio).
 
+### Fixed
+
+- [fix/correcciones-tarjetas-crc-a2] A2 - Corregir hallazgos RC1, RC2 y RC3 de Tarjetas CRC. Issue: [#112](https://github.com/cmariano93-netizen/SistemaPedidos/issues/112) PR: [#113](https://github.com/cmariano93-netizen/SistemaPedidos/pull/113). @neith18 (Diseñadora de Tarjetas CRC).
+
+- [fix/correcciones-escenarios-casos-uso-A2] A2 - Corregi hallazgo RC8 de Escenarios de casos de uso. Issue: [#114](https://github.com/lucasmengarelli3/SistemaPedidos/issues/114) PR: [#115](https://github.com/lucasmengarelli3/SistemaPedidos/pull/115). @LMengarelli93 (Especialista en escenarios de casos de uso).
+
+- [fix/correcciones-escenarios-casos-uso-A2] A2 - Problemas de fusion de cambios en changelog.md: [#118](https://github.com/lucasmengarelli3/SistemaPedidos/issues/118) PR: [#119](https://github.com/lucasmengarelli3/SistemaPedidos/pull/119). @LMengarelli93 (Especialista en escenarios de casos de uso).
+
+- [fix/doc-coord-corregir-enlaces-rotos] A2 - Corregir enlaces rotos (README e índice de diagramas), documentación de IA del Modelador (RC6), encabezado de release (RC15) y entrada del backport (RC16). Issue: [#116](https://github.com/lucasmengarelli3/SistemaPedidos/issues/116) PR: [#120](https://github.com/lucasmengarelli3/SistemaPedidos/pull/120). @santimarM (Documentador y coordinador).
+
+- [fix/doc-coord-rc9-rc11] A2 - Adaptar plantillas de issues y PR a la Actividad Obligatoria N°2 (RC9) y documentar el prompt y las revisiones asistidas por IA en ia/a2/documentador-coordinador.md (RC11), y corregir el enlace roto a las tarjetas CRC en ia/a2/especialista-escenarios.md. Issue: [#121](https://github.com/lucasmengarelli3/SistemaPedidos/issues/121) PR: [#122](https://github.com/lucasmengarelli3/SistemaPedidos/pull/122), [#123](https://github.com/lucasmengarelli3/SistemaPedidos/pull/123). @santimarM (Documentador y coordinador).
+
+- [fix/doc-coord-rc10] A2 - Documentar en ia/a2/documentador-coordinador.md las cuatro revisiones asistidas por IA publicadas por el Documentador y Coordinador en las PRs #69, #102, #105 y #113 (RC10, RC4). Issue: [#124](https://github.com/lucasmengarelli3/SistemaPedidos/issues/124) PR: [#125](https://github.com/lucasmengarelli3/SistemaPedidos/pull/125). @santimarM (Documentador y coordinador).
+
+- [fix/doc-coord-rc12] A2 - Reconciliar los roles declarados con los aportes reales de la AO2 (RC12): se agregaron integrantes a README.md y se documentó la participación de cada uno. Issue: [#126](https://github.com/lucasmengarelli3/SistemaPedidos/issues/126) PR: [#127](https://github.com/lucasmengarelli3/SistemaPedidos/pull/127). @santimarM (Documentador y coordinador).
+
+- [fix/doc-coord-changelog-ao2] A2 - Actualizar la tabla de integrantes de README.md (matrícula de Isis Neith Escalada e incorporación de Agustin Ariel Feijo; cambios subidos directamente a release/actividad-obligatoria-2 en los commits b40b6b1, 2f7f29b y e71e711, desvío de GitFlow) y reubicar las correcciones de la AO2 (PRs #113 a #127) en el bloque de la release AO2 de changelog.md. Issue: [#128](https://github.com/lucasmengarelli3/SistemaPedidos/issues/128) PR: [#129](https://github.com/lucasmengarelli3/SistemaPedidos/pull/129). @santimarM (Documentador y coordinador).
+
 ## Release Actividad Obligatoria N°1 - 2026-09-23
 
 ### Added
@@ -171,18 +189,3 @@
 - [fix/doc-coor-repo-update-changelog.md] Changelog.md restructurado completo. Issue: [#93](https://github.com/cmariano93-netizen/SistemaPedidos/issues/93) PR: [#94](https://github.com/cmariano93-netizen/SistemaPedidos/pull/94). @LMengarelli93 (Documentador y coordinador).
 
 - [fix/doc-coor-repo-update-changelog.md] Changelog.md restructurado completo. Issue: [#95](https://github.com/cmariano93-netizen/SistemaPedidos/issues/95) PR: [#96](https://github.com/cmariano93-netizen/SistemaPedidos/pull/96). @LMengarelli93 (Documentador y coordinador).
-
-- [fix/correcciones-tarjetas-crc-a2] A2 - Corregir hallazgos RC1, RC2 y RC3 de Tarjetas CRC. Issue: [#112](https://github.com/cmariano93-netizen/SistemaPedidos/issues/112) PR: [#113](https://github.com/cmariano93-netizen/SistemaPedidos/pull/113). @neith18 (Diseñadora de Tarjetas CRC).
-
-- [fix/correcciones-escenarios-casos-uso-A2] A2 - Corregi hallazgo RC8 de Escenarios de casos de uso. Issue: [#114](https://github.com/lucasmengarelli3/SistemaPedidos/issues/114) PR: [#115](https://github.com/lucasmengarelli3/SistemaPedidos/pull/115). @LMengarelli93 (Especialista en escenarios de casos de uso).
-
-- [fix/correcciones-escenarios-casos-uso-A2] A2 - Problemas de fusion de cambios en changelog.md: [#118](https://github.com/lucasmengarelli3/SistemaPedidos/issues/118) PR: [#119](https://github.com/lucasmengarelli3/SistemaPedidos/pull/119). @LMengarelli93 (Especialista en escenarios de casos de uso).
-
-- [fix/doc-coord-corregir-enlaces-rotos] A2 - Corregir enlaces rotos (README e índice de diagramas), documentación de IA del Modelador (RC6), encabezado de release (RC15) y entrada del backport (RC16). Issue: [#116](https://github.com/lucasmengarelli3/SistemaPedidos/issues/116) PR: [#120](https://github.com/lucasmengarelli3/SistemaPedidos/pull/120). @santimarM (Documentador y coordinador).
-
-- [fix/doc-coord-rc9-rc11] A2 - Adaptar plantillas de issues y PR a la Actividad Obligatoria N°2 (RC9) y documentar el prompt y las revisiones asistidas por IA en ia/a2/documentador-coordinador.md (RC11), y corregir el enlace roto a las tarjetas CRC en ia/a2/especialista-escenarios.md. Issue: [#121](https://github.com/lucasmengarelli3/SistemaPedidos/issues/121) PR: [#122](https://github.com/lucasmengarelli3/SistemaPedidos/pull/122), [#123](https://github.com/lucasmengarelli3/SistemaPedidos/pull/123). @santimarM (Documentador y coordinador).
-
-- [fix/doc-coord-rc10] A2 - Documentar en ia/a2/documentador-coordinador.md las cuatro revisiones asistidas por IA publicadas por el Documentador y Coordinador en las PRs #69, #102, #105 y #113 (RC10, RC4). Issue: [#124](https://github.com/lucasmengarelli3/SistemaPedidos/issues/124) PR: [#125](https://github.com/lucasmengarelli3/SistemaPedidos/pull/125). @santimarM (Documentador y coordinador).
-
-- [fix/doc-coord-rc12] A2 - Reconciliar los roles declarados con los aportes reales de la AO2 (RC12): se agregaron integrantes a README.md y se documentó la participación de cada uno. Issue: [#126](https://github.com/lucasmengarelli3/SistemaPedidos/issues/126) PR: [#127](https://github.com/lucasmengarelli3/SistemaPedidos/pull/127). @santimarM (Documentador y coordinador).
-
