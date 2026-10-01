@@ -12,10 +12,10 @@ Este proyecto tiene como objetivo el diseño orientado a objetos de una aplicaci
 
 | Nombre y Apellido      | Matrícula |  Usuario de GitHub  |
 | :--------------------- | :-------: | :-----------------: |
-| Mariano Costamagna     |  164690   | @cmariano93-netizen |
+| Feijo, Agustin Ariel   |  164921   |  @Lmengarelli93     |
 | Lucas Mengarelli       |  164298   |   @LMengarelli93    |
 | Santiago Medel Marquez |  154076   |     @santimarM      |
-| Isis Neith Escalada    | Pendiente |      @neith18       |
+| Isis Neith Escalada    |  155447   |      @neith18       |
 
 ## Participación en la Actividad Obligatoria N°2
 
