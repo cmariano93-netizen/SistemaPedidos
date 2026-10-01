@@ -2,7 +2,6 @@
 left to right direction
 skinparam packageStyle rectangle
 skinparam shadowing false
-skinparam actorStyle awesome
 
 actor "Usuario de mostrador" as Mostrador
 actor "Cliente" as Cliente
@@ -20,21 +19,22 @@ rectangle "Modificación de Pedidos" {
 Cliente --> UC_Modificar : solicita cambios
 Mostrador --> UC_Modificar : opera en sistema
 
-UC_Modificar .> UC_Buscar : <<include>>
-UC_Modificar .> UC_Recalcular : <<include>>
-UC_Modificar .> UC_NotificarCocina : <<include>>
+UC_Modificar ..> UC_Buscar : <<include>>
+UC_Modificar ..> UC_Recalcular : <<include>>
+UC_Modificar ..> UC_NotificarCocina : <<include>>
 
-UC_Productos .> UC_Modificar : <<extend>>
-UC_Personalizaciones .> UC_Modificar : <<extend>>
-UC_RechazarMod .> UC_Modificar : <<extend>>
+UC_Modificar <.. UC_Productos : <<extend>>
+UC_Modificar <.. UC_Personalizaciones : <<extend>>
+UC_Modificar <.. UC_RechazarMod : <<extend>>
 
-note right of UC_Modificar
-  Precondición: Solo permitido si el
-  pedido está en estado 'recibido'.
-  Si ya pasó a preparación, queda bloqueado.
+note bottom of UC_Modificar
+  Regla de estado (RF10 a RF12):
+  Solo permitido si el pedido está en
+  estado 'recibido'. Desde 'en preparación'
+  queda bloqueado.
 end note
 
-note bottom of UC_RechazarMod
+note right of UC_RechazarMod
   Punto de extensión: Se activa si el pedido
   cambió de estado durante la edición o ya
   está en preparación/listo.

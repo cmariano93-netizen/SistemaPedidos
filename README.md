@@ -10,13 +10,15 @@ Este proyecto tiene como objetivo el diseño orientado a objetos de una aplicaci
 
 ## Integrantes
 
-| Nombre y Apellido  | Matrícula |  Usuario de GitHub  |
-| :----------------- | :-------: | :-----------------: |
-| Mariano Costamagna |  164690   | @cmariano93-netizen |
-| Lucas Mengarelli   |  164298   |   @LMengarelli93    |
+| Nombre y Apellido      | Matrícula |  Usuario de GitHub  |
+| :--------------------- | :-------: | :-----------------: |
+| Feijo, Agustin Ariel   |  164921   |   @AgustinCalaver   |
+| Lucas Mengarelli       |  164298   |  @lucasmengarelli3  |
+| Santiago Medel Marquez |  154076   |     @santimarM      |
+| Isis Neith Escalada    |  155447   |      @neith18       |
 
 ## Diagramas y Diseños
 
 - [Anexo](./anexos/introduccion.md)
 - [Diagramas UML](./diagramas/diagramasUML.md)
-- [Herramientas Agile](./herramientas-agile/herramientas-agile.md)
+- [Herramientas Agile](./herramientas-agile/herramientas_agile.md)

@@ -4,11 +4,15 @@
 
 ---
 
-## Release Actividad Obligatoria N°1 - 2026-09-23
+## [Unreleased]
+
+### Changed
+
+- [backport/release-actividad-obligatoria-2] Backport de la release de la Actividad Obligatoria N°2: establecer la base en develop del Primer Parcial. Issue: [#138](https://github.com/lucasmengarelli3/SistemaPedidos/issues/138) PR: [#139](https://github.com/lucasmengarelli3/SistemaPedidos/pull/139). @santimarM (Documentador y coordinador).
+
+## Release Actividad Obligatoria N°2 - 2026-09-30
 
 ### Added
-
-- [Backport/release-actividad-obligatoria-1] Establecer la base en Develop Issue: [#97](https://github.com/cmariano93-netizen/SistemaPedidos/issues/97) PR: [#99](https://github.com/cmariano93-netizen/SistemaPedidos/pull/99). @LMengarelli93 (Documentador y coordinador).
 
 - [feature/diseniador-tarjetas-crc-add-tarjeta-clase-1] A2 - Diseñar Tarjetas CRC: Creación estructura de carpetas.
   Issue: [#68](https://github.com/cmariano93-netizen/SistemaPedidos/issues/68)
@@ -29,6 +33,40 @@
 - [feature/doc-coord-repo-update-readme-md] Modifico estructura de carpetas y archivos del proyecto.-
   Issue: [#108](https://github.com/cmariano93-netizen/SistemaPedidos/issues/108)
   PR: [#107](https://github.com/cmariano93-netizen/SistemaPedidos/pull/107). @cmariano93-netizen (Documentador y Coordinador de Repositorio).
+
+### Fixed
+
+- [fix/correcciones-tarjetas-crc-a2] A2 - Diseñar Tarjetas CRC: Corregir hallazgos RC1, RC2 y RC3. Issue: [#112](https://github.com/lucasmengarelli3/SistemaPedidos/issues/112) PR: [#113](https://github.com/lucasmengarelli3/SistemaPedidos/pull/113). @neith18 (Diseñadora de Tarjetas CRC).
+
+- [fix/correcciones-escenarios-casos-uso-A2] A2 - Especialista en escenarios casos de uso: Corregir hallazgos RC8. Issue: [#114](https://github.com/lucasmengarelli3/SistemaPedidos/issues/114) PR: [#115](https://github.com/lucasmengarelli3/SistemaPedidos/pull/115). @lucasmengarelli3 (Especialista en escenarios de casos de uso).
+
+- [fix/correcciones-escenarios-casos-uso-A2] solucionar problema de HEAD. Issue: [#118](https://github.com/lucasmengarelli3/SistemaPedidos/issues/118) PR: [#119](https://github.com/lucasmengarelli3/SistemaPedidos/pull/119). @lucasmengarelli3 (Especialista en escenarios de casos de uso).
+
+- [fix/doc-coord-corregir-enlaces-rotos] A2 - Documentador: corregir enlaces rotos y hallazgos RC6, RC15 y RC16. Issue: [#116](https://github.com/lucasmengarelli3/SistemaPedidos/issues/116) PR: [#120](https://github.com/lucasmengarelli3/SistemaPedidos/pull/120) (cerrada sin merge por apuntar a develop; sus commits se integraron a la release mediante la PR [#122](https://github.com/lucasmengarelli3/SistemaPedidos/pull/122)). @santimarM (Documentador y coordinador).
+
+- [fix/doc-coord-rc9-rc11] A2 - Documentador: corregir hallazgos RC9 y RC11. Issue: [#121](https://github.com/lucasmengarelli3/SistemaPedidos/issues/121) PR: [#122](https://github.com/lucasmengarelli3/SistemaPedidos/pull/122). @santimarM (Documentador y coordinador).
+
+- [fix/doc-coord-rc9-rc11] A2 - Documentador: corregir enlace a tarjetas CRC y completar changelog. Issue: [#121](https://github.com/lucasmengarelli3/SistemaPedidos/issues/121) PR: [#123](https://github.com/lucasmengarelli3/SistemaPedidos/pull/123). @santimarM (Documentador y coordinador).
+
+- [fix/doc-coord-rc10] A2 - Documentador: documentar revisiones asistidas por IA (RC10 y RC4). Issue: [#124](https://github.com/lucasmengarelli3/SistemaPedidos/issues/124) PR: [#125](https://github.com/lucasmengarelli3/SistemaPedidos/pull/125). @santimarM (Documentador y coordinador).
+
+- [fix/doc-coord-rc12] A2 - Documentador: reconciliar roles declarados con los aportes reales (RC12). Issue: [#126](https://github.com/lucasmengarelli3/SistemaPedidos/issues/126) PR: [#127](https://github.com/lucasmengarelli3/SistemaPedidos/pull/127). @santimarM (Documentador y coordinador).
+
+- [release/actividad-obligatoria-2] Update README.md (desvío de GitFlow; sin PR). Commit: [b40b6b1](https://github.com/lucasmengarelli3/SistemaPedidos/commit/b40b6b19537ed259697690eb7939454b31bef999) - @santimarM (Documentador y coordinador).
+
+- [release/actividad-obligatoria-2] Update GitHub username for Agustin Feijo (desvío de GitFlow; sin PR). Commit: [2f7f29b](https://github.com/lucasmengarelli3/SistemaPedidos/commit/2f7f29b5071a301c55afee3f21fc3318d0f1fd56) - @santimarM (Documentador y coordinador).
+
+- [release/actividad-obligatoria-2] Update GitHub username for Agustin Feijo (desvío de GitFlow; sin PR). Commit: [e71e711](https://github.com/lucasmengarelli3/SistemaPedidos/commit/e71e71185b250d338ef4106813970796145a7c14) - @santimarM (Documentador y coordinador).
+
+- [fix/doc-coord-changelog-ao2] A2 - Documentador: actualizar integrantes en README.md y reubicar correcciones de la AO2 en changelog.md. Issue: [#128](https://github.com/lucasmengarelli3/SistemaPedidos/issues/128) PR: [#129](https://github.com/lucasmengarelli3/SistemaPedidos/pull/129). @santimarM (Documentador y coordinador).
+
+- [fix-correcciones-diagramas-casos-uso-A2] A2 - Modelador de diagramas de Casos de Uso: Corregir RC5, RC6, RC13, RC14. Issue: [#130](https://github.com/lucasmengarelli3/SistemaPedidos/issues/130) PR: [#131](https://github.com/lucasmengarelli3/SistemaPedidos/pull/131). @lucasmengarelli3 (Modelador de diagramas de casos de uso).
+
+- [fix/doc-coord-rc17-rc18] A2 - Documentador: corregir hallazgos RC17 y RC18 de changelog.md. Issue: [#132](https://github.com/lucasmengarelli3/SistemaPedidos/issues/132) PR: [#133](https://github.com/lucasmengarelli3/SistemaPedidos/pull/133). @santimarM (Documentador y coordinador).
+
+- [fix/modelador-diag-casos-uso-rc5-rc13-rc14] A2 - Modelador: alinear reglas de estado en diagramas de casos de uso (RC5). Issue: [#134](https://github.com/lucasmengarelli3/SistemaPedidos/issues/134) PR: [#135](https://github.com/lucasmengarelli3/SistemaPedidos/pull/135). @santimarM (Documentador y coordinador; asume por contingencia la corrección del Modelador de diagramas de casos de uso).
+
+- [fix/doc-coord-rc20-rc26] A2 - Documentador: corregir hallazgos RC20 a RC26 de índices y README.md. Issue: [#136](https://github.com/lucasmengarelli3/SistemaPedidos/issues/136) PR: [#137](https://github.com/lucasmengarelli3/SistemaPedidos/pull/137). @santimarM (Documentador y coordinador).
 
 ## Release Actividad Obligatoria N°1 - 2026-09-23
 

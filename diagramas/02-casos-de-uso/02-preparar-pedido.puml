@@ -2,7 +2,6 @@
 left to right direction
 skinparam packageStyle rectangle
 skinparam shadowing false
-skinparam actorStyle awesome
 
 actor "Cocina" as Cocina
 actor "Usuario de mostrador" as Mostrador
@@ -18,21 +17,30 @@ rectangle "Preparación de Pedidos en Cocina" {
   usecase "Reportar falta\nde insumos" as UC_FaltaInsumos
 }
 
-Cocina --> UC_Preparar
 Mostrador --> UC_Priorizar
+Cocina --> UC_Preparar
 
-UC_Preparar .> UC_Cola : <<include>>
-UC_Preparar .> UC_Detalle : <<include>>
-UC_Preparar .> UC_EnPrep : <<include>>
-UC_Preparar .> UC_Listo : <<include>>
-UC_Preparar .> UC_NotificarMostrador : <<include>>
+UC_Priorizar ..> UC_Cola : <<include>>
 
-UC_Priorizar .> UC_Cola : <<include>>
-UC_FaltaInsumos .> UC_Preparar : <<extend>>
+UC_Preparar ..> UC_Cola : <<include>>
+UC_Preparar ..> UC_Detalle : <<include>>
+UC_Preparar ..> UC_EnPrep : <<include>>
+UC_Preparar ..> UC_Listo : <<include>>
+UC_Preparar ..> UC_NotificarMostrador : <<include>>
 
-note right of UC_Preparar
-  Transiciones del ciclo de vida:
+UC_Preparar <.. UC_FaltaInsumos : <<extend>>
+
+note bottom of UC_Preparar
+  Regla de estado (RF7):
   recibido -> en preparación -> listo.
+  Desde 'en preparación' quedan bloqueadas
+  las modificaciones (RF10 a RF12).
   Al marcar como 'listo', se notifica a mostrador.
+end note
+
+note right of UC_Priorizar
+  Regla de estado (RF9):
+  Solo se puede priorizar un pedido
+  en estado 'recibido' o 'en preparación'.
 end note
 @enduml
