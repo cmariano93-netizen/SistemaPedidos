@@ -1,5 +1,7 @@
 @startuml
 left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
 
 actor "Usuario de mostrador" as Mostrador
 actor "Cliente" as Cliente
@@ -16,15 +18,15 @@ rectangle "Entrega de Pedidos" {
 Cliente --> UC_Entrega : se presenta a retirar
 Mostrador --> UC_Entrega : valida y entrega
 
-UC_Entrega -d.> UC_Identificar : <<include>>
-UC_Entrega -d.> UC_ValidarListo : <<include>>
-UC_Entrega -d.> UC_ActualizarEntregado : <<include>>
-UC_Entrega -d.> UC_RegistrarAudit : <<include>>
+UC_Entrega ..> UC_Identificar : <<include>>
+UC_Entrega ..> UC_ValidarListo : <<include>>
+UC_Entrega ..> UC_ActualizarEntregado : <<include>>
+UC_Entrega ..> UC_RegistrarAudit : <<include>>
 
-UC_VerificarCobro .> UC_Entrega : <<extend>>
+UC_Entrega <.. UC_VerificarCobro : <<extend>>
 
-note left of UC_Entrega
-  Precondición indispensable:
+note bottom of UC_Entrega
+  Regla de estado (RF13):
   El pedido debe estar en estado 'listo'.
   Al completarse pasa a 'entregado'.
 end note
