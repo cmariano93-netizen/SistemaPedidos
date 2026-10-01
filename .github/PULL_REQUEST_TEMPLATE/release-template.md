@@ -1,10 +1,10 @@
-## Release: Actividad Obligatoria N°1
+## Release: Actividad Obligatoria N°2
 
 ### Resumen de la entrega
 <!-- Descripción general de qué se entrega -->
 
 ### Versión
-`release/actividad-obligatoria-1`
+`release/actividad-obligatoria-2`
 
 ### Cambios integrados
 <!-- Lista de PRs mergeadas en esta release -->
@@ -18,16 +18,20 @@
 | Nombre | Rol | #X | #X |
 
 ### Archivos generados
-- [ ] `README.md` - Portada y descripción del proyecto
-- [ ] `changelog.md` - Registro de cambios y participación
-- [ ] `anexos/introduccion.md` - Introducción a POO y requisitos
-- [ ] `anexos/anexos.md` - Índice de anexos
-- [ ] `diagramas/01-diagrama-clases/01-boceto-inicial-corregido.excalidraw` - Diagrama
-- [ ] `diagramas/01-diagrama-clases/01-boceto-inicial-corregido-final.png` - Imagen exportada
+- [ ] `README.md` - Portada y accesos a los artefactos de la AO2
+- [ ] `changelog.md` - Registro de cambios y participación de la AO2
+- [ ] `herramientas-agile/herramientas_agile.md` - Índice de herramientas ágiles
+- [ ] `herramientas-agile/tarjetas-crc/` - Tarjetas CRC e índice `tarjetas-crc.md`
+- [ ] `diagramas/diagramasUML.md` - Índice general de diagramas
+- [ ] `diagramas/02-casos-de-uso/` - Diagramas `.puml` y `.png` e índice `diagramas_de_casos_de_uso.md`
+- [ ] `diagramas/03-escenarios-casos-de-uso/` - Escenarios e índice `escenarios_de_casos_de_uso.md`
+- [ ] `ia/a2/` - Documentación del uso de IA de cada rol
 
 ### Criterios de aceptación
 - [ ] Estructura de carpetas correcta
 - [ ] Formato markdown correcto
+- [ ] Todos los enlaces de los índices funcionan
+- [ ] Los roles del equipo participante coinciden con los autores de las PRs
 - [ ] Todos los integrantes documentados en changelog.md
 - [ ] PRs enlazadas en changelog.md
 - [ ] Issues cerradas correctamente
