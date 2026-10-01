@@ -58,6 +58,8 @@
 
 - [fix/doc-coord-rc17-rc18] A2 - Documentador: corregir hallazgos RC17 y RC18 de changelog.md. Issue: [#132](https://github.com/lucasmengarelli3/SistemaPedidos/issues/132) PR: [#133](https://github.com/lucasmengarelli3/SistemaPedidos/pull/133). @santimarM (Documentador y coordinador).
 
+- [fix/modelador-diag-casos-uso-rc5-rc13-rc14] A2 - Modelador: alinear reglas de estado en diagramas de casos de uso (RC5). Issue: [#134](https://github.com/lucasmengarelli3/SistemaPedidos/issues/134) PR: [#NNN](https://github.com/lucasmengarelli3/SistemaPedidos/pull/NNN). @santimarM (Documentador y coordinador; asume por contingencia la corrección del Modelador de diagramas de casos de uso).
+
 ## Release Actividad Obligatoria N°1 - 2026-09-23
 
 ### Added

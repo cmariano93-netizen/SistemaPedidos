@@ -104,7 +104,7 @@ El sistema debe permitir registrar que un pedido listo fue entregado al cliente.
 ### Estados del pedido
 
 - recibido: permitir modificar, agregar/quitar productos, cancelar y priorizar.
-- en preparación: permitir priorizar y consultar; bloquear modificaciones.
+- en preparación: permitir cancelar, priorizar y consultar; bloquear modificaciones.
 - listo: permitir registrar entrega; bloquear modificaciones.
 - entregado: solo consulta.
 - cancelado: solo consulta histórica y no aparece en la lista de pedidos activos.
