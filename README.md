@@ -13,7 +13,7 @@ Este proyecto tiene como objetivo el diseño orientado a objetos de una aplicaci
 | Nombre y Apellido      | Matrícula |  Usuario de GitHub  |
 | :--------------------- | :-------: | :-----------------: |
 | Feijo, Agustin Ariel   |  164921   |   @AgustinCalaver   |
-| Lucas Mengarelli       |  164298   |   @LMengarelli93    |
+| Lucas Mengarelli       |  164298   |  @lucasmengarelli3  |
 | Santiago Medel Marquez |  154076   |     @santimarM      |
 | Isis Neith Escalada    |  155447   |      @neith18       |
 
