@@ -56,3 +56,12 @@ Cada archivo de clase debe utilizar estrictamente el siguiente formato de tabla 
  - `anexos/introduccion.md` (Secciones: Requisitos Funcionales RF1-RF5 y Casos de Uso CU1-CU5)
 - `diagramas/01-diagrama-clases/01-boceto-inicial.png`
 - `plantilla_crc.md` (como guía de formato Markdown)
+
+## Revisión crítica
+
+- Se identificaron nueve clases en el boceto corregido: `PersonalAtencion`, `Cocina`, `Pedido`, `ItemPedido`, `Producto`, `Personalizacion`, `Pago`, `Encargado` y `Cliente`.
+- Durante la revisión se detectó que `anexos/introduccion.md` describía una posible especialización de `Producto` mediante `ProductoEnvasado` y `ProductoElaborado`, aunque estas clases no forman parte del boceto corregido. Se alineó la introducción con el diseño vigente, que mantiene una única clase `Producto` y no presenta relaciones de herencia. Por este motivo, las tarjetas indican `Ninguna` como superclase y subclase.
+- Se descartaron `Usuario` y `Combo`, presentes en una versión anterior pero ausentes del boceto corregido.
+- Se conservaron las asociaciones visibles del diagrama: atención con pedido, cocina con pedido, encargado con pedido, cliente con pedido, pedido con ítems y pago, e ítem con producto y personalización.
+- Las responsabilidades se distribuyeron según los métodos y atributos del boceto: `Pedido` coordina el ciclo de vida y el total, `ItemPedido` calcula el subtotal, `Producto` informa el precio y `Personalizacion` calcula el adicional.
+- Se eliminó el duplicado de `Pago` con espacio en el nombre y se conservó sólo `07-tarjeta-crc-Pago.md`.
