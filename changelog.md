@@ -46,7 +46,7 @@
 
 - [fix/doc-coord-changelog-ao2] A2 - Actualizar la tabla de integrantes de README.md (matrícula de Isis Neith Escalada e incorporación de Agustin Ariel Feijo; cambios subidos directamente a release/actividad-obligatoria-2 en los commits b40b6b1, 2f7f29b y e71e711, desvío de GitFlow) y reubicar las correcciones de la AO2 (PRs #113 a #127) en el bloque de la release AO2 de changelog.md. Issue: [#128](https://github.com/lucasmengarelli3/SistemaPedidos/issues/128) PR: [#129](https://github.com/lucasmengarelli3/SistemaPedidos/pull/129). @santimarM (Documentador y coordinador).
 
-- [fix-correcciones-diagramas-casos-uso-A2] A2 -Corregir hallazgos RC5, RC6, RC13, RC14 de Tarjetas CRC.. Issue: [#130](https://github.com/lucasmengarelli3/SistemaPedidos/issues/130) PR: [#131](https://github.com/lucasmengarelli3/SistemaPedidos/pull/131). @LMengarelli93.
+- [fix-correcciones-diagramas-casos-uso-A2] A2 -Corregir hallazgos RC5, RC6, RC13, RC14 de Modelador diagramas de Casos de uso. Issue: [#130](https://github.com/lucasmengarelli3/SistemaPedidos/issues/130) PR: [#131](https://github.com/lucasmengarelli3/SistemaPedidos/pull/131). @LMengarelli93.
 
 ## Release Actividad Obligatoria N°1 - 2026-09-23
 
