@@ -10,6 +10,8 @@
 
 - [feature/esp-srp-add-anexo-srp] P1 - Principio de Responsabilidad Única (SRP): anexo `01-srp.md`, diagrama de clases `01-solid-01-srp`, índice `principios_solid.md` y documentación del uso de IA. Issue: [#140](https://github.com/lucasmengarelli3/SistemaPedidos/issues/140) PR: [#141](https://github.com/lucasmengarelli3/SistemaPedidos/pull/141). @santimarM (Documentador y Coordinador de Repositorio + SRP).
 
+- [feature/esp-extension-ocp-add-anexo-ocp] P1 - Principio Abierto/Cerrado (OCP): anexo `02-ocp.md`, diagrama de clases `01-solid-02-ocp` y documentación del uso de IA. Issue: [#143](https://github.com/lucasmengarelli3/SistemaPedidos/issues/143) PR: [#144](https://github.com/lucasmengarelli3/SistemaPedidos/pull/144). @santimarM (Especialista en Principios de Extencion (OCP)).
+
 ### Changed
 
 - [backport/release-actividad-obligatoria-2] Backport de la release de la Actividad Obligatoria N°2: establecer la base en develop del Primer Parcial. Issue: [#138](https://github.com/lucasmengarelli3/SistemaPedidos/issues/138) PR: [#139](https://github.com/lucasmengarelli3/SistemaPedidos/pull/139). @santimarM (Documentador y coordinador).
