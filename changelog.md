@@ -14,6 +14,8 @@
 
 - [feature/esp-isp-add-anexo-isp] P1 - Principio de Segregación de Interfaces (ISP): anexo `04-isp.md`, diagrama de clases `01-solid-04-isp` y documentación del uso de IA. Issue: [#147](https://github.com/lucasmengarelli3/SistemaPedidos/issues/147) PR: [#148](https://github.com/lucasmengarelli3/SistemaPedidos/pull/148). @neith18 (Especialista en Segregación de Interfaces (ISP)).
 
+- [feature/esp-dip-add-anexo-dip] P1 - Especialista en Inversión de Dependencias (DIP): anexo `05-dip.md`, diagrama de clases `01-solid-05-dip` y documento de IA. Issue: [#149](https://github.com/lucasmengarelli3/SistemaPedidos/issues/149) PR: [#150](https://github.com/lucasmengarelli3/SistemaPedidos/pull/150). @AgustinCalaver (Especialista en Inversión de Dependencias).
+
 ### Changed
 
 - [feature/doc-coord-repo-update-readme-md] P1 - Documentar y Coordinar repositorio: `README.md` enlaza el índice de anexos, `diagramas/diagramasUML.md` integra los diagramas de clases SOLID, plantillas de PR adaptadas al Primer Parcial y documentación de los code reviews asistidos por IA en `ia/primer-parcial/documentador-coordinador.md`. Issue: [#142](https://github.com/lucasmengarelli3/SistemaPedidos/issues/142) PR: [#151](https://github.com/lucasmengarelli3/SistemaPedidos/pull/151). @santimarM (Documentador y Coordinador de Repositorio + SRP).
