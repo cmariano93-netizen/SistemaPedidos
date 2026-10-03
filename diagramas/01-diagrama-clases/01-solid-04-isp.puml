@@ -7,14 +7,8 @@ interface IEdicionPedido {
     + modificarItem()
 }
 
-interface ICicloVidaPedido {
+interface ICambioEstadoPedido {
     + cambiarEstado()
-    + cancelar()
-}
-
-interface ICobroPedido {
-    + calcularTotal()
-    + registrarPago()
 }
 
 class Pedido {
@@ -27,14 +21,31 @@ class Pedido {
     + agregarItem()
     + quitarItem()
     + modificarItem()
-    + calcularTotal()
     + cambiarEstado()
     + cancelar()
-    + registrarPago()
 }
 
+class GestorPedidos
+class Cocina
+class Encargado
+
 Pedido ..|> IEdicionPedido
-Pedido ..|> ICicloVidaPedido
-Pedido ..|> ICobroPedido
+Pedido ..|> ICambioEstadoPedido
+
+GestorPedidos ..> IEdicionPedido : usa
+Cocina ..> ICambioEstadoPedido : usa
+Encargado ..> ICambioEstadoPedido : usa
+
+note top of IEdicionPedido
+  Agrupa operaciones de edición del pedido.
+  Las modificaciones se permiten en estado recibido.
+  RF10 a RF12.
+end note
+
+note top of ICambioEstadoPedido
+  Expone únicamente el cambio de estado
+  requerido por sus clientes.
+  RF7.
+end note
 
 @enduml

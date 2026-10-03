@@ -1,6 +1,8 @@
 # Especialista en Segregación de Interfaces (ISP)
 
 ## Prompt utilizado
+
+```text
 Leé como contexto los siguientes archivos del repositorio:
 
 - anexos/introduccion.md
@@ -26,6 +28,7 @@ Quiero que:
 7. Indicá ventajas, problemas o sobreingeniería que veas en cada alternativa y cuál está mejor respaldada por el diseño actual.
 
 No modifiques archivos. Solo realizá el análisis y devolvé las propuestas para revisión crítica.
+```
 
 ## Archivos de contexto referenciados
 
@@ -58,22 +61,26 @@ Además, indicó que una segregación excesiva en interfaces de un único métod
 
 ## Ajustes realizados
 
-El resultado de Copilot fue revisado críticamente antes de incorporarlo a la propuesta final.
+El resultado de Copilot fue revisado críticamente antes de incorporarlo a la propuesta final y posteriormente se contrastó con los anexos SRP y OCP ya integrados en `develop`, además de los casos de uso y requisitos del sistema.
 
-Se aceptó como punto de partida la alternativa centrada en la clase `Pedido`, porque sus métodos actuales permiten identificar grupos de responsabilidades diferenciados y respaldados por el boceto, las tarjetas CRC y los requisitos del sistema.
+Se aceptó como punto de partida la alternativa centrada en la clase `Pedido`, porque el boceto inicial permite identificar grupos de operaciones con necesidades diferentes desde la perspectiva de sus clientes.
 
 Se realizaron los siguientes ajustes:
 
-- Se mantuvo la agrupación de `agregarItem()`, `quitarItem()` y `modificarItem()` en una interfaz de edición, denominada `IEdicionPedido`, debido a que las tres operaciones modifican el contenido del pedido y están sujetas a las reglas de edición definidas por su estado.
+- Se mantuvo la agrupación de `agregarItem()`, `quitarItem()` y `modificarItem()` en una interfaz de edición denominada `IEdicionPedido`. Las tres operaciones modifican el contenido del pedido y se encuentran relacionadas con las restricciones de edición definidas para el estado recibido.
 
-- Se mantuvo la agrupación de `cambiarEstado()` y `cancelar()` en `ICicloVidaPedido`, ya que ambas operaciones participan de la administración del ciclo de vida y de las transiciones permitidas del pedido.
+- La propuesta inicial agrupaba `cambiarEstado()` y `cancelar()` en una interfaz `ICicloVidaPedido`. Durante la revisión se detectó que esta agrupación obligaría a clientes como `Cocina`, que necesita solicitar cambios de estado durante la preparación, a depender también de `cancelar()`, aunque no utiliza esa operación. Para aplicar ISP desde la perspectiva del cliente, se reemplazó esa interfaz por `ICambioEstadoPedido`, que contiene únicamente `cambiarEstado()`.
 
-- Copilot inicialmente propuso separar `calcularTotal()` y `registrarPago()` en interfaces individuales. Esta fragmentación fue descartada por considerarse innecesaria para el diseño actual. Se decidió agrupar ambas operaciones en `ICobroPedido`, dado que aparecen relacionadas dentro del flujo de cobro documentado. Se dejó explícito que `calcularTotal()` también se utiliza en otros momentos del sistema y que esta agrupación se propone específicamente para el contexto de cobro.
+- La operación `cancelar()` permanece en `Pedido`, pero no se incorporó a las interfaces propuestas. No se creó una interfaz adicional únicamente para contenerla, ya que no se identificó un conjunto de clientes que justificara esa abstracción y hacerlo habría introducido una fragmentación innecesaria.
 
-- La alternativa de crear varias interfaces a partir de `PersonalAtencion`, `Cocina` y `Encargado` no se utilizó como solución principal. Aunque algunas de esas agrupaciones eran coherentes con las responsabilidades de las clases, su división requería asumir consumidores diferenciados que el modelo actual no muestra de manera explícita y podía introducir sobreingeniería.
+- Copilot había identificado `calcularTotal()` y `registrarPago()` como responsabilidades potencialmente segregables. En una primera revisión ambas se agruparon en `ICobroPedido`, pero esta decisión fue descartada posteriormente al contrastar la propuesta ISP con los anexos SRP y OCP ya integrados en `develop`. En esos diseños, `Pedido` deja de calcular el total y registrar el pago: esas responsabilidades pasan a `CalculadoraTotalPedido` y `RegistradorPago`. Por coherencia entre los principios aplicados en el parcial, `ICobroPedido` fue eliminada de la propuesta final.
 
-- Se descartó la creación de una interfaz general como `IGestionPedido`, porque reuniría operaciones de edición, ciclo de vida y cobro en un único contrato y podría generar dependencias hacia métodos que un cliente no necesita.
+- Se incorporaron explícitamente los clientes de las interfaces en el diagrama UML para mostrar la aplicación del ISP desde el punto de vista de las dependencias. `GestorPedidos` depende de `IEdicionPedido`, mientras que `Cocina` y `Encargado` dependen de `ICambioEstadoPedido`.
 
-- No se incorporaron nuevas clases, métodos ni actores para justificar las interfaces propuestas. En particular, no se agregó una dependencia desde una clase cliente hacia `ICobroPedido`, ya que el análisis posterior del repositorio no permitió identificar de forma inequívoca una clase existente que consuma el contrato completo.
+- Se descartó una interfaz general como `IGestionPedido`, porque reuniría operaciones utilizadas por clientes con necesidades diferentes y generaría dependencias hacia métodos que no utilizan.
 
-- Durante la revisión de la justificación técnica se corrigió la redacción para diferenciar claramente los elementos existentes del boceto inicial de las interfaces incorporadas como propuesta del parcial. Las interfaces `IEdicionPedido`, `ICicloVidaPedido` e `ICobroPedido` no pertenecían al modelo original, sino que fueron diseñadas como aplicación del ISP a partir de responsabilidades ya existentes.
+- La advertencia de Copilot sobre interfaces de un único método se revisó según el contexto concreto. Aunque una interfaz de un solo método puede ser innecesaria si no existe una necesidad diferenciada, `ICambioEstadoPedido` se mantuvo porque los clientes representados necesitan específicamente la capacidad de solicitar cambios de estado sin depender de las operaciones de edición o cancelación.
+
+- No se agregaron nuevos métodos ni requisitos para justificar la solución. Las interfaces propuestas abstraen comportamientos ya existentes y las dependencias de los clientes se fundamentan en las responsabilidades y casos de uso documentados.
+
+- Finalmente, se agregaron anotaciones al diagrama UML para explicitar el criterio de agrupación de cada interfaz y los requisitos asociados, y se corrigió la referencia de la imagen para permitir acceder tanto al PNG como al código PlantUML.
