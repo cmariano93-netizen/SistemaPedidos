@@ -1,0 +1,40 @@
+@startuml
+title Aplicación del Principio de Segregación de Interfaces (ISP)
+
+interface IEdicionPedido {
+    + agregarItem()
+    + quitarItem()
+    + modificarItem()
+}
+
+interface ICicloVidaPedido {
+    + cambiarEstado()
+    + cancelar()
+}
+
+interface ICobroPedido {
+    + calcularTotal()
+    + registrarPago()
+}
+
+class Pedido {
+    - numero
+    - fechaHora
+    - nombreRetiro
+    - estado
+    - prioritario
+
+    + agregarItem()
+    + quitarItem()
+    + modificarItem()
+    + calcularTotal()
+    + cambiarEstado()
+    + cancelar()
+    + registrarPago()
+}
+
+Pedido ..|> IEdicionPedido
+Pedido ..|> ICicloVidaPedido
+Pedido ..|> ICobroPedido
+
+@enduml
