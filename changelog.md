@@ -14,7 +14,7 @@
 
 ### Changed
 
-- [feature/doc-coord-repo-update-readme-md] P1 - Documentar y Coordinar repositorio: `README.md` enlaza el índice de anexos, `diagramas/diagramasUML.md` integra los diagramas de clases SOLID, plantillas de PR adaptadas al Primer Parcial y documentación de los code reviews asistidos por IA en `ia/primer-parcial/documentador-coordinador.md`. Issue: [#142](https://github.com/lucasmengarelli3/SistemaPedidos/issues/142) PR: [#PENDIENTE](https://github.com/lucasmengarelli3/SistemaPedidos/pulls). @santimarM (Documentador y Coordinador de Repositorio + SRP).
+- [feature/doc-coord-repo-update-readme-md] P1 - Documentar y Coordinar repositorio: `README.md` enlaza el índice de anexos, `diagramas/diagramasUML.md` integra los diagramas de clases SOLID, plantillas de PR adaptadas al Primer Parcial y documentación de los code reviews asistidos por IA en `ia/primer-parcial/documentador-coordinador.md`. Issue: [#142](https://github.com/lucasmengarelli3/SistemaPedidos/issues/142) PR: [#151](https://github.com/lucasmengarelli3/SistemaPedidos/pull/151). @santimarM (Documentador y Coordinador de Repositorio + SRP).
 
 - [backport/release-actividad-obligatoria-2] Backport de la release de la Actividad Obligatoria N°2: establecer la base en develop del Primer Parcial. Issue: [#138](https://github.com/lucasmengarelli3/SistemaPedidos/issues/138) PR: [#139](https://github.com/lucasmengarelli3/SistemaPedidos/pull/139). @santimarM (Documentador y coordinador).
 
