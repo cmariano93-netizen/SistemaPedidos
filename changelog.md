@@ -12,6 +12,8 @@
 
 - [feature/esp-extension-ocp-add-anexo-ocp] P1 - Principio Abierto/Cerrado (OCP): anexo `02-ocp.md`, diagrama de clases `01-solid-02-ocp` y documentación del uso de IA. Issue: [#143](https://github.com/lucasmengarelli3/SistemaPedidos/issues/143) PR: [#144](https://github.com/lucasmengarelli3/SistemaPedidos/pull/144). @LMengarelli93 (Especialista en Principios de Extencion (OCP)).
 
+- [feature/esp-isp-add-anexo-isp] P1 - Principio de Segregación de Interfaces (ISP): anexo `04-isp.md`, diagrama de clases `01-solid-04-isp` y documentación del uso de IA. Issue: [#147](https://github.com/lucasmengarelli3/SistemaPedidos/issues/147) PR: [#148](https://github.com/lucasmengarelli3/SistemaPedidos/pull/148). @neith18 (Especialista en Segregación de Interfaces (ISP)).
+
 ### Changed
 
 - [backport/release-actividad-obligatoria-2] Backport de la release de la Actividad Obligatoria N°2: establecer la base en develop del Primer Parcial. Issue: [#138](https://github.com/lucasmengarelli3/SistemaPedidos/issues/138) PR: [#139](https://github.com/lucasmengarelli3/SistemaPedidos/pull/139). @santimarM (Documentador y coordinador).
