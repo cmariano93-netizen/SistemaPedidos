@@ -5,7 +5,7 @@
 > 1. Identifica las dependencias hacia clases concretas en el diseño actual del Kiosco "Sabor", especialmente en `Pedido`, `Pago`, `PersonalAtencion` y `Cocina`.
 > 2. Propón abstracciones (interfaces o clases abstractas) para invertirlas aplicando el Principio de Inversión de Dependencias (DIP).
 > 3. Indica dónde aplicar Inyección de Dependencias por constructor.
-> 4. Genera el contenido para el anexo `anexos/principios-solid/05-dip.md` organizándolo estrictamente en las 5 secciones de la consigna y explicando conceptos de clases abstractas e interfaces.
+> 4. Genera el contenido para el anexo `anexos/principios-solid/05-dip.md` en Markdown conceptual, sin código Java.
 > 5. Genera el código PlantUML para el diagrama de clases refactorizado `diagramas/01-diagrama-clases/01-solid-05-dip.puml`.
 > 
 > Respeta el dominio del Kiosco "Sabor" y los nombres de métodos y atributos de las tarjetas CRC oficiales.
@@ -27,3 +27,4 @@
 - **Inclusión teórica:** Se agregó la explicación explícita sobre la diferencia entre clases abstractas e interfaces y la fundamentación de por qué se eligieron interfaces para las abstracciones del sistema.
 - **Alineación de clases con SRP/OCP:** Se unificó la lógica de cobro reemplazando la clase `GestorPago` por `RegistradorPago`, alineando el modelo con los anexos previos de SRP y OCP, y eliminando firmas duplicadas de `registrarPago()` en `Pedido` y `Pago`.
 - **Correcciones de notación UML:** Se corrigió la declaración del tipo numerado `ResultadoPago` para usar la sintaxis `enum` nativa de PlantUML con sus literales (`APROBADO`, `RECHAZADO`), y se especificó el tipo genérico explícito `List<Pedido>` en la interfaz `IRepositorioPedidos`.
+- **Premisa sobre el diseño inicial:** Se descartó la afirmación de que el boceto ya tenía clases concretas de persistencia o cobro. Las tarjetas CRC no las incluyen, por lo que los repositorios y procesadores se documentaron como puntos de extensión propuestos, y el anexo conserva la tabla de dependencias por clase y la matriz de inyección por constructor.

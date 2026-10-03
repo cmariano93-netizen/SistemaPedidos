@@ -130,7 +130,6 @@ Pedido "1" *-- "1..*" ItemPedido : contiene
 ItemPedido --> Producto : corresponde a
 ItemPedido "1" o-- "0..*" Personalizacion : incluye
 Pedido "1" o-- "0..*" Pago : registra
-Pago --> Pedido : valida total
 Pedido --> EstadoPedido : mantiene
 RegistradorPago ..> Pedido : coordina registro
 Encargado --> Pedido : supervisa / cambia estado
