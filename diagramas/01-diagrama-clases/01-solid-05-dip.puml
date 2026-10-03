@@ -9,7 +9,7 @@ title Principio de Inversión de Dependencias (DIP) - Sistema de Pedidos "Sabor 
 interface IRepositorioPedidos {
   + guardar(pedido : Pedido) : void
   + buscarPorNumero(numero : int) : Pedido
-  + listarActivos() : List
+  + listarActivos() : List<Pedido>
   + actualizar(pedido : Pedido) : void
 }
 
@@ -55,7 +55,6 @@ class Pedido {
   + calcularTotal() : Decimal
   + cambiarEstado(nuevo : EstadoPedido) : void
   + cancelar() : void
-  + registrarPago() : void
 }
 
 class ItemPedido {
@@ -83,16 +82,15 @@ class Pago {
   - monto : Decimal
   - fechaHora : DateTime
   - formaPago : String
-  + registrarPago() : void
 }
 
 class Encargado
 class Cliente
 
-class GestorPago {
+class RegistradorPago {
   + registrarPago(pedido : Pedido, monto : Decimal, formaPago : String) : Pago
   .. Constructor ..
-  + GestorPago(procesador : IProcesadorPago, repositorio : IRepositorioPedidos)
+  + RegistradorPago(procesador : IProcesadorPago, repositorio : IRepositorioPedidos)
 }
 
 class RepositorioPedidosMemoria
@@ -100,7 +98,11 @@ class RepositorioPedidosBaseDatos
 class CatalogoProductos
 class ProcesadorEfectivo
 class ProcesadorQR
-class ResultadoPago <<enumeration>>
+
+enum ResultadoPago {
+  APROBADO
+  RECHAZADO
+}
 
 enum EstadoPedido {
   RECIBIDO
@@ -121,8 +123,8 @@ PersonalAtencion --> IRepositorioPedidos : consulta / guarda
 PersonalAtencion --> ICatalogoProductos : busca productos
 PersonalAtencion --> IRecepcionPedidos : envía pedido
 Cocina --> IRepositorioPedidos : consulta / actualiza
-GestorPago --> IProcesadorPago : procesa cobro
-GestorPago --> IRepositorioPedidos : guarda pago
+RegistradorPago --> IProcesadorPago : procesa cobro
+RegistradorPago --> IRepositorioPedidos : guarda pago
 
 Pedido "1" *-- "1..*" ItemPedido : contiene
 ItemPedido --> Producto : corresponde a
@@ -130,7 +132,7 @@ ItemPedido "1" o-- "0..*" Personalizacion : incluye
 Pedido "1" o-- "0..*" Pago : registra
 Pago --> Pedido : valida total
 Pedido --> EstadoPedido : mantiene
-GestorPago ..> Pedido : coordina registro
+RegistradorPago ..> Pedido : coordina registro
 Encargado --> Pedido : supervisa / cambia estado
 Cliente --> Pedido : solicita / retira
 Cliente --> Pago : abona
@@ -146,9 +148,9 @@ note bottom of Pago
   No depende de la pasarela concreta.
 end note
 
-note right of GestorPago
-  Servicio de aplicación añadido para coordinar
-  el cobro; no sustituye la clase CRC Pago.
+note right of RegistradorPago
+  Servicio de aplicación alineado con SRP/OCP
+  para coordinar el cobro mediante contratos abstractos.
 end note
 
 note bottom of IRepositorioPedidos
